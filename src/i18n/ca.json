@@ -27,39 +27,39 @@
   "nav_install": "Instal·lació",
   "hero_badge": "Pre-beta · versió 0.3.10",
   "scroll_hint": "Desplaça",
-  "about_h": "Arch, sense haver-lo de muntar a mà",
-  "about_p": "Arctiva és per a qui ve de Windows o vol Arch sense muntar-lo a mà. Manté el millor d'Arch —repositoris oficials sense modificar, pacman i rolling release— i afegeix el que li falta per a l'ús quotidià: instal·lador gràfic, un escriptori KDE Plasma de manejament proper a Windows, actualitzacions senzilles amb instantànies automàtiques a les quals tornar, i jocs i controladors gràfics sense complicacions.",
-  "principles_h": "El que la fa diferent",
+  "about_h": "Arch Linux per al dia a dia",
+  "about_p": "Arctiva és per a qui ve de Windows o vol Arch sense muntar-lo a mà. Manté el millor d'Arch (repositoris oficials sense modificar, pacman i rolling release) i afegeix el que li falta per a l'ús quotidià: instal·lador gràfic, un escriptori KDE Plasma de manejament proper a Windows, actualitzacions senzilles amb instantànies automàtiques a les quals tornar, i jocs i controladors gràfics sense complicacions.",
+  "principles_h": "Principis",
   "principles": [
     {
-      "h": "Arch de debò, sense forks",
-      "p": "Els repositoris oficials core, extra i multilib, sense canvis ni retards. Si alguna cosa d'Arch es trenca, es mitiga amb avisos i instantànies, no amb un fork."
+      "h": "Els repositoris d'Arch, tal qual",
+      "p": "core, extra i multilib oficials, sense canvis ni retards. Si alguna cosa d'Arch es trenca, es resol amb avisos i instantànies, no amb un fork."
     },
     {
-      "h": "Repositori propi mínim i signat",
-      "p": "[arctiva] només conté peces pròpies i va signat amb GPG. La clau principal es guarda fora de línia i signa sempre la integració contínua, mai un equip personal."
+      "h": "Un repositori propi, petit i signat",
+      "p": "[arctiva] només té paquets d'Arctiva i està signat amb GPG. La clau principal és fora de línia i només signa el sistema d'integració contínua, mai un equip personal."
     },
     {
-      "h": "Personalització sense pedaços",
-      "p": "L'escriptori s'adapta només amb configuració i temes. No es modifica KDE ni Calamares, així que les actualitzacions no trenquen res."
+      "h": "Configuració, no pedaços",
+      "p": "L'escriptori es personalitza amb ajustos i temes. KDE i Calamares no es modifiquen, així que les actualitzacions de Plasma no donen problemes."
     },
     {
-      "h": "Reproduïble",
-      "p": "Cada ISO fixa una data de l'Arch Linux Archive, de manera que es pot reconstruir amb exactament els mateixos paquets."
+      "h": "Compilacions reproduïbles",
+      "p": "Cada ISO es fixa a una data de l'Arch Linux Archive, així que es pot reconstruir amb exactament els mateixos paquets."
     },
     {
-      "h": "Honest amb les limitacions",
-      "p": "El que no funciona —Secure Boot, certs jocs amb antitrampes, programes de Windows concrets— s'explica amb claredat."
+      "h": "Clars amb el que falta",
+      "p": "Alguns programes de Windows i jocs amb antitrampes poden donar problemes. Si alguna cosa no funciona, ho diem."
     },
     {
-      "h": "Lliure i transparent",
-      "p": "Tot el codi, les decisions de disseny i el full de ruta són públics a GitHub."
+      "h": "Codi obert",
+      "p": "El codi, les decisions de disseny i el full de ruta són públics a GitHub."
     }
   ],
-  "tag_done": "Fet",
+  "tag_done": "Completat",
   "tag_wip": "En desenvolupament",
   "tag_planned": "Previst",
-  "feat_h": "Tot el que necessites, en un sol sistema",
+  "feat_h": "Què inclou",
   "feat": [
     {
       "s": "done",
@@ -68,7 +68,7 @@
     },
     {
       "s": "done",
-      "h": "Instantànies des de les quals arrencar",
+      "h": "Instantànies de Btrfs",
       "p": "Btrfs amb compressió zstd. Snapper i snap-pac fan una instantània abans i després de cada canvi de paquets, i GRUB permet arrencar-ne qualsevol."
     },
     {
@@ -78,17 +78,17 @@
     },
     {
       "s": "done",
-      "h": "Arrencada dual, sense perdre dades",
+      "h": "Instal·lació al costat de Windows",
       "p": "Abans de tocar el disc, una comprovació avisa si Windows està hibernat o amb inici ràpid, o si BitLocker està actiu, i GRUB mostra Windows automàticament. El xifratge de disc opcional demana la contrasenya una sola vegada."
     },
     {
       "s": "done",
-      "h": "Gràfiques que funcionen soles",
+      "h": "Controladors gràfics",
       "p": "AMD i Intel funcionen de sèrie. NVIDIA GTX 16 / RTX 20 i posteriors es detecten i instal·len nvidia-open automàticament. Les GTX 900/1000 usen el controlador lliure i t'expliquem les opcions."
     },
     {
       "s": "done",
-      "h": "Jocs a punt per jugar",
+      "h": "Jocs",
       "p": "multilib activat de sèrie; Steam, Lutris, GameMode, MangoHud i Gamescope al perfil Jocs. Heroic, ProtonPlus i Bottles estan previstos."
     },
     {
@@ -102,7 +102,7 @@
       "p": "Una botiga amb repositoris oficials, Flathub i AUR clarament diferenciats, i Bottles per a arxius .exe i .msi, amb avisos honestos de compatibilitat."
     }
   ],
-  "install_h": "Instal·lat en deu passos",
+  "install_h": "Instal·lació en deu passos",
   "install_p": "L'instal·lador gràfic et guia en tot el procés. El perfil Bàsic s'instal·la sempre, amb o sense internet; els extres es descarreguen només si hi ha connexió.",
   "install_steps": [
     "Benvinguda",
@@ -116,7 +116,7 @@
     "Instal·lació",
     "Final"
   ],
-  "snap_h": "Si una actualització trenca alguna cosa, tira enrere",
+  "snap_h": "Si una actualització falla, tornes enrere",
   "snap_p": "Arctiva fa una instantània abans de cada actualització. Si alguna cosa falla, reinicia, tria la instantània anterior al menú de GRUB i el sistema torna a funcionar.",
   "snap_lines": [
     {
@@ -144,7 +144,7 @@
       "t": "Arrencada la instantània #214. Tot funciona de nou."
     }
   ],
-  "profiles_h": "Tria el que necessites",
+  "profiles_h": "Perfils d'instal·lació",
   "profiles_p": "Els perfils es poden combinar.",
   "profiles": [
     {
@@ -167,24 +167,24 @@
   "center_p": "Una aplicació que reuneix les eines d'Arctiva, amb l'aspecte de Plasma. En desenvolupament (fase 4, versió 0.5.0).",
   "center": [
     {
-      "h": "Actualitzacions sense sorpreses",
+      "h": "Actualitzacions",
       "p": "Llegeix les notícies d'archlinux.org des de la teva última actualització i bloqueja l'actualització fins que llegeixis les que exigeixen intervenció manual. Marca els paquets delicats (kernel, NVIDIA, Mesa, systemd, Plasma), actualitza els Flatpak i ajuda amb els .pacnew."
     },
     {
-      "h": "Errors en llenguatge planer",
-      "p": "Tradueix les fallades habituals —conflictes, claus, espai al disc, sense xarxa— a missatges comprensibles, sense amagar el text original."
+      "h": "Missatges d'error comprensibles",
+      "p": "Tradueix les fallades habituals (conflictes, claus, espai al disc, sense xarxa) a missatges comprensibles, sense amagar el text original."
     },
     {
       "h": "Controladors",
       "p": "Mostra la gràfica detectada i el que falta, i ho instal·la."
     },
     {
-      "h": "Extres amb un interruptor",
+      "h": "Extres",
       "p": "Jocs, Oficina, kernel LTS, impressores i tallafoc: instal·lar i treure amb un sol interruptor."
     },
     {
-      "h": "Seguretat des del disseny",
-      "p": "Les accions d'administrador passen per un ajudant amb un conjunt tancat d'operacions —mai ordres arbitràries— i demanen la contrasenya amb el diàleg estàndard del sistema (polkit)."
+      "h": "Permisos d'administrador",
+      "p": "Les accions d'administrador passen per un ajudant amb un conjunt tancat d'operacions (mai ordres arbitràries) i demanen la contrasenya amb el diàleg estàndard del sistema (polkit)."
     },
     {
       "h": "Protecció de l'arrencada",
@@ -257,13 +257,13 @@
     "Gràfica amb Vulkan per jugar",
     "USB de 8 GB o més"
   ],
-  "limits_h": "Limitacions conegudes",
+  "limits_h": "Convé saber",
   "limits": [
-    "Sense Secure Boot a la 1.0.",
-    "Sense hibernació a la 1.0 (la suspensió sí que funciona).",
-    "Només UEFI; els equips amb BIOS antiga no estan suportats.",
-    "NVIDIA GTX 900/1000 usen el controlador lliure per defecte.",
-    "Alguns jocs amb antitrampes i alguns programes de Windows no funcionen."
+    "Secure Boot no està suportat a la 1.0.",
+    "La hibernació no hi serà a la 1.0; la suspensió sí que funciona.",
+    "Només equips amb UEFI.",
+    "Les NVIDIA GTX 900/1000 usen el controlador lliure.",
+    "Alguns programes de Windows i jocs amb antitrampes poden no funcionar."
   ],
   "noiso_h": "Encara no hi ha ISO per descarregar",
   "noiso_p": "Arctiva està en desenvolupament, abans de la primera beta. Si vols provar-la, pots construir la ISO des del codi font."

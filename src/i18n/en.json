@@ -27,39 +27,39 @@
   "nav_install": "Install",
   "hero_badge": "Pre-beta · version 0.3.10",
   "scroll_hint": "Scroll",
-  "about_h": "Arch, without the assembly required",
-  "about_p": "Arctiva is for people coming from Windows, or who want Arch without building it by hand. It keeps the best of Arch — unmodified official repositories, pacman and rolling releases — and adds what Arch lacks for everyday use: a graphical installer, a KDE Plasma desktop that feels familiar, simple updates with automatic snapshots to go back to, and games and graphics drivers without the fuss.",
-  "principles_h": "What makes it different",
+  "about_h": "Arch Linux for everyday use",
+  "about_p": "Arctiva is for people coming from Windows, or who want Arch without building it by hand. It keeps the best of Arch ( unmodified official repositories, pacman and rolling releases ) and adds what Arch lacks for everyday use: a graphical installer, a KDE Plasma desktop that feels familiar, simple updates with automatic snapshots to go back to, and games and graphics drivers without the fuss.",
+  "principles_h": "Principles",
   "principles": [
     {
-      "h": "Real Arch, no forks",
-      "p": "Official core, extra and multilib, untouched and on time. If something in Arch breaks, it is mitigated with warnings and snapshots, not with a fork."
+      "h": "Arch's own repositories",
+      "p": "Official core, extra and multilib, with no changes and no delay. If something in Arch breaks, we deal with it through warnings and snapshots instead of forking."
     },
     {
-      "h": "A minimal, signed repository",
-      "p": "[arctiva] holds only our own pieces and is signed with GPG. The master key stays offline; only continuous integration signs, never a personal machine."
+      "h": "A small signed repository",
+      "p": "[arctiva] only holds Arctiva's own packages and is signed with GPG. The master key stays offline, and only the continuous integration system signs, never a personal computer."
     },
     {
-      "h": "Customised without patches",
-      "p": "The desktop is adapted through configuration and themes only. Plasma and Calamares are never modified, so updates don't break anything."
+      "h": "Configuration, not patches",
+      "p": "The desktop is customised through settings and themes. KDE and Calamares are not modified, so Plasma updates don't get in the way."
     },
     {
-      "h": "Reproducible",
-      "p": "Each ISO pins a date of the Arch Linux Archive, so it can be rebuilt with exactly the same packages."
+      "h": "Reproducible builds",
+      "p": "Each ISO is pinned to a date of the Arch Linux Archive, so it can be rebuilt with exactly the same packages."
     },
     {
-      "h": "Honest about limits",
-      "p": "What doesn't work — Secure Boot, some anti-cheat games, certain Windows programs — is explained clearly."
+      "h": "Clear about what's missing",
+      "p": "Some Windows programs and games with anti-cheat can give trouble. When something doesn't work, we say so."
     },
     {
-      "h": "Free and transparent",
-      "p": "All the code, design decisions and the roadmap are public on GitHub."
+      "h": "Open source",
+      "p": "The code, design decisions and roadmap are public on GitHub."
     }
   ],
-  "tag_done": "Done",
+  "tag_done": "Complete",
   "tag_wip": "In development",
   "tag_planned": "Planned",
-  "feat_h": "Everything you need, in one system",
+  "feat_h": "What's included",
   "feat": [
     {
       "s": "done",
@@ -68,7 +68,7 @@
     },
     {
       "s": "done",
-      "h": "Snapshots you can boot",
+      "h": "Btrfs snapshots",
       "p": "Btrfs with zstd compression. Snapper and snap-pac take a snapshot before and after every package change, and GRUB lets you boot any of them."
     },
     {
@@ -78,17 +78,17 @@
     },
     {
       "s": "done",
-      "h": "Dual boot, without losing data",
+      "h": "Install alongside Windows",
       "p": "Before touching the disk, a check warns about hibernated Windows or Fast Startup and active BitLocker, and GRUB lists Windows automatically. Optional disk encryption asks the password only once."
     },
     {
       "s": "done",
-      "h": "Graphics that just work",
+      "h": "Graphics drivers",
       "p": "AMD and Intel work out of the box. NVIDIA GTX 16 / RTX 20 and later are detected and get nvidia-open automatically. Older GTX 900/1000 use the free driver, and you are told your options."
     },
     {
       "s": "done",
-      "h": "Games ready to play",
+      "h": "Games",
       "p": "multilib on by default; Steam, Lutris, GameMode, MangoHud and Gamescope in the Gaming profile. Heroic, ProtonPlus and Bottles are planned."
     },
     {
@@ -99,10 +99,10 @@
     {
       "s": "planned",
       "h": "Apps and Windows programs",
-      "p": "A store with official repositories, Flathub and the AUR clearly told apart, plus Bottles for .exe and .msi files — with honest compatibility notes."
+      "p": "A store with official repositories, Flathub and the AUR clearly told apart, plus Bottles for .exe and .msi files, with notes on compatibility."
     }
   ],
-  "install_h": "Installed in ten steps",
+  "install_h": "Installation in ten steps",
   "install_p": "The graphical installer walks you through the whole process. Basic is always installed, with or without internet; extras are downloaded only when there is a connection.",
   "install_steps": [
     "Welcome",
@@ -116,7 +116,7 @@
     "Installation",
     "Done"
   ],
-  "snap_h": "If an update breaks something, go back",
+  "snap_h": "If an update fails, you go back",
   "snap_p": "Arctiva takes a snapshot before every update. If something fails, reboot, pick the previous snapshot in the GRUB menu and your system works again.",
   "snap_lines": [
     {
@@ -144,7 +144,7 @@
       "t": "Booted snapshot #214. Everything works again."
     }
   ],
-  "profiles_h": "Pick what you need",
+  "profiles_h": "Installation profiles",
   "profiles_p": "Profiles can be combined.",
   "profiles": [
     {
@@ -167,24 +167,24 @@
   "center_p": "One app that brings Arctiva's tools together, with the look of Plasma. In development (phase 4, version 0.5.0).",
   "center": [
     {
-      "h": "Updates that don't surprise you",
+      "h": "Updates",
       "p": "Reads the archlinux.org news since your last update and blocks the update until you read any item that needs manual action. Flags delicate packages (kernel, NVIDIA, Mesa, systemd, Plasma), updates Flatpaks, and helps with .pacnew files."
     },
     {
-      "h": "Errors in plain language",
-      "p": "Translates the usual failures — conflicts, keys, disk space, no network — into clear messages, without hiding the original text."
+      "h": "Readable error messages",
+      "p": "Translates the usual failures ( conflicts, keys, disk space, no network ) into clear messages, without hiding the original text."
     },
     {
       "h": "Drivers",
       "p": "Shows the detected graphics card and what is missing, and installs it."
     },
     {
-      "h": "Extras with a switch",
+      "h": "Extras",
       "p": "Gaming, Office, LTS kernel, printers and firewall: install and remove with one toggle."
     },
     {
-      "h": "Security by design",
-      "p": "Admin actions go through a helper with a closed set of operations — never arbitrary commands — and ask for the password with the standard system dialog (polkit)."
+      "h": "Administrator permissions",
+      "p": "Admin actions go through a helper with a closed set of operations ( never arbitrary commands ) and ask for the password with the standard system dialog (polkit)."
     },
     {
       "h": "Boot protection",
@@ -257,13 +257,13 @@
     "Vulkan-capable graphics for gaming",
     "USB drive of 8 GB or more"
   ],
-  "limits_h": "Known limitations",
+  "limits_h": "Good to know",
   "limits": [
-    "No Secure Boot in 1.0.",
-    "No hibernation in 1.0 (suspend works).",
-    "UEFI only; old BIOS machines are not supported.",
-    "NVIDIA GTX 900/1000 use the free driver by default.",
-    "Some anti-cheat games and some Windows programs do not work."
+    "Secure Boot is not supported in 1.0.",
+    "Hibernation won't be in 1.0; suspend works.",
+    "UEFI machines only.",
+    "NVIDIA GTX 900/1000 cards use the free driver.",
+    "Some Windows programs and anti-cheat games may not work."
   ],
   "noiso_h": "No ISO to download yet",
   "noiso_p": "Arctiva is in development, before its first beta. If you want to try it, you can build the ISO from the source code."

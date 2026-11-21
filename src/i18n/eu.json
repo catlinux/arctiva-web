@@ -27,39 +27,39 @@
   "nav_install": "Instalazioa",
   "hero_badge": "Pre-beta · 0.3.10 bertsioa",
   "scroll_hint": "Jaitsi",
-  "about_h": "Arch, eskuz muntatu beharrik gabe",
-  "about_p": "Arctiva Windows-etik datozenentzat da, edo Arch eskuz muntatu nahi ez dutenentzat. Arch-en onena mantentzen du —aldatu gabeko biltegi ofizialak, pacman eta rolling release— eta egunerokotasunerako falta zaiona gehitzen du: instalatzaile grafikoa, Windows-en antzeko KDE Plasma mahaigaina, eguneratze errazak eta itzultzeko berreskuratze-puntu automatikoak, eta konplikaziorik gabeko jolasak eta kontrolatzaile grafikoak.",
-  "principles_h": "Zerk egiten duen desberdin",
+  "about_h": "Arch Linux egunerokoan erabiltzeko",
+  "about_p": "Arctiva Windows-etik datozenentzat da, edo Arch eskuz muntatu nahi ez dutenentzat. Arch-en onena mantentzen du (aldatu gabeko biltegi ofizialak, pacman eta rolling release) eta egunerokotasunerako falta zaiona gehitzen du: instalatzaile grafikoa, Windows-en antzeko KDE Plasma mahaigaina, eguneratze errazak eta itzultzeko berreskuratze-puntu automatikoak, eta konplikaziorik gabeko jolasak eta kontrolatzaile grafikoak.",
+  "principles_h": "Printzipioak",
   "principles": [
     {
-      "h": "Benetako Arch, forkik gabe",
-      "p": "core, extra eta multilib biltegi ofizialak, aldaketarik eta atzerapenik gabe. Arch-en zerbait hautsiz gero, abisuekin eta berreskuratze-puntuekin arintzen da, ez fork batekin."
+      "h": "Arch-en biltegiak, dagoen bezala",
+      "p": "core, extra eta multilib ofizialak, aldaketarik eta atzerapenik gabe. Arch-en zerbait hausten bada, abisuekin eta berreskuratze-puntuekin konpontzen da, ez fork batekin."
     },
     {
-      "h": "Biltegi propio minimoa eta sinatua",
-      "p": "[arctiva]-k pieza propioak bakarrik ditu eta GPG-rekin sinatuta dago. Gako nagusia lineaz kanpo gordetzen da eta beti integrazio jarraituak sinatzen du, inoiz ez ordenagailu pertsonal batek."
+      "h": "Biltegi propio txikia eta sinatua",
+      "p": "[arctiva]-k Arctiva-ren paketeak bakarrik ditu eta GPG-rekin sinatuta dago. Gako nagusia lineaz kanpo dago eta integrazio jarraituaren sistemak bakarrik sinatzen du, inoiz ez ordenagailu pertsonal batek."
     },
     {
-      "h": "Pertsonalizazioa adabakirik gabe",
-      "p": "Mahaigaina konfigurazioarekin eta gaiekin soilik egokitzen da. Ez da KDE ez Calamares aldatzen; beraz, eguneratzeek ez dute ezer hausten."
+      "h": "Konfigurazioa, ez adabakiak",
+      "p": "Mahaigaina ezarpenekin eta gaiekin pertsonalizatzen da. KDE eta Calamares ez dira aldatzen, beraz Plasma-ren eguneratzeek ez dute arazorik ematen."
     },
     {
-      "h": "Erreproduzigarria",
-      "p": "ISO bakoitzak Arch Linux Archive-ren data bat finkatzen du, eta horrela pakete berdinekin berreraiki daiteke."
+      "h": "Konpilazio erreproduzigarriak",
+      "p": "ISO bakoitza Arch Linux Archive-ren data batera finkatzen da, eta pakete berdinekin berreraiki daiteke."
     },
     {
-      "h": "Mugekin zintzoa",
-      "p": "Funtzionatzen ez duena —Secure Boot, iruzur-aurkako zenbait joko, Windows-eko programa jakin batzuk— argi azaltzen da."
+      "h": "Falta denaren berri argi",
+      "p": "Windows-eko zenbait programak eta iruzur-aurkako zenbait jokok arazoak eman ditzakete. Zerbait ez badabil, esaten dugu."
     },
     {
-      "h": "Librea eta gardena",
-      "p": "Kode guztia, diseinu-erabakiak eta ibilbide-orria publikoak dira GitHub-en."
+      "h": "Kode irekia",
+      "p": "Kodea, diseinu-erabakiak eta ibilbide-orria publikoak dira GitHub-en."
     }
   ],
-  "tag_done": "Eginda",
+  "tag_done": "Osatuta",
   "tag_wip": "Garatzen",
   "tag_planned": "Aurreikusita",
-  "feat_h": "Behar duzun guztia, sistema bakarrean",
+  "feat_h": "Zer dakar",
   "feat": [
     {
       "s": "done",
@@ -68,7 +68,7 @@
     },
     {
       "s": "done",
-      "h": "Hasi daitezkeen berreskuratze-puntuak",
+      "h": "Btrfs berreskuratze-puntuak",
       "p": "Btrfs zstd konpresioarekin. Snapper eta snap-pac-ek berreskuratze-puntu bat sortzen dute pakete-aldaketa bakoitzaren aurretik eta ondoren, eta GRUB-ek edozein abiarazten uzten du."
     },
     {
@@ -78,17 +78,17 @@
     },
     {
       "s": "done",
-      "h": "Abiarazte bikoitza, daturik galdu gabe",
+      "h": "Windows-en ondoan instalatzea",
       "p": "Diskoa ukitu aurretik, egiaztapen batek abisatzen du Windows hibernatuta edo abio azkarrarekin badago, edo BitLocker aktibo badago, eta GRUB-ek Windows automatikoki erakusten du. Aukerako disko-zifratzeak pasahitza behin bakarrik eskatzen du."
     },
     {
       "s": "done",
-      "h": "Berez funtzionatzen duten grafikoak",
+      "h": "Kontrolatzaile grafikoak",
       "p": "AMD eta Intel berez funtzionatzen dute. NVIDIA GTX 16 / RTX 20 eta berriagoak detektatu eta nvidia-open automatikoki instalatzen da. GTX 900/1000-ek kontrolatzaile librea erabiltzen dute eta aukerak azaltzen zaizkizu."
     },
     {
       "s": "done",
-      "h": "Jolasteko prest dauden jolasak",
+      "h": "Jolasak",
       "p": "multilib berez aktibatuta; Steam, Lutris, GameMode, MangoHud eta Gamescope Jolasak profilean. Heroic, ProtonPlus eta Bottles aurreikusita daude."
     },
     {
@@ -99,10 +99,10 @@
     {
       "s": "planned",
       "h": "Aplikazioak eta Windows-eko programak",
-      "p": "Biltegi ofizialak, Flathub eta AUR argi bereizten dituen denda bat, eta Bottles .exe eta .msi fitxategietarako, bateragarritasun-ohar zintzoekin."
+      "p": "Biltegi ofizialak, Flathub eta AUR argi bereizten dituen denda bat, eta Bottles .exe eta .msi fitxategietarako, bateragarritasunari buruzko oharrekin."
     }
   ],
-  "install_h": "Hamar urratsetan instalatuta",
+  "install_h": "Instalazioa hamar urratsetan",
   "install_p": "Instalatzaile grafikoak prozesu osoan gidatzen zaitu. Oinarrizko profila beti instalatzen da, internetekin edo gabe; gehigarriak konexioa dagoenean bakarrik deskargatzen dira.",
   "install_steps": [
     "Ongietorria",
@@ -116,7 +116,7 @@
     "Instalazioa",
     "Amaiera"
   ],
-  "snap_h": "Eguneratze batek zerbait hausten badu, itzuli atzera",
+  "snap_h": "Eguneratze batek huts egiten badu, atzera egiten duzu",
   "snap_p": "Arctiva-k berreskuratze-puntu bat sortzen du eguneratze bakoitzaren aurretik. Zerbait huts egiten badu, berrabiarazi, aukeratu aurreko berreskuratze-puntua GRUB menuan eta sistemak berriro funtzionatuko du.",
   "snap_lines": [
     {
@@ -144,7 +144,7 @@
       "t": "#214 berreskuratze-puntua abiarazita. Dena berriro dabil."
     }
   ],
-  "profiles_h": "Aukeratu behar duzuna",
+  "profiles_h": "Instalazio-profilak",
   "profiles_p": "Profilak konbina daitezke.",
   "profiles": [
     {
@@ -167,24 +167,24 @@
   "center_p": "Arctiva-ren tresnak biltzen dituen aplikazio bat, Plasma-ren itxurarekin. Garatzen (4. fasea, 0.5.0 bertsioa).",
   "center": [
     {
-      "h": "Ustekaberik gabeko eguneratzeak",
+      "h": "Eguneratzeak",
       "p": "Azken eguneratzetik archlinux.org-eko berriak irakurtzen ditu eta eguneratzea blokeatzen du eskuzko esku-hartzea eskatzen dutenak irakurri arte. Pakete delikatuak markatzen ditu (kernel, NVIDIA, Mesa, systemd, Plasma), Flatpak-ak eguneratzen ditu eta .pacnew-ekin laguntzen du."
     },
     {
-      "h": "Erroreak hizkuntza argian",
-      "p": "Ohiko hutsegiteak —gatazkak, gakoak, disko-lekua, sarerik eza— mezu ulergarri bihurtzen ditu, jatorrizko testua ezkutatu gabe."
+      "h": "Errore-mezu ulergarriak",
+      "p": "Ohiko hutsegiteak (gatazkak, gakoak, disko-lekua, sarerik eza) mezu ulergarri bihurtzen ditu, jatorrizko testua ezkutatu gabe."
     },
     {
       "h": "Kontrolatzaileak",
       "p": "Detektatutako grafikoa eta falta dena erakusten ditu, eta instalatu egiten du."
     },
     {
-      "h": "Gehigarriak etengailu batekin",
+      "h": "Gehigarriak",
       "p": "Jolasak, Bulegoa, LTS kernela, inprimagailuak eta suhesia: instalatu eta kendu etengailu batekin."
     },
     {
-      "h": "Segurtasuna diseinutik",
-      "p": "Administratzaile-ekintzak eragiketa multzo itxia duen laguntzaile baten bidez egiten dira —inoiz ez agindu arbitrarioak— eta pasahitza sistemaren elkarrizketa estandarrarekin eskatzen dute (polkit)."
+      "h": "Administratzaile-baimenak",
+      "p": "Administratzaile-ekintzak eragiketa multzo itxia duen laguntzaile baten bidez egiten dira (inoiz ez agindu arbitrarioak) eta pasahitza sistemaren elkarrizketa estandarrarekin eskatzen dute (polkit)."
     },
     {
       "h": "Abioaren babesa",
@@ -257,13 +257,13 @@
     "Vulkan duen grafikoa jolasteko",
     "8 GB edo gehiagoko USB bat"
   ],
-  "limits_h": "Muga ezagunak",
+  "limits_h": "Jakitea komeni da",
   "limits": [
-    "Secure Boot gabe 1.0-n.",
-    "Hibernaziorik gabe 1.0-n (etenaldiak funtzionatzen du).",
-    "UEFI soilik; BIOS zaharreko ekipoak ez daude onartuta.",
-    "NVIDIA GTX 900/1000-ek kontrolatzaile librea erabiltzen dute lehenespenez.",
-    "Iruzur-aurkako zenbait jokok eta Windows-eko zenbait programak ez dute funtzionatzen."
+    "Secure Boot ez dago onartuta 1.0-n.",
+    "Hibernazioa ez dago 1.0-n; etenaldiak funtzionatzen du.",
+    "UEFI duten ekipoak soilik.",
+    "NVIDIA GTX 900/1000-ek kontrolatzaile librea erabiltzen dute.",
+    "Windows-eko zenbait programak eta iruzur-aurkako zenbait jokok ez dute funtzionatu ahal izango."
   ],
   "noiso_h": "Oraindik ez dago ISOrik deskargatzeko",
   "noiso_p": "Arctiva garatzen ari da, lehen betaren aurretik. Probatu nahi baduzu, ISOa iturburu-kodetik eraiki dezakezu."

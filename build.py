@@ -60,7 +60,8 @@ def inline(text, lang):
             url = link("license", lang)
         elif url in LEGAL.values():
             url = "../" + next(k for k, v in LEGAL.items() if v == url) + "/trademarks.html"
-        return f'<a href="{url}">{label}</a>'
+        ext = ' target="_blank" rel="noopener noreferrer"' if url.startswith("http") else ""
+        return f'<a href="{url}"{ext}>{label}</a>'
     text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl, text)
     text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
     return re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)
@@ -118,7 +119,7 @@ def render(lang, texts, names):
     d["link_roadmap_url"] = e(link("roadmap", lang))
     d["trademarks_url"] = trademarks_href(lang)
     d["links"] = "".join(
-        f'<li><a href="{e(u)}">{e(texts[k])}</a></li>'
+        f'<li><a href="{e(u)}" target="_blank" rel="noopener noreferrer">{e(texts[k])}</a></li>'
         for k, u in (
             ("link_code", CONFIG["code_url"]),
             ("link_roadmap", link("roadmap", lang)),

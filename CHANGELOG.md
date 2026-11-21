@@ -4,6 +4,14 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.2.1] - 2026-11-21
+
+### Cambiado
+- Textos más sobrios en los cinco idiomas: menos adornos, encabezados descriptivos y limitaciones conocidas redactadas sin dramatismo.
+- Estado «Hecho» renombrado a «Completado» (y equivalentes en los demás idiomas).
+- Las ventanas de muestra usan una barra de título neutra en lugar de los botones de macOS.
+- Los enlaces externos se abren en una pestaña nueva.
+
 ## [0.2.0] - 2026-11-21
 
 ### Cambiado
