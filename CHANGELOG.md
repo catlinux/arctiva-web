@@ -4,6 +4,12 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.3.2] - 2026-11-21
+
+### Añadido
+- Enlace a GitHub Discussions en la sección «Comunidad».
+- `.github/FUNDING.yml` con GitHub Sponsors para mostrar el botón «Sponsor» en este repositorio.
+
 ## [0.3.1] - 2026-11-21
 
 ### Añadido

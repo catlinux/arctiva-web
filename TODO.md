@@ -1,7 +1,6 @@
 # TODO
 
 ## Alta
-- Activar GitHub Discussions en `catlinux/arctiva` (Settings → Features → Discussions), poner su URL en `community.discussions` de `src/site.json` y desplegar.
 - Requisitos exactos (RAM, disco, USB, Vulkan): pendientes de confirmar con el proyecto principal.
 - Revisión de los textos en gallego y euskera por una persona hablante nativa.
 

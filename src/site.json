@@ -30,7 +30,7 @@
     }
   },
   "community": {
-    "discussions": "",
+    "discussions": "https://github.com/catlinux/arctiva/discussions",
     "releases": "https://github.com/catlinux/arctiva/releases",
     "issues": "https://github.com/catlinux/arctiva/issues"
   },
