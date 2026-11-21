@@ -8,65 +8,8 @@
   "nav_label": "Main",
   "langs_label": "Language",
   "nav_about": "About",
-  "nav_status": "Status",
   "nav_reqs": "Requirements",
   "nav_roadmap": "Roadmap",
-  "about_h": "What is Arctiva?",
-  "about_p": "Arctiva keeps the official Arch Linux repositories, pacman and the rolling-release model, and adds what makes it easy to start using.",
-  "features": [
-    {
-      "h": "Arch Linux base",
-      "p": "Official Arch repositories, pacman and rolling releases."
-    },
-    {
-      "h": "Graphical installer",
-      "p": "Calamares, with Basic, Gaming and Office profiles."
-    },
-    {
-      "h": "KDE Plasma",
-      "p": "A desktop that feels close to what Windows users already know."
-    },
-    {
-      "h": "Safe updates",
-      "p": "Btrfs + Snapper snapshots taken automatically and bootable from GRUB."
-    },
-    {
-      "h": "Gaming without hassle",
-      "p": "Games and graphics drivers ready to use."
-    }
-  ],
-  "status_h": "Project status",
-  "status_done_h": "Done: phase 2 (0.3.0)",
-  "status_done_p": "Live ISO with KDE Plasma and an installer with Basic, Gaming and Office profiles, Btrfs with snapshots, optional encryption and installation alongside Windows. Tested in virtual machines.",
-  "status_wip_h": "In progress (0.3.x)",
-  "status_wip_p": "Arctiva Center (welcome, updates, drivers, extras). Our own signed repository [arctiva] is already published.",
-  "status_noiso": "There is no ISO to download yet: coming soon. In the meantime, you can build it from the source code.",
-  "reqs_h": "Planned requirements",
-  "reqs": [
-    "64-bit x86 PC with UEFI (Secure Boot disabled)",
-    "4 GB of RAM (8 GB recommended)",
-    "40 GB of disk (64 GB recommended)",
-    "GPU with Vulkan support for gaming"
-  ],
-  "roadmap_h": "Roadmap",
-  "roadmap": [
-    {
-      "v": "Phase 3 · 0.4.0",
-      "t": "Own repository and hardware support."
-    },
-    {
-      "v": "Phase 4 · 0.5.0",
-      "t": "Arctiva Center."
-    },
-    {
-      "v": "Phase 5 · 0.6.0",
-      "t": "Application store and Windows compatibility."
-    },
-    {
-      "v": "Towards 1.0",
-      "t": "Polish and testing on real hardware."
-    }
-  ],
   "legal_independent": "Arctiva is an independent project. It is not affiliated with or endorsed by Arch Linux.",
   "legal_license": "The code is released under GPL-3.0-or-later. The name and the logo are not covered by that license: they are governed by the project's trademark policy.",
   "legal_author": "Developed and maintained by CatLinux.",
@@ -79,5 +22,249 @@
   "link_repo": "Signed package repository",
   "link_trademarks": "Name and logo policy",
   "fingerprint_label": "Repository key fingerprint:",
-  "roadmap_more": "Full detail in the project's roadmap."
+  "roadmap_more": "Full detail in the project's roadmap.",
+  "nav_features": "Features",
+  "nav_install": "Install",
+  "hero_badge": "Pre-beta · version 0.3.10",
+  "scroll_hint": "Scroll",
+  "about_h": "Arch, without the assembly required",
+  "about_p": "Arctiva is for people coming from Windows, or who want Arch without building it by hand. It keeps the best of Arch — unmodified official repositories, pacman and rolling releases — and adds what Arch lacks for everyday use: a graphical installer, a KDE Plasma desktop that feels familiar, simple updates with automatic snapshots to go back to, and games and graphics drivers without the fuss.",
+  "principles_h": "What makes it different",
+  "principles": [
+    {
+      "h": "Real Arch, no forks",
+      "p": "Official core, extra and multilib, untouched and on time. If something in Arch breaks, it is mitigated with warnings and snapshots, not with a fork."
+    },
+    {
+      "h": "A minimal, signed repository",
+      "p": "[arctiva] holds only our own pieces and is signed with GPG. The master key stays offline; only continuous integration signs, never a personal machine."
+    },
+    {
+      "h": "Customised without patches",
+      "p": "The desktop is adapted through configuration and themes only. Plasma and Calamares are never modified, so updates don't break anything."
+    },
+    {
+      "h": "Reproducible",
+      "p": "Each ISO pins a date of the Arch Linux Archive, so it can be rebuilt with exactly the same packages."
+    },
+    {
+      "h": "Honest about limits",
+      "p": "What doesn't work — Secure Boot, some anti-cheat games, certain Windows programs — is explained clearly."
+    },
+    {
+      "h": "Free and transparent",
+      "p": "All the code, design decisions and the roadmap are public on GitHub."
+    }
+  ],
+  "tag_done": "Done",
+  "tag_wip": "In development",
+  "tag_planned": "Planned",
+  "feat_h": "Everything you need, in one system",
+  "feat": [
+    {
+      "s": "done",
+      "h": "Live ISO and graphical installer",
+      "p": "Try the full KDE Plasma desktop without installing anything, then install with a Calamares-based wizard with Arctiva's own design. Offline install: it copies the tested live system, so it is fast."
+    },
+    {
+      "s": "done",
+      "h": "Snapshots you can boot",
+      "p": "Btrfs with zstd compression. Snapper and snap-pac take a snapshot before and after every package change, and GRUB lets you boot any of them."
+    },
+    {
+      "s": "done",
+      "h": "KDE Plasma 6 on Wayland",
+      "p": "Menu, taskbar and tray like Windows from the first minute. Dolphin, high-refresh-rate screens (VRR), HDR; old X11 apps still work through Xwayland."
+    },
+    {
+      "s": "done",
+      "h": "Dual boot, without losing data",
+      "p": "Before touching the disk, a check warns about hibernated Windows or Fast Startup and active BitLocker, and GRUB lists Windows automatically. Optional disk encryption asks the password only once."
+    },
+    {
+      "s": "done",
+      "h": "Graphics that just work",
+      "p": "AMD and Intel work out of the box. NVIDIA GTX 16 / RTX 20 and later are detected and get nvidia-open automatically. Older GTX 900/1000 use the free driver, and you are told your options."
+    },
+    {
+      "s": "done",
+      "h": "Games ready to play",
+      "p": "multilib on by default; Steam, Lutris, GameMode, MangoHud and Gamescope in the Gaming profile. Heroic, ProtonPlus and Bottles are planned."
+    },
+    {
+      "s": "wip",
+      "h": "Arctiva Center",
+      "p": "One native app (Python + Qt/PySide6) for updates, drivers and extras. The base window exists and is already published; its modules are being written."
+    },
+    {
+      "s": "planned",
+      "h": "Apps and Windows programs",
+      "p": "A store with official repositories, Flathub and the AUR clearly told apart, plus Bottles for .exe and .msi files — with honest compatibility notes."
+    }
+  ],
+  "install_h": "Installed in ten steps",
+  "install_p": "The graphical installer walks you through the whole process. Basic is always installed, with or without internet; extras are downloaded only when there is a connection.",
+  "install_steps": [
+    "Welcome",
+    "Language and time zone",
+    "Keyboard",
+    "Profile",
+    "System check",
+    "Disk",
+    "User",
+    "Summary",
+    "Installation",
+    "Done"
+  ],
+  "snap_h": "If an update breaks something, go back",
+  "snap_p": "Arctiva takes a snapshot before every update. If something fails, reboot, pick the previous snapshot in the GRUB menu and your system works again.",
+  "snap_lines": [
+    {
+      "k": "cmd",
+      "t": "sudo pacman -Syu"
+    },
+    {
+      "k": "info",
+      "t": "snap-pac → snapshot #214 (pre)"
+    },
+    {
+      "k": "ok",
+      "t": "update finished"
+    },
+    {
+      "k": "warn",
+      "t": "After the reboot, something is broken."
+    },
+    {
+      "k": "info",
+      "t": "GRUB → Arctiva snapshots → #214"
+    },
+    {
+      "k": "ok",
+      "t": "Booted snapshot #214. Everything works again."
+    }
+  ],
+  "profiles_h": "Pick what you need",
+  "profiles_p": "Profiles can be combined.",
+  "profiles": [
+    {
+      "h": "Basic",
+      "p": "Plasma desktop, Firefox, snapshots and everything needed to start. Always installed.",
+      "m": "Included"
+    },
+    {
+      "h": "Gaming",
+      "p": "Steam, Lutris, GameMode, MangoHud and Gamescope, with the 32-bit graphics libraries.",
+      "m": "≈ 0.3 GB · needs internet"
+    },
+    {
+      "h": "Office",
+      "p": "LibreOffice and Thunderbird in English, Spanish and Catalan, with spell checkers, compatible fonts, and scanner and printer support.",
+      "m": "≈ 0.3 GB · needs internet"
+    }
+  ],
+  "center_h": "Arctiva Center",
+  "center_p": "One app that brings Arctiva's tools together, with the look of Plasma. In development (phase 4, version 0.5.0).",
+  "center": [
+    {
+      "h": "Updates that don't surprise you",
+      "p": "Reads the archlinux.org news since your last update and blocks the update until you read any item that needs manual action. Flags delicate packages (kernel, NVIDIA, Mesa, systemd, Plasma), updates Flatpaks, and helps with .pacnew files."
+    },
+    {
+      "h": "Errors in plain language",
+      "p": "Translates the usual failures — conflicts, keys, disk space, no network — into clear messages, without hiding the original text."
+    },
+    {
+      "h": "Drivers",
+      "p": "Shows the detected graphics card and what is missing, and installs it."
+    },
+    {
+      "h": "Extras with a switch",
+      "p": "Gaming, Office, LTS kernel, printers and firewall: install and remove with one toggle."
+    },
+    {
+      "h": "Security by design",
+      "p": "Admin actions go through a helper with a closed set of operations — never arbitrary commands — and ask for the password with the standard system dialog (polkit)."
+    },
+    {
+      "h": "Boot protection",
+      "p": "When GRUB is updated it is also reinstalled on the EFI partition, so your machine is never left unable to boot."
+    }
+  ],
+  "roadmap_h": "Roadmap",
+  "roadmap": [
+    {
+      "v": "0.1",
+      "n": "Foundations",
+      "t": "Architecture, license and brand.",
+      "s": "done"
+    },
+    {
+      "v": "0.2",
+      "n": "Live ISO",
+      "t": "Plasma in live mode.",
+      "s": "done"
+    },
+    {
+      "v": "0.3",
+      "n": "Installer",
+      "t": "Tailored Calamares, dual boot, snapshots.",
+      "s": "done"
+    },
+    {
+      "v": "0.4",
+      "n": "Repository and hardware",
+      "t": "Signed [arctiva] repository, graphics detection. Almost done.",
+      "s": "wip"
+    },
+    {
+      "v": "0.5",
+      "n": "Arctiva Center",
+      "t": "Welcome, drivers, updates and extras.",
+      "s": "wip"
+    },
+    {
+      "v": "0.6",
+      "n": "Apps and Windows",
+      "t": "Store and Windows compatibility.",
+      "s": "planned"
+    },
+    {
+      "v": "0.7",
+      "n": "Identity",
+      "t": "GRUB theme, boot screen, login, Plasma theme, wallpapers.",
+      "s": "planned"
+    },
+    {
+      "v": "0.8–0.9",
+      "n": "Beta",
+      "t": "Real-hardware testing, documentation, public beta.",
+      "s": "planned"
+    },
+    {
+      "v": "1.0",
+      "n": "Stable",
+      "t": "First stable release, monthly publication.",
+      "s": "planned"
+    }
+  ],
+  "reqs_h": "Planned requirements",
+  "reqs": [
+    "x86 64-bit PC with UEFI",
+    "Secure Boot disabled",
+    "4 GB of RAM (8 GB recommended)",
+    "40 GB of disk (64 GB recommended, because of snapshots)",
+    "Vulkan-capable graphics for gaming",
+    "USB drive of 8 GB or more"
+  ],
+  "limits_h": "Known limitations",
+  "limits": [
+    "No Secure Boot in 1.0.",
+    "No hibernation in 1.0 (suspend works).",
+    "UEFI only; old BIOS machines are not supported.",
+    "NVIDIA GTX 900/1000 use the free driver by default.",
+    "Some anti-cheat games and some Windows programs do not work."
+  ],
+  "noiso_h": "No ISO to download yet",
+  "noiso_p": "Arctiva is in development, before its first beta. If you want to try it, you can build the ISO from the source code."
 }

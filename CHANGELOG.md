@@ -4,6 +4,13 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.2.0] - 2026-11-21
+
+### Cambiado
+- Rediseño completo: tema oscuro con la paleta del logo, fondo de estrellas y auroras con parallax, cabecera de cristal con barra de progreso y sección activa, cinta de tecnologías.
+- Animaciones por scroll: aparición escalonada de secciones, instalador en diez pasos que avanza al desplazarse, terminal que muestra cómo volver a una instantánea y hoja de ruta con línea de progreso. Se desactivan con «reducir movimiento» y la página es legible sin JavaScript.
+- Contenido ampliado según la descripción del proyecto (versión 0.3.10): principios, características con su estado real (hecho, en desarrollo, previsto), perfiles de instalación, Arctiva Center, hoja de ruta completa, requisitos y limitaciones conocidas, en los cinco idiomas.
+
 ## [0.1.2] - 2026-11-21
 
 ### Cambiado

@@ -8,65 +8,8 @@
   "nav_label": "Nagusia",
   "langs_label": "Hizkuntza",
   "nav_about": "Zer da",
-  "nav_status": "Egoera",
   "nav_reqs": "Eskakizunak",
   "nav_roadmap": "Ibilbide-orria",
-  "about_h": "Zer da Arctiva?",
-  "about_p": "Arctivak Arch Linux-en biltegi ofizialak, pacman eta rolling release eredua mantentzen ditu, eta erabiltzen hasteko erraztasunak gehitzen ditu.",
-  "features": [
-    {
-      "h": "Arch Linux oinarria",
-      "p": "Arch-en biltegi ofizialak, pacman eta rolling release."
-    },
-    {
-      "h": "Instalatzaile grafikoa",
-      "p": "Calamares, Oinarrizkoa, Jolasak eta Bulegoa profilekin."
-    },
-    {
-      "h": "KDE Plasma",
-      "p": "Windows-eko erabiltzaileek ezagutzen dutenaren antzeko erabilera duen mahaigaina."
-    },
-    {
-      "h": "Eguneratze seguruak",
-      "p": "Btrfs + Snapper berreskuratze-puntu automatikoak, GRUB-etik abiarazteko modukoak."
-    },
-    {
-      "h": "Jolasak oztoporik gabe",
-      "p": "Jolasak eta kontrolatzaile grafikoak erabiltzeko prest."
-    }
-  ],
-  "status_h": "Proiektuaren egoera",
-  "status_done_h": "Eginda: 2. fasea (0.3.0)",
-  "status_done_p": "KDE Plasma duen ISO live bat eta Oinarrizkoa, Jolasak eta Bulegoa profilak dituen instalatzailea, Btrfs berreskuratze-puntuekin, aukerako zifratzea eta Windows-en ondoan instalatzea. Makina birtualetan probatuta.",
-  "status_wip_h": "Abian (0.3.x)",
-  "status_wip_p": "Arctiva Center (ongietorria, eguneratzeak, kontrolatzaileak, gehigarriak). Sinatutako biltegi propioa [arctiva] jada argitaratuta dago.",
-  "status_noiso": "Oraindik ez dago deskargatzeko ISOrik: laster. Bitartean, iturburu-kodetik eraiki dezakezu.",
-  "reqs_h": "Aurreikusitako eskakizunak",
-  "reqs": [
-    "64 biteko x86 PCa, UEFIrekin (Secure Boot desaktibatuta)",
-    "4 GB RAM (8 GB gomendatua)",
-    "40 GB disko (64 GB gomendatua)",
-    "Jolasteko, Vulkan onartzen duen GPUa"
-  ],
-  "roadmap_h": "Ibilbide-orria",
-  "roadmap": [
-    {
-      "v": "3. fasea · 0.4.0",
-      "t": "Biltegi propioa eta hardwarea."
-    },
-    {
-      "v": "4. fasea · 0.5.0",
-      "t": "Arctiva Center."
-    },
-    {
-      "v": "5. fasea · 0.6.0",
-      "t": "Aplikazio-denda eta Windows-ekiko bateragarritasuna."
-    },
-    {
-      "v": "1.0 aldera",
-      "t": "Fintzea eta benetako hardwarean probak."
-    }
-  ],
   "legal_independent": "Arctiva proiektu independentea da. Ez dago Arch Linux-ekin lotuta, ezta haren babesik ere.",
   "legal_license": "Kodea GPL-3.0-or-later lizentziapean banatzen da. Izena eta logotipoa ez daude lizentzia horren azpian: proiektuaren marka-politikak arautzen ditu.",
   "legal_author": "CatLinux-ek garatua eta mantendua.",
@@ -79,5 +22,249 @@
   "link_repo": "Sinatutako pakete-biltegia",
   "link_trademarks": "Izenaren eta logotipoaren politika",
   "fingerprint_label": "Biltegiaren gakoaren hatz-marka:",
-  "roadmap_more": "Xehetasun guztiak proiektuaren ibilbide-orrian."
+  "roadmap_more": "Xehetasun guztiak proiektuaren ibilbide-orrian.",
+  "nav_features": "Ezaugarriak",
+  "nav_install": "Instalazioa",
+  "hero_badge": "Pre-beta · 0.3.10 bertsioa",
+  "scroll_hint": "Jaitsi",
+  "about_h": "Arch, eskuz muntatu beharrik gabe",
+  "about_p": "Arctiva Windows-etik datozenentzat da, edo Arch eskuz muntatu nahi ez dutenentzat. Arch-en onena mantentzen du —aldatu gabeko biltegi ofizialak, pacman eta rolling release— eta egunerokotasunerako falta zaiona gehitzen du: instalatzaile grafikoa, Windows-en antzeko KDE Plasma mahaigaina, eguneratze errazak eta itzultzeko berreskuratze-puntu automatikoak, eta konplikaziorik gabeko jolasak eta kontrolatzaile grafikoak.",
+  "principles_h": "Zerk egiten duen desberdin",
+  "principles": [
+    {
+      "h": "Benetako Arch, forkik gabe",
+      "p": "core, extra eta multilib biltegi ofizialak, aldaketarik eta atzerapenik gabe. Arch-en zerbait hautsiz gero, abisuekin eta berreskuratze-puntuekin arintzen da, ez fork batekin."
+    },
+    {
+      "h": "Biltegi propio minimoa eta sinatua",
+      "p": "[arctiva]-k pieza propioak bakarrik ditu eta GPG-rekin sinatuta dago. Gako nagusia lineaz kanpo gordetzen da eta beti integrazio jarraituak sinatzen du, inoiz ez ordenagailu pertsonal batek."
+    },
+    {
+      "h": "Pertsonalizazioa adabakirik gabe",
+      "p": "Mahaigaina konfigurazioarekin eta gaiekin soilik egokitzen da. Ez da KDE ez Calamares aldatzen; beraz, eguneratzeek ez dute ezer hausten."
+    },
+    {
+      "h": "Erreproduzigarria",
+      "p": "ISO bakoitzak Arch Linux Archive-ren data bat finkatzen du, eta horrela pakete berdinekin berreraiki daiteke."
+    },
+    {
+      "h": "Mugekin zintzoa",
+      "p": "Funtzionatzen ez duena —Secure Boot, iruzur-aurkako zenbait joko, Windows-eko programa jakin batzuk— argi azaltzen da."
+    },
+    {
+      "h": "Librea eta gardena",
+      "p": "Kode guztia, diseinu-erabakiak eta ibilbide-orria publikoak dira GitHub-en."
+    }
+  ],
+  "tag_done": "Eginda",
+  "tag_wip": "Garatzen",
+  "tag_planned": "Aurreikusita",
+  "feat_h": "Behar duzun guztia, sistema bakarrean",
+  "feat": [
+    {
+      "s": "done",
+      "h": "ISO live eta instalatzaile grafikoa",
+      "p": "Probatu KDE Plasma mahaigain osoa ezer instalatu gabe, eta gero instalatu Calamares-en oinarritutako eta Arctiva-ren diseinu propioa duen laguntzailearekin. Konexiorik gabeko instalazioa: probatutako sistema live-a kopiatzen du, beraz azkarra da."
+    },
+    {
+      "s": "done",
+      "h": "Hasi daitezkeen berreskuratze-puntuak",
+      "p": "Btrfs zstd konpresioarekin. Snapper eta snap-pac-ek berreskuratze-puntu bat sortzen dute pakete-aldaketa bakoitzaren aurretik eta ondoren, eta GRUB-ek edozein abiarazten uzten du."
+    },
+    {
+      "s": "done",
+      "h": "KDE Plasma 6 Wayland gainean",
+      "p": "Menua, zeregin-barra eta erretilua Windows-en estilokoak lehen minututik. Dolphin, maiztasun handiko pantailak (VRR), HDR; X11 aplikazio zaharrek Xwayland-ekin funtzionatzen jarraitzen dute."
+    },
+    {
+      "s": "done",
+      "h": "Abiarazte bikoitza, daturik galdu gabe",
+      "p": "Diskoa ukitu aurretik, egiaztapen batek abisatzen du Windows hibernatuta edo abio azkarrarekin badago, edo BitLocker aktibo badago, eta GRUB-ek Windows automatikoki erakusten du. Aukerako disko-zifratzeak pasahitza behin bakarrik eskatzen du."
+    },
+    {
+      "s": "done",
+      "h": "Berez funtzionatzen duten grafikoak",
+      "p": "AMD eta Intel berez funtzionatzen dute. NVIDIA GTX 16 / RTX 20 eta berriagoak detektatu eta nvidia-open automatikoki instalatzen da. GTX 900/1000-ek kontrolatzaile librea erabiltzen dute eta aukerak azaltzen zaizkizu."
+    },
+    {
+      "s": "done",
+      "h": "Jolasteko prest dauden jolasak",
+      "p": "multilib berez aktibatuta; Steam, Lutris, GameMode, MangoHud eta Gamescope Jolasak profilean. Heroic, ProtonPlus eta Bottles aurreikusita daude."
+    },
+    {
+      "s": "wip",
+      "h": "Arctiva Center",
+      "p": "Aplikazio propio bakarra (Python + Qt/PySide6) eguneratzeetarako, kontrolatzaileetarako eta gehigarrietarako. Oinarrizko leihoa badago eta argitaratuta dago; bere moduluak programatzen ari dira."
+    },
+    {
+      "s": "planned",
+      "h": "Aplikazioak eta Windows-eko programak",
+      "p": "Biltegi ofizialak, Flathub eta AUR argi bereizten dituen denda bat, eta Bottles .exe eta .msi fitxategietarako, bateragarritasun-ohar zintzoekin."
+    }
+  ],
+  "install_h": "Hamar urratsetan instalatuta",
+  "install_p": "Instalatzaile grafikoak prozesu osoan gidatzen zaitu. Oinarrizko profila beti instalatzen da, internetekin edo gabe; gehigarriak konexioa dagoenean bakarrik deskargatzen dira.",
+  "install_steps": [
+    "Ongietorria",
+    "Hizkuntza eta ordu-zona",
+    "Teklatua",
+    "Profila",
+    "Ekipoaren egiaztapena",
+    "Diskoa",
+    "Erabiltzailea",
+    "Laburpena",
+    "Instalazioa",
+    "Amaiera"
+  ],
+  "snap_h": "Eguneratze batek zerbait hausten badu, itzuli atzera",
+  "snap_p": "Arctiva-k berreskuratze-puntu bat sortzen du eguneratze bakoitzaren aurretik. Zerbait huts egiten badu, berrabiarazi, aukeratu aurreko berreskuratze-puntua GRUB menuan eta sistemak berriro funtzionatuko du.",
+  "snap_lines": [
+    {
+      "k": "cmd",
+      "t": "sudo pacman -Syu"
+    },
+    {
+      "k": "info",
+      "t": "snap-pac → berreskuratze-puntua #214 (pre)"
+    },
+    {
+      "k": "ok",
+      "t": "eguneratzea amaituta"
+    },
+    {
+      "k": "warn",
+      "t": "Berrabiarazi ondoren, zerbait ez dabil."
+    },
+    {
+      "k": "info",
+      "t": "GRUB → Arctiva-ren berreskuratze-puntuak → #214"
+    },
+    {
+      "k": "ok",
+      "t": "#214 berreskuratze-puntua abiarazita. Dena berriro dabil."
+    }
+  ],
+  "profiles_h": "Aukeratu behar duzuna",
+  "profiles_p": "Profilak konbina daitezke.",
+  "profiles": [
+    {
+      "h": "Oinarrizkoa",
+      "p": "Plasma mahaigaina, Firefox, berreskuratze-puntuak eta hasteko behar den guztia. Beti instalatzen da.",
+      "m": "Barne"
+    },
+    {
+      "h": "Jolasak",
+      "p": "Steam, Lutris, GameMode, MangoHud eta Gamescope, 32 biteko liburutegi grafikoekin.",
+      "m": "≈ 0,3 GB · internet behar du"
+    },
+    {
+      "h": "Bulegoa",
+      "p": "LibreOffice eta Thunderbird ingelesez, gaztelaniaz eta katalanez, zuzentzaileekin, tipografia bateragarriekin eta eskaner eta inprimagailuen euskarriarekin.",
+      "m": "≈ 0,3 GB · internet behar du"
+    }
+  ],
+  "center_h": "Arctiva Center",
+  "center_p": "Arctiva-ren tresnak biltzen dituen aplikazio bat, Plasma-ren itxurarekin. Garatzen (4. fasea, 0.5.0 bertsioa).",
+  "center": [
+    {
+      "h": "Ustekaberik gabeko eguneratzeak",
+      "p": "Azken eguneratzetik archlinux.org-eko berriak irakurtzen ditu eta eguneratzea blokeatzen du eskuzko esku-hartzea eskatzen dutenak irakurri arte. Pakete delikatuak markatzen ditu (kernel, NVIDIA, Mesa, systemd, Plasma), Flatpak-ak eguneratzen ditu eta .pacnew-ekin laguntzen du."
+    },
+    {
+      "h": "Erroreak hizkuntza argian",
+      "p": "Ohiko hutsegiteak —gatazkak, gakoak, disko-lekua, sarerik eza— mezu ulergarri bihurtzen ditu, jatorrizko testua ezkutatu gabe."
+    },
+    {
+      "h": "Kontrolatzaileak",
+      "p": "Detektatutako grafikoa eta falta dena erakusten ditu, eta instalatu egiten du."
+    },
+    {
+      "h": "Gehigarriak etengailu batekin",
+      "p": "Jolasak, Bulegoa, LTS kernela, inprimagailuak eta suhesia: instalatu eta kendu etengailu batekin."
+    },
+    {
+      "h": "Segurtasuna diseinutik",
+      "p": "Administratzaile-ekintzak eragiketa multzo itxia duen laguntzaile baten bidez egiten dira —inoiz ez agindu arbitrarioak— eta pasahitza sistemaren elkarrizketa estandarrarekin eskatzen dute (polkit)."
+    },
+    {
+      "h": "Abioaren babesa",
+      "p": "GRUB eguneratzean EFI partizioan ere berrinstalatzen da, ekipoa inoiz abiarazi ezinik gera ez dadin."
+    }
+  ],
+  "roadmap_h": "Ibilbide-orria",
+  "roadmap": [
+    {
+      "v": "0.1",
+      "n": "Oinarriak",
+      "t": "Arkitektura, lizentzia eta marka.",
+      "s": "done"
+    },
+    {
+      "v": "0.2",
+      "n": "ISO live",
+      "t": "Plasma live moduan.",
+      "s": "done"
+    },
+    {
+      "v": "0.3",
+      "n": "Instalatzailea",
+      "t": "Neurrira egindako Calamares, abiarazte bikoitza, berreskuratze-puntuak.",
+      "s": "done"
+    },
+    {
+      "v": "0.4",
+      "n": "Biltegia eta hardwarea",
+      "t": "[arctiva] biltegi sinatua, grafikoen detekzioa. Ia amaituta.",
+      "s": "wip"
+    },
+    {
+      "v": "0.5",
+      "n": "Arctiva Center",
+      "t": "Ongietorria, kontrolatzaileak, eguneratzeak eta gehigarriak.",
+      "s": "wip"
+    },
+    {
+      "v": "0.6",
+      "n": "Aplikazioak eta Windows",
+      "t": "Denda eta Windows-ekiko bateragarritasuna.",
+      "s": "planned"
+    },
+    {
+      "v": "0.7",
+      "n": "Nortasuna",
+      "t": "GRUB gaia, abio-pantaila, saio-hasiera, Plasma gaia eta horma-paperak.",
+      "s": "planned"
+    },
+    {
+      "v": "0.8–0.9",
+      "n": "Beta",
+      "t": "Benetako hardwarean probak, dokumentazioa, beta publikoa.",
+      "s": "planned"
+    },
+    {
+      "v": "1.0",
+      "n": "Egonkorra",
+      "t": "Lehen bertsio egonkorra, hileroko argitalpena.",
+      "s": "planned"
+    }
+  ],
+  "reqs_h": "Aurreikusitako eskakizunak",
+  "reqs": [
+    "64 biteko x86 PC-a UEFI-rekin",
+    "Secure Boot desaktibatuta",
+    "4 GB RAM (8 GB gomendatuta)",
+    "40 GB disko (64 GB gomendatuta, berreskuratze-puntuengatik)",
+    "Vulkan duen grafikoa jolasteko",
+    "8 GB edo gehiagoko USB bat"
+  ],
+  "limits_h": "Muga ezagunak",
+  "limits": [
+    "Secure Boot gabe 1.0-n.",
+    "Hibernaziorik gabe 1.0-n (etenaldiak funtzionatzen du).",
+    "UEFI soilik; BIOS zaharreko ekipoak ez daude onartuta.",
+    "NVIDIA GTX 900/1000-ek kontrolatzaile librea erabiltzen dute lehenespenez.",
+    "Iruzur-aurkako zenbait jokok eta Windows-eko zenbait programak ez dute funtzionatzen."
+  ],
+  "noiso_h": "Oraindik ez dago ISOrik deskargatzeko",
+  "noiso_p": "Arctiva garatzen ari da, lehen betaren aurretik. Probatu nahi baduzu, ISOa iturburu-kodetik eraiki dezakezu."
 }

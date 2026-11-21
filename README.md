@@ -1,6 +1,6 @@
 # arctiva-web
 
-Web pública de Arctiva (<https://arctiva.techmarc.es>). Sitio estático, sin rastreadores ni recursos de terceros, en cinco idiomas: inglés, castellano, catalán, gallego y euskera.
+Web pública de Arctiva (<https://arctiva.techmarc.es>). Sitio estático de una sola página por idioma, con tema oscuro y animaciones por scroll (respeta «reducir movimiento»), sin rastreadores ni recursos de terceros, en cinco idiomas: inglés, castellano, catalán, gallego y euskera.
 
 ## Requisitos
 
@@ -9,7 +9,7 @@ Web pública de Arctiva (<https://arctiva.techmarc.es>). Sitio estático, sin ra
 
 ## Estructura
 
-- `src/template.html`: plantilla común. `src/site.json`: dominio, enlace al repositorio e idiomas.
+- `src/template.html`: plantilla común. `src/app.js`: animaciones por scroll (se incrusta en cada página por la CSP; la web funciona sin él). Estilos en `assets/style.css`. `src/site.json`: dominio, enlace al repositorio e idiomas.
 - `src/i18n/<idioma>.json`: todo el texto de cada idioma. Todas las claves son obligatorias en todos los idiomas.
 - `src/legal/`: política del nombre y el logo (`TRADEMARKS*.md`), publicada como `/en/trademarks.html` y `/es/trademarks.html`.
 - `assets/`: estilos y logos oficiales (`arctiva-logo.svg`, `arctiva-mark.svg`, `arctiva-mark-mono.svg`, `arctiva-icon.svg`). No se modifican ni se redibujan.

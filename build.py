@@ -16,16 +16,20 @@ BASE = CONFIG["base_url"].rstrip("/")
 DEFAULT = CONFIG["default_lang"]
 ORDER = CONFIG["languages"]
 
-LIST_KEYS = {"features", "reqs", "roadmap"}
+LIST_KEYS = {"principles", "feat", "install_steps", "snap_lines", "profiles", "center", "roadmap", "reqs", "limits"}
 REQUIRED = {
-    "lang_name", "title", "description", "tagline", "lead", "cta_soon",
-    "nav_label", "langs_label", "nav_about", "nav_status", "nav_reqs", "nav_roadmap",
-    "about_h", "about_p", "features", "status_h", "status_done_h", "status_done_p",
-    "status_wip_h", "status_wip_p", "status_noiso", "reqs_h", "reqs", "roadmap_h",
-    "roadmap", "legal_independent", "legal_license", "legal_author", "cta_code",
-    "links_h", "link_code", "link_roadmap", "link_arch", "link_changes", "link_repo",
-    "link_trademarks", "fingerprint_label", "roadmap_more",
+    "lang_name", "title", "description", "tagline", "lead", "cta_soon", "cta_code",
+    "nav_label", "langs_label", "nav_about", "nav_features", "nav_install", "nav_roadmap", "nav_reqs",
+    "hero_badge", "scroll_hint", "about_h", "about_p", "principles_h", "principles",
+    "tag_done", "tag_wip", "tag_planned", "feat_h", "feat", "install_h", "install_p", "install_steps",
+    "snap_h", "snap_p", "snap_lines", "profiles_h", "profiles_p", "profiles",
+    "center_h", "center_p", "center", "roadmap_h", "roadmap", "roadmap_more",
+    "reqs_h", "reqs", "limits_h", "limits", "noiso_h", "noiso_p",
+    "legal_independent", "legal_license", "legal_author", "links_h", "link_code", "link_roadmap",
+    "link_arch", "link_changes", "link_repo", "link_trademarks", "fingerprint_label",
 }
+TICKER = ["Arch Linux", "KDE Plasma 6", "Wayland", "Btrfs", "Snapper", "Calamares", "GRUB",
+          "Steam", "Flathub", "GPL-3.0-or-later"]
 LEGAL = {"en": "TRADEMARKS.md", "es": "TRADEMARKS.es.md"}
 
 e = html.escape
@@ -123,13 +127,40 @@ def render(lang, texts, names):
             ("link_repo", CONFIG["repo_url"]),
         )
     ) + f'<li><a href="{trademarks_href(lang)}">{e(texts["link_trademarks"])}</a></li>'
-    d["features"] = "".join(
-        f'<div class="card"><h3>{e(f["h"])}</h3><p>{e(f["p"])}</p></div>' for f in texts["features"]
+    def tag(s):
+        return f'<span class="tag {s}">{e(texts["tag_" + s])}</span>'
+    def cards(items, num=False):
+        return "".join(
+            f'<div class="card">' + (f'<span class="num">{i + 1:02d}</span>' if num else "")
+            + f'<h3>{e(c["h"])}</h3><p>{e(c["p"])}</p>'
+            + (f'<span class="meta">{e(c["m"])}</span>' if "m" in c else "") + "</div>"
+            for i, c in enumerate(items)
+        )
+    d["principles"] = cards(texts["principles"], num=True)
+    d["feat"] = "".join(
+        f'<div class="card {f["s"]}">{tag(f["s"])}<h3>{e(f["h"])}</h3><p>{e(f["p"])}</p></div>'
+        for f in texts["feat"]
+    )
+    d["install_steps"] = "".join(
+        f'<li><span class="chk"></span><span class="n">{i + 1:02d}</span>{e(s)}</li>'
+        for i, s in enumerate(texts["install_steps"])
+    )
+    d["snap_lines"] = "".join(
+        f'<p class="l {l["k"]}"><span class="pr">{"$" if l["k"] == "cmd" else "›"}</span>{e(l["t"])}</p>'
+        for l in texts["snap_lines"]
+    )
+    d["profiles"] = cards(texts["profiles"])
+    d["center"] = cards(texts["center"])
+    d["center_tag"] = tag("wip")
+    d["roadmap"] = "".join(
+        f'<li class="{r["s"]}"><span class="dot"></span><div class="v">{e(r["v"])}</div>'
+        f'<div class="b"><h3>{e(r["n"])}</h3><p>{e(r["t"])}</p>{tag(r["s"])}</div></li>'
+        for r in texts["roadmap"]
     )
     d["reqs"] = "".join(f"<li>{e(r)}</li>" for r in texts["reqs"])
-    d["roadmap"] = "".join(
-        f'<li><b>{e(r["v"])}</b> — {e(r["t"])}</li>' for r in texts["roadmap"]
-    )
+    d["limits"] = "".join(f"<li>{e(r)}</li>" for r in texts["limits"])
+    d["ticker"] = "".join(f"<span>{e(x)}</span>" for x in TICKER)
+    d["script"] = (SRC / "app.js").read_text(encoding="utf-8")
     d["hreflang"] = "\n".join(
         f'<link rel="alternate" hreflang="{l}" href="{BASE}/{l}/">' for l in ORDER
     ) + f'\n<link rel="alternate" hreflang="x-default" href="{BASE}/">'
@@ -148,7 +179,7 @@ def render(lang, texts, names):
 
 def chooser(names):
     items = "".join(
-        f'<li><a class="btn" href="{l}/" hreflang="{l}" lang="{l}">{e(names[l])}</a></li>' for l in ORDER
+        f'<li><a class="btn ghost" href="{l}/" hreflang="{l}" lang="{l}">{e(names[l])}</a></li>' for l in ORDER
     )
     hrefs = "\n".join(f'<link rel="alternate" hreflang="{l}" href="{BASE}/{l}/">' for l in ORDER)
     langs = json.dumps(ORDER)
@@ -158,7 +189,7 @@ def chooser(names):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arctiva</title>
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="dark">
 <link rel="icon" type="image/svg+xml" href="assets/arctiva-icon.svg">
 {hrefs}
 <link rel="stylesheet" href="assets/style.css">
@@ -174,6 +205,7 @@ def chooser(names):
 </script>
 </head>
 <body>
+<div class="bg" aria-hidden="true"><i class="stars"></i><i class="aurora a1"></i><i class="aurora a2"></i><i class="aurora a3"></i></div>
 <main class="chooser">
 <img src="assets/arctiva-logo.svg" alt="Arctiva" width="280" height="280">
 <ul>{items}</ul>
