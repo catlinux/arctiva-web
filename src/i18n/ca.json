@@ -99,7 +99,7 @@
     {
       "s": "planned",
       "h": "Aplicacions i programes de Windows",
-      "p": "Una botiga amb repositoris oficials, Flathub i AUR clarament diferenciats, i Bottles per a arxius .exe i .msi, amb avisos honestos de compatibilitat."
+      "p": "Una botiga amb repositoris oficials, Flathub i AUR clarament diferenciats, i Bottles per a arxius .exe i .msi, amb notes de compatibilitat."
     }
   ],
   "install_h": "Instal·lació en deu passos",
