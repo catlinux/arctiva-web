@@ -10,6 +10,6 @@
 - Mantener `src/i18n` al día con el estado real del proyecto principal (0.3.x, fases).
 
 ## Baja
-- Donaciones: poner la URL de Buy Me a Coffee en `support.coffee`; Monero más adelante (necesita dirección); sección «Colabora» (probar, traducir, reportar fallos).
+- Donaciones: Monero más adelante (necesita dirección); sección «Colabora» (probar, traducir, reportar fallos).
 - Confirmar si hay plan para Secure Boot y reflejarlo en «Conviene saber».
 - Sustituir «Descarga: próximamente» por el enlace real cuando exista ISO.

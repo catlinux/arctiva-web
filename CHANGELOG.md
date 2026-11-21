@@ -4,6 +4,11 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.3.4] - 2026-11-21
+
+### Añadido
+- Tarjeta de Buy Me a Coffee en «Apoya Arctiva», para quien no tiene cuenta de GitHub.
+
 ## [0.3.3] - 2026-11-21
 
 ### Cambiado
