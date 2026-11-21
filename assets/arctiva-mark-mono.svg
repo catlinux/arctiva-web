@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="currentColor">
+  <title>Arctiva</title>
+  <defs>
+    <path id="swooshShape" d="M40,392 C160,300 320,222 476,212 C492,211 498,216 492,224 C330,250 170,322 40,392 Z"/>
+    <path id="rightShape" d="M256,92 C332,92 392,250 412,430 L330,430 C316,300 290,168 256,168 Z"/>
+    <mask id="cutBySwoosh" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <use href="#swooshShape" fill="#000" stroke="#000" stroke-width="16" stroke-linejoin="round"/>
+    </mask>
+    <mask id="cutByRight" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <use href="#rightShape" fill="#000" stroke="#000" stroke-width="16" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <circle cx="256" cy="250" r="200" fill="none" stroke="currentColor" stroke-width="8" opacity="0.5"/>
+  <path mask="url(#cutBySwoosh)" d="M100,430 C120,250 180,92 256,92 L256,168 C224,168 196,300 160,430 Z"/>
+  <use mask="url(#cutByRight)" href="#swooshShape"/>
+  <use href="#rightShape"/>
+</svg>

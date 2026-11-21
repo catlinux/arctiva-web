@@ -1,0 +1,83 @@
+{
+  "lang_name": "Español",
+  "title": "Arctiva — Linux, sin barreras.",
+  "description": "Arctiva es una distribución basada en Arch Linux con instalador gráfico, KDE Plasma, instantáneas automáticas y juegos listos para usar.",
+  "tagline": "Linux, sin barreras.",
+  "lead": "Una distribución Linux basada en Arch Linux: los repositorios oficiales de Arch y el modelo rolling release, con instalador gráfico, un escritorio familiar y actualizaciones seguras.",
+  "cta_soon": "Descarga: próximamente",
+  "nav_label": "Principal",
+  "langs_label": "Idioma",
+  "nav_about": "Qué es",
+  "nav_status": "Estado",
+  "nav_reqs": "Requisitos",
+  "nav_roadmap": "Hoja de ruta",
+  "about_h": "¿Qué es Arctiva?",
+  "about_p": "Arctiva mantiene los repositorios oficiales de Arch Linux, pacman y el modelo rolling release, y añade lo que facilita empezar a usarla.",
+  "features": [
+    {
+      "h": "Base Arch Linux",
+      "p": "Repositorios oficiales de Arch, pacman y rolling release."
+    },
+    {
+      "h": "Instalador gráfico",
+      "p": "Calamares, con perfiles Básico, Juegos y Oficina."
+    },
+    {
+      "h": "KDE Plasma",
+      "p": "Un escritorio con un manejo cercano al que ya conocen los usuarios de Windows."
+    },
+    {
+      "h": "Actualizaciones seguras",
+      "p": "Instantáneas Btrfs + Snapper automáticas y arrancables desde GRUB."
+    },
+    {
+      "h": "Juegos sin complicaciones",
+      "p": "Juegos y controladores gráficos listos para usar."
+    }
+  ],
+  "status_h": "Estado del proyecto",
+  "status_done_h": "Hecho: fase 2 (0.3.0)",
+  "status_done_p": "ISO live con KDE Plasma e instalador con perfiles Básico, Juegos y Oficina, Btrfs con instantáneas, cifrado opcional e instalación junto a Windows. Probado en máquinas virtuales.",
+  "status_wip_h": "En curso (0.3.x)",
+  "status_wip_p": "Arctiva Center (bienvenida, actualizaciones, controladores, extras). El repositorio propio firmado [arctiva] ya está publicado.",
+  "status_noiso": "Todavía no hay ISO para descargar: próximamente. Mientras tanto, puedes construirla a partir del código fuente.",
+  "reqs_h": "Requisitos previstos",
+  "reqs": [
+    "PC x86 de 64 bits con UEFI (Secure Boot desactivado)",
+    "4 GB de RAM (8 GB recomendados)",
+    "40 GB de disco (64 GB recomendados)",
+    "GPU con soporte Vulkan para jugar"
+  ],
+  "roadmap_h": "Hoja de ruta",
+  "roadmap": [
+    {
+      "v": "Fase 3 · 0.4.0",
+      "t": "Repositorio propio y hardware."
+    },
+    {
+      "v": "Fase 4 · 0.5.0",
+      "t": "Arctiva Center."
+    },
+    {
+      "v": "Fase 5 · 0.6.0",
+      "t": "Tienda de aplicaciones y compatibilidad con Windows."
+    },
+    {
+      "v": "Hacia la 1.0",
+      "t": "Pulido y pruebas en hardware real."
+    }
+  ],
+  "legal_independent": "Arctiva es un proyecto independiente. No está afiliado ni respaldado por Arch Linux.",
+  "legal_license": "El código se distribuye bajo GPL-3.0-or-later. El nombre y el logo no están bajo esa licencia: se rigen por la política de marca del proyecto.",
+  "legal_author": "Desarrollado y mantenido por CatLinux.",
+  "cta_code": "Código fuente",
+  "links_h": "Enlaces",
+  "link_code": "Código fuente (GitHub)",
+  "link_roadmap": "Hoja de ruta detallada",
+  "link_arch": "Arquitectura",
+  "link_changes": "Cambios",
+  "link_repo": "Repositorio de paquetes firmado",
+  "link_trademarks": "Política del nombre y el logo",
+  "fingerprint_label": "Huella de la clave del repositorio:",
+  "roadmap_more": "Detalle completo en la hoja de ruta del proyecto."
+}

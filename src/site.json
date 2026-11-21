@@ -1,0 +1,32 @@
+{
+  "base_url": "https://arctiva.techmarc.es",
+  "repo_url": "https://github.com/catlinux/arctiva-repo",
+  "default_lang": "en",
+  "languages": [
+    "en",
+    "es",
+    "ca",
+    "gl",
+    "eu"
+  ],
+  "code_url": "https://github.com/catlinux/arctiva",
+  "repo_key_fingerprint": "C0AE 9639 0DC2 0F79 3A38  0441 B216 D69A 3793 8267",
+  "links": {
+    "roadmap": {
+      "en": "https://github.com/catlinux/arctiva/blob/main/docs/en/roadmap.md",
+      "es": "https://github.com/catlinux/arctiva/blob/main/docs/es/hoja-de-ruta.md"
+    },
+    "architecture": {
+      "en": "https://github.com/catlinux/arctiva/blob/main/docs/en/architecture.md",
+      "es": "https://github.com/catlinux/arctiva/blob/main/docs/es/arquitectura.md"
+    },
+    "changelog": {
+      "en": "https://github.com/catlinux/arctiva/blob/main/CHANGELOG.md",
+      "es": "https://github.com/catlinux/arctiva/blob/main/CHANGELOG.es.md"
+    },
+    "license": {
+      "en": "https://github.com/catlinux/arctiva/blob/main/LICENSE",
+      "es": "https://github.com/catlinux/arctiva/blob/main/LICENSE"
+    }
+  }
+}

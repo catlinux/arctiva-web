@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>Arctiva — Linux, without the barriers.</title>
+  <defs>
+    <radialGradient id="halo" cx="0.5" cy="0.32" r="0.42"><stop offset="0" stop-color="#1e4fd8" stop-opacity="0.28"/><stop offset="1" stop-color="#1e4fd8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="word" gradientUnits="userSpaceOnUse" x1="0" y1="-10" x2="0" y2="110"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d6e2ff"/></linearGradient>
+    <linearGradient id="lineL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2f8cff" stop-opacity="0"/><stop offset="1" stop-color="#6fd6ff"/></linearGradient>
+    <linearGradient id="lineR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6fd6ff"/><stop offset="1" stop-color="#2f8cff" stop-opacity="0"/></linearGradient>
+    <clipPath id="base"><rect x="-20" y="-20" width="820" height="130"/></clipPath>
+  </defs>
+  <rect width="1200" height="1200" fill="#05070d"/>
+  <rect width="1200" height="1200" fill="url(#halo)"/>
+  <g transform="translate(280,95) scale(1.25)">
+  <defs>
+    <linearGradient id="ring" gradientUnits="userSpaceOnUse" x1="70" y1="440" x2="456" y2="80">
+      <stop offset="0" stop-color="#1d4ed8" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#1e5bd8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#6fd6ff"/>
+    </linearGradient>
+    <linearGradient id="left" gradientUnits="userSpaceOnUse" x1="100" y1="430" x2="256" y2="92">
+      <stop offset="0" stop-color="#0b2d8f"/>
+      <stop offset="1" stop-color="#3d86ff"/>
+    </linearGradient>
+    <linearGradient id="right" gradientUnits="userSpaceOnUse" x1="256" y1="92" x2="412" y2="430">
+      <stop offset="0" stop-color="#3d86ff"/>
+      <stop offset="1" stop-color="#8fe6ff"/>
+    </linearGradient>
+    <linearGradient id="swoosh" gradientUnits="userSpaceOnUse" x1="40" y1="392" x2="494" y2="216">
+      <stop offset="0" stop-color="#1d6ff2" stop-opacity="0.1"/>
+      <stop offset="0.5" stop-color="#9be7ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <path id="swooshShape" d="M40,392 C160,300 320,222 476,212 C492,211 498,216 492,224 C330,250 170,322 40,392 Z"/>
+    <path id="rightShape" d="M256,92 C332,92 392,250 412,430 L330,430 C316,300 290,168 256,168 Z"/>
+    <mask id="cutBySwoosh" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <use href="#swooshShape" fill="#000" stroke="#000" stroke-width="12" stroke-linejoin="round"/>
+    </mask>
+    <mask id="cutByRight" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <use href="#rightShape" fill="#000" stroke="#000" stroke-width="12" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+
+  <circle cx="256" cy="250" r="200" fill="none" stroke="url(#ring)" stroke-width="12" opacity="0.35" filter="url(#glow)"/>
+  <circle cx="256" cy="250" r="200" fill="none" stroke="url(#ring)" stroke-width="4"/>
+
+  <path mask="url(#cutBySwoosh)" fill="url(#left)" d="M100,430 C120,250 180,92 256,92 L256,168 C224,168 196,300 160,430 Z"/>
+
+  <g mask="url(#cutByRight)">
+    <use href="#swooshShape" fill="#4cc3ff" opacity="0.7" filter="url(#glow)"/>
+    <use href="#swooshShape" fill="url(#swoosh)"/>
+  </g>
+
+  <use href="#rightShape" fill="url(#right)"/>
+</g>
+  <g transform="translate(212,770)"><g clip-path="url(#base)" stroke="url(#word)" stroke-width="20" stroke-linecap="square" stroke-linejoin="round" fill="none"><g transform="translate(7,0)"><path d="M0,100 L45,0 L90,100"/><path d="M33,110 L45,82 L57,110 Z" fill="#2f8cff" stroke="none"/></g><g transform="translate(139,0)"><path d="M0,100 V0 H45 A28,28 0 0 1 45,56 H0 M38,56 L72,100"/></g><g transform="translate(254,0)"><path d="M91.5,22 A50,50 0 1 0 91.5,78"/></g><g transform="translate(389,0)"><path d="M0,0 H84 M42,0 V100"/></g><g transform="translate(511,0)"><path d="M0,0 V100"/></g><g transform="translate(553,0)"><path d="M0,0 L44,100 L88,0"/></g><g transform="translate(679,0)"><path d="M0,100 L45,0 L90,100"/><path d="M33,110 L45,82 L57,110 Z" fill="#2f8cff" stroke="none"/></g></g></g>
+  <text x="600" y="978" text-anchor="middle" font-family="Montserrat, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="300" letter-spacing="6" fill="#c3cee8">Linux, without the barriers.</text>
+  <rect x="230" y="1047" width="345" height="2" fill="url(#lineL)"/>
+  <rect x="590" y="1038" width="20" height="20" fill="#2f8cff" transform="rotate(45 600 1048)"/>
+  <rect x="625" y="1047" width="345" height="2" fill="url(#lineR)"/>
+</svg>

@@ -1,0 +1,83 @@
+{
+  "lang_name": "Euskara",
+  "title": "Arctiva — Linux, oztoporik gabe.",
+  "description": "Arctiva Arch Linux-en oinarritutako banaketa da: instalatzaile grafikoa, KDE Plasma, berreskuratze-puntu automatikoak eta jolasak erabiltzeko prest.",
+  "tagline": "Linux, oztoporik gabe.",
+  "lead": "Arch Linux-en oinarritutako Linux banaketa bat: Arch-en biltegi ofizialak eta rolling release eredua, instalatzaile grafikoarekin, mahaigain ezagun batekin eta eguneratze seguruekin.",
+  "cta_soon": "Deskarga: laster",
+  "nav_label": "Nagusia",
+  "langs_label": "Hizkuntza",
+  "nav_about": "Zer da",
+  "nav_status": "Egoera",
+  "nav_reqs": "Eskakizunak",
+  "nav_roadmap": "Ibilbide-orria",
+  "about_h": "Zer da Arctiva?",
+  "about_p": "Arctivak Arch Linux-en biltegi ofizialak, pacman eta rolling release eredua mantentzen ditu, eta erabiltzen hasteko erraztasunak gehitzen ditu.",
+  "features": [
+    {
+      "h": "Arch Linux oinarria",
+      "p": "Arch-en biltegi ofizialak, pacman eta rolling release."
+    },
+    {
+      "h": "Instalatzaile grafikoa",
+      "p": "Calamares, Oinarrizkoa, Jolasak eta Bulegoa profilekin."
+    },
+    {
+      "h": "KDE Plasma",
+      "p": "Windows-eko erabiltzaileek ezagutzen dutenaren antzeko erabilera duen mahaigaina."
+    },
+    {
+      "h": "Eguneratze seguruak",
+      "p": "Btrfs + Snapper berreskuratze-puntu automatikoak, GRUB-etik abiarazteko modukoak."
+    },
+    {
+      "h": "Jolasak oztoporik gabe",
+      "p": "Jolasak eta kontrolatzaile grafikoak erabiltzeko prest."
+    }
+  ],
+  "status_h": "Proiektuaren egoera",
+  "status_done_h": "Eginda: 2. fasea (0.3.0)",
+  "status_done_p": "KDE Plasma duen ISO live bat eta Oinarrizkoa, Jolasak eta Bulegoa profilak dituen instalatzailea, Btrfs berreskuratze-puntuekin, aukerako zifratzea eta Windows-en ondoan instalatzea. Makina birtualetan probatuta.",
+  "status_wip_h": "Abian (0.3.x)",
+  "status_wip_p": "Arctiva Center (ongietorria, eguneratzeak, kontrolatzaileak, gehigarriak). Sinatutako biltegi propioa [arctiva] jada argitaratuta dago.",
+  "status_noiso": "Oraindik ez dago deskargatzeko ISOrik: laster. Bitartean, iturburu-kodetik eraiki dezakezu.",
+  "reqs_h": "Aurreikusitako eskakizunak",
+  "reqs": [
+    "64 biteko x86 PCa, UEFIrekin (Secure Boot desaktibatuta)",
+    "4 GB RAM (8 GB gomendatua)",
+    "40 GB disko (64 GB gomendatua)",
+    "Jolasteko, Vulkan onartzen duen GPUa"
+  ],
+  "roadmap_h": "Ibilbide-orria",
+  "roadmap": [
+    {
+      "v": "3. fasea · 0.4.0",
+      "t": "Biltegi propioa eta hardwarea."
+    },
+    {
+      "v": "4. fasea · 0.5.0",
+      "t": "Arctiva Center."
+    },
+    {
+      "v": "5. fasea · 0.6.0",
+      "t": "Aplikazio-denda eta Windows-ekiko bateragarritasuna."
+    },
+    {
+      "v": "1.0 aldera",
+      "t": "Fintzea eta benetako hardwarean probak."
+    }
+  ],
+  "legal_independent": "Arctiva proiektu independentea da. Ez dago Arch Linux-ekin lotuta, ezta haren babesik ere.",
+  "legal_license": "Kodea GPL-3.0-or-later lizentziapean banatzen da. Izena eta logotipoa ez daude lizentzia horren azpian: proiektuaren marka-politikak arautzen ditu.",
+  "legal_author": "CatLinux-ek garatua eta mantendua.",
+  "cta_code": "Iturburu-kodea",
+  "links_h": "Estekak",
+  "link_code": "Iturburu-kodea (GitHub)",
+  "link_roadmap": "Ibilbide-orri xehatua",
+  "link_arch": "Arkitektura",
+  "link_changes": "Aldaketak",
+  "link_repo": "Sinatutako pakete-biltegia",
+  "link_trademarks": "Izenaren eta logotipoaren politika",
+  "fingerprint_label": "Biltegiaren gakoaren hatz-marka:",
+  "roadmap_more": "Xehetasun guztiak proiektuaren ibilbide-orrian."
+}

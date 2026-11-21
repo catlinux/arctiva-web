@@ -1,0 +1,83 @@
+{
+  "lang_name": "Català",
+  "title": "Arctiva — Linux, sense barreres.",
+  "description": "Arctiva és una distribució basada en Arch Linux amb instal·lador gràfic, KDE Plasma, instantànies automàtiques i jocs llestos per usar.",
+  "tagline": "Linux, sense barreres.",
+  "lead": "Una distribució Linux basada en Arch Linux: els repositoris oficials d'Arch i el model rolling release, amb instal·lador gràfic, un escriptori familiar i actualitzacions segures.",
+  "cta_soon": "Descàrrega: aviat",
+  "nav_label": "Principal",
+  "langs_label": "Idioma",
+  "nav_about": "Què és",
+  "nav_status": "Estat",
+  "nav_reqs": "Requisits",
+  "nav_roadmap": "Full de ruta",
+  "about_h": "Què és Arctiva?",
+  "about_p": "Arctiva manté els repositoris oficials d'Arch Linux, pacman i el model rolling release, i hi afegeix el que facilita començar-la a usar.",
+  "features": [
+    {
+      "h": "Base Arch Linux",
+      "p": "Repositoris oficials d'Arch, pacman i rolling release."
+    },
+    {
+      "h": "Instal·lador gràfic",
+      "p": "Calamares, amb perfils Bàsic, Jocs i Oficina."
+    },
+    {
+      "h": "KDE Plasma",
+      "p": "Un escriptori amb un maneig proper al que ja coneixen els usuaris de Windows."
+    },
+    {
+      "h": "Actualitzacions segures",
+      "p": "Instantànies Btrfs + Snapper automàtiques i arrencables des de GRUB."
+    },
+    {
+      "h": "Jocs sense complicacions",
+      "p": "Jocs i controladors gràfics llestos per usar."
+    }
+  ],
+  "status_h": "Estat del projecte",
+  "status_done_h": "Fet: fase 2 (0.3.0)",
+  "status_done_p": "ISO live amb KDE Plasma i instal·lador amb perfils Bàsic, Jocs i Oficina, Btrfs amb instantànies, xifratge opcional i instal·lació al costat de Windows. Provat en màquines virtuals.",
+  "status_wip_h": "En curs (0.3.x)",
+  "status_wip_p": "Arctiva Center (benvinguda, actualitzacions, controladors, extres). El repositori propi signat [arctiva] ja està publicat.",
+  "status_noiso": "Encara no hi ha cap ISO per descarregar: aviat. Mentrestant, la pots construir a partir del codi font.",
+  "reqs_h": "Requisits previstos",
+  "reqs": [
+    "PC x86 de 64 bits amb UEFI (Secure Boot desactivat)",
+    "4 GB de RAM (8 GB recomanats)",
+    "40 GB de disc (64 GB recomanats)",
+    "GPU amb suport Vulkan per jugar"
+  ],
+  "roadmap_h": "Full de ruta",
+  "roadmap": [
+    {
+      "v": "Fase 3 · 0.4.0",
+      "t": "Repositori propi i maquinari."
+    },
+    {
+      "v": "Fase 4 · 0.5.0",
+      "t": "Arctiva Center."
+    },
+    {
+      "v": "Fase 5 · 0.6.0",
+      "t": "Botiga d'aplicacions i compatibilitat amb Windows."
+    },
+    {
+      "v": "Cap a la 1.0",
+      "t": "Polit i proves en maquinari real."
+    }
+  ],
+  "legal_independent": "Arctiva és un projecte independent. No està afiliat ni avalat per Arch Linux.",
+  "legal_license": "El codi es distribueix sota GPL-3.0-or-later. El nom i el logo no estan sota aquesta llicència: es regeixen per la política de marca del projecte.",
+  "legal_author": "Desenvolupat i mantingut per CatLinux.",
+  "cta_code": "Codi font",
+  "links_h": "Enllaços",
+  "link_code": "Codi font (GitHub)",
+  "link_roadmap": "Full de ruta detallat",
+  "link_arch": "Arquitectura",
+  "link_changes": "Canvis",
+  "link_repo": "Repositori de paquets signat",
+  "link_trademarks": "Política del nom i el logo",
+  "fingerprint_label": "Empremta de la clau del repositori:",
+  "roadmap_more": "Detall complet al full de ruta del projecte."
+}

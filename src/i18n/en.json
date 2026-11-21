@@ -1,0 +1,83 @@
+{
+  "lang_name": "English",
+  "title": "Arctiva — Linux, without the barriers.",
+  "description": "Arctiva is an Arch Linux–based distribution with a graphical installer, KDE Plasma, automatic snapshots and gaming out of the box.",
+  "tagline": "Linux, without the barriers.",
+  "lead": "A Linux distribution based on Arch Linux: the official Arch repositories and rolling releases, with a graphical installer, a familiar desktop and safe updates.",
+  "cta_soon": "Download: coming soon",
+  "nav_label": "Main",
+  "langs_label": "Language",
+  "nav_about": "About",
+  "nav_status": "Status",
+  "nav_reqs": "Requirements",
+  "nav_roadmap": "Roadmap",
+  "about_h": "What is Arctiva?",
+  "about_p": "Arctiva keeps the official Arch Linux repositories, pacman and the rolling-release model, and adds what makes it easy to start using.",
+  "features": [
+    {
+      "h": "Arch Linux base",
+      "p": "Official Arch repositories, pacman and rolling releases."
+    },
+    {
+      "h": "Graphical installer",
+      "p": "Calamares, with Basic, Gaming and Office profiles."
+    },
+    {
+      "h": "KDE Plasma",
+      "p": "A desktop that feels close to what Windows users already know."
+    },
+    {
+      "h": "Safe updates",
+      "p": "Btrfs + Snapper snapshots taken automatically and bootable from GRUB."
+    },
+    {
+      "h": "Gaming without hassle",
+      "p": "Games and graphics drivers ready to use."
+    }
+  ],
+  "status_h": "Project status",
+  "status_done_h": "Done: phase 2 (0.3.0)",
+  "status_done_p": "Live ISO with KDE Plasma and an installer with Basic, Gaming and Office profiles, Btrfs with snapshots, optional encryption and installation alongside Windows. Tested in virtual machines.",
+  "status_wip_h": "In progress (0.3.x)",
+  "status_wip_p": "Arctiva Center (welcome, updates, drivers, extras). Our own signed repository [arctiva] is already published.",
+  "status_noiso": "There is no ISO to download yet: coming soon. In the meantime, you can build it from the source code.",
+  "reqs_h": "Planned requirements",
+  "reqs": [
+    "64-bit x86 PC with UEFI (Secure Boot disabled)",
+    "4 GB of RAM (8 GB recommended)",
+    "40 GB of disk (64 GB recommended)",
+    "GPU with Vulkan support for gaming"
+  ],
+  "roadmap_h": "Roadmap",
+  "roadmap": [
+    {
+      "v": "Phase 3 · 0.4.0",
+      "t": "Own repository and hardware support."
+    },
+    {
+      "v": "Phase 4 · 0.5.0",
+      "t": "Arctiva Center."
+    },
+    {
+      "v": "Phase 5 · 0.6.0",
+      "t": "Application store and Windows compatibility."
+    },
+    {
+      "v": "Towards 1.0",
+      "t": "Polish and testing on real hardware."
+    }
+  ],
+  "legal_independent": "Arctiva is an independent project. It is not affiliated with or endorsed by Arch Linux.",
+  "legal_license": "The code is released under GPL-3.0-or-later. The name and the logo are not covered by that license: they are governed by the project's trademark policy.",
+  "legal_author": "Developed and maintained by CatLinux.",
+  "cta_code": "Source code",
+  "links_h": "Links",
+  "link_code": "Source code (GitHub)",
+  "link_roadmap": "Detailed roadmap",
+  "link_arch": "Architecture",
+  "link_changes": "Changelog",
+  "link_repo": "Signed package repository",
+  "link_trademarks": "Name and logo policy",
+  "fingerprint_label": "Repository key fingerprint:",
+  "roadmap_more": "Full detail in the project's roadmap."
+}
