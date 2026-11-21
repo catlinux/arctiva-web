@@ -4,6 +4,12 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.3.3] - 2026-11-21
+
+### Cambiado
+- Requisitos con los datos del proyecto: 25 GB de disco (40 GB recomendados) y USB de 4 GB o más.
+- Versión mostrada en la portada: 0.4.0.
+
 ## [0.3.2] - 2026-11-21
 
 ### Añadido

@@ -25,7 +25,7 @@
   "roadmap_more": "Detalle completo na folla de ruta do proxecto.",
   "nav_features": "Características",
   "nav_install": "Instalación",
-  "hero_badge": "Pre-beta · versión 0.3.10",
+  "hero_badge": "Pre-beta · versión 0.4.0",
   "scroll_hint": "Desliza",
   "about_h": "Arch Linux para o día a día",
   "about_p": "Arctiva é para quen vén de Windows ou quere Arch sen montalo a man. Mantén o mellor de Arch (repositorios oficiais sen modificar, pacman e rolling release) e engade o que lle falta para o uso cotián: instalador gráfico, un escritorio KDE Plasma de manexo próximo a Windows, actualizacións sinxelas con instantáneas automáticas ás que volver, e xogos e controladores gráficos sen complicacións.",
@@ -253,9 +253,9 @@
     "PC x86 de 64 bits con UEFI",
     "Secure Boot desactivado",
     "4 GB de RAM (8 GB recomendados)",
-    "40 GB de disco (64 GB recomendados, polas instantáneas)",
+    "25 GB de disco (40 GB recomendados, polas instantáneas)",
     "Gráfica con Vulkan para xogar",
-    "USB de 8 GB ou máis"
+    "USB de 4 GB ou máis"
   ],
   "limits_h": "Convén saber",
   "limits": [

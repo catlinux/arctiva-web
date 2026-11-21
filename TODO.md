@@ -1,7 +1,6 @@
 # TODO
 
 ## Alta
-- Requisitos exactos (RAM, disco, USB, Vulkan): pendientes de confirmar con el proyecto principal.
 - Revisión de los textos en gallego y euskera por una persona hablante nativa.
 
 ## Media
