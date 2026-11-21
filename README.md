@@ -30,6 +30,15 @@ El script hace `git fetch` + `merge --ff-only` de `origin/main` y regenera `publ
 
 Instalación en el servidor (una sola vez, con sudo): ver `docs/DESPLIEGUE.md`.
 
-## Licencia
+## Créditos y licencia
 
-Licencia del código de la web: pendiente de decidir por el titular (no hay `LICENSE` todavía). El nombre y el logo de Arctiva no están cubiertos por la licencia del código: ver la política en `src/legal/`.
+**arctiva-web** está desarrollado y mantenido por **CatLinux**.
+Copyright (C) 2026 CatLinux.
+
+Licencia [GPL-3.0-or-later](LICENSE): software libre; puedes usarlo, estudiarlo, modificarlo y compartirlo, también con fines comerciales. Si distribuyes una versión modificada, debe seguir bajo la misma licencia, con su código fuente y conservando los avisos de copyright.
+
+El **nombre y el logo de Arctiva** (los archivos `assets/arctiva-*.svg`) **no están cubiertos** por esa licencia: pertenecen a CatLinux y se rigen por la política de `src/legal/`.
+
+### Material de terceros
+
+Este proyecto no contiene material de terceros.

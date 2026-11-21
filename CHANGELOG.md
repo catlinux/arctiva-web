@@ -4,6 +4,11 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.1.1] - 2026-11-21
+
+### Añadido
+- Licencia GPL-3.0-or-later (`LICENSE`, titular CatLinux) y sección de créditos y licencia en el README, con la salvedad de que el nombre y el logo no quedan cubiertos.
+
 ## [0.1.0] - 2026-11-21
 
 ### Añadido
