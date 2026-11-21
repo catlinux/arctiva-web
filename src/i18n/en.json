@@ -271,5 +271,13 @@
   "community_p": "Ask a question, follow the news or report a bug. It all happens on GitHub, and you need a free account to post.",
   "comm_discussions": "Questions and discussions",
   "comm_releases": "Release notes",
-  "comm_issues": "Report a bug"
+  "comm_issues": "Report a bug",
+  "support_h": "Support Arctiva",
+  "support_p": "Arctiva is free software. If you like it, you can help it keep going.",
+  "sp_gh_h": "Have a GitHub account?",
+  "sp_gh_p": "Sponsor Arctiva monthly or with a one-time contribution.",
+  "sp_gh_btn": "Sponsor on GitHub",
+  "sp_coffee_h": "No GitHub account? A coffee will do.",
+  "sp_coffee_p": "Quick and simple: buy us a coffee, no GitHub needed.",
+  "sp_coffee_btn": "Buy us a coffee"
 }

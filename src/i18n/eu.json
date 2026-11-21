@@ -271,5 +271,13 @@
   "community_p": "Galdetu, jarraitu berriak edo jakinarazi errore bat. Dena GitHub-en egiten da eta kontu doako bat behar da idazteko.",
   "comm_discussions": "Galderak eta eztabaidak",
   "comm_releases": "Bertsio bakoitzaren berriak",
-  "comm_issues": "Errore baten berri eman"
+  "comm_issues": "Errore baten berri eman",
+  "support_h": "Lagundu Arctiva",
+  "support_p": "Arctiva software librea da. Gustatzen bazaizu, aurrera jarraitzen lagun dezakezu.",
+  "sp_gh_h": "GitHub kontua duzu?",
+  "sp_gh_p": "Babestu Arctiva hilero edo behin-behineko ekarpen batekin.",
+  "sp_gh_btn": "Babestu GitHub-en",
+  "sp_coffee_h": "GitHub gabe? Kafe batekin nahikoa da.",
+  "sp_coffee_p": "Azkarra eta erraza: gonbidatu kafe batera, GitHub behar izan gabe.",
+  "sp_coffee_btn": "Gonbidatu kafe batera"
 }

@@ -4,6 +4,11 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.3.1] - 2026-11-21
+
+### Añadido
+- Sección «Apoya Arctiva» con GitHub Sponsors; la opción de Buy Me a Coffee (para quien no tiene cuenta de GitHub) se activará con `support.coffee` en `src/site.json`.
+
 ## [0.3.0] - 2026-11-21
 
 ### Añadido

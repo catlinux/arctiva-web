@@ -121,6 +121,7 @@ h3.sub + .grid { margin-top: 0; }
 .card .num { display: block; font: 700 .8rem ui-monospace, monospace; color: var(--blue); letter-spacing: .15em; margin-bottom: .8rem; }
 .card .meta { display: inline-block; margin-top: 1rem; padding: .2rem .7rem; border-radius: 99px; background: rgba(61, 134, 255, .15); color: var(--cyan); font-size: .8rem; }
 .card .tag { margin-bottom: .9rem; }
+.card .btn { margin-top: 1.2rem; }
 .tag { display: inline-block; padding: .15rem .65rem; border-radius: 99px; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; border: 1px solid currentColor; vertical-align: middle; }
 h2 .tag { font-size: .7rem; margin-left: .5rem; -webkit-text-fill-color: currentColor; }
 .tag.done { color: var(--green); }

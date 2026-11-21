@@ -33,5 +33,9 @@
     "discussions": "",
     "releases": "https://github.com/catlinux/arctiva/releases",
     "issues": "https://github.com/catlinux/arctiva/issues"
+  },
+  "support": {
+    "sponsors": "https://github.com/sponsors/catlinux",
+    "coffee": ""
   }
 }

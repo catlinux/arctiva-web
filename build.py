@@ -26,6 +26,7 @@ REQUIRED = {
     "center_h", "center_p", "center", "roadmap_h", "roadmap", "roadmap_more",
     "reqs_h", "reqs", "limits_h", "limits", "noiso_h", "noiso_p",
     "legal_independent", "legal_license", "legal_author", "links_h", "link_code", "link_roadmap",
+    "support_h", "support_p", "sp_gh_h", "sp_gh_p", "sp_gh_btn", "sp_coffee_h", "sp_coffee_p", "sp_coffee_btn",
     "community_h", "community_p", "comm_discussions", "comm_releases", "comm_issues",
     "link_arch", "link_changes", "link_repo", "link_trademarks", "fingerprint_label",
 }
@@ -163,6 +164,14 @@ def render(lang, texts, names):
         f'<li><a href="{e(CONFIG["community"][k])}" target="_blank" rel="noopener noreferrer">{e(texts["comm_" + k])}</a></li>'
         for k in ("discussions", "releases", "issues") if CONFIG["community"].get(k)
     )
+    def support_card(key, h, p, btn, cls):
+        url = CONFIG["support"].get(key)
+        if not url:
+            return ""
+        return (f'<div class="card"><h3>{e(texts[h])}</h3><p>{e(texts[p])}</p>'
+                f'<a class="btn {cls}" href="{e(url)}" target="_blank" rel="noopener noreferrer">{e(texts[btn])}</a></div>')
+    d["support"] = (support_card("sponsors", "sp_gh_h", "sp_gh_p", "sp_gh_btn", "primary")
+                    + support_card("coffee", "sp_coffee_h", "sp_coffee_p", "sp_coffee_btn", "ghost"))
     d["reqs"] = "".join(f"<li>{e(r)}</li>" for r in texts["reqs"])
     d["limits"] = "".join(f"<li>{e(r)}</li>" for r in texts["limits"])
     d["ticker"] = "".join(f"<span>{e(x)}</span>" for x in TICKER)

@@ -271,5 +271,13 @@
   "community_p": "Pregunta, sigue las novedades o cuéntanos un fallo. Todo se hace en GitHub y hace falta una cuenta gratuita para escribir.",
   "comm_discussions": "Preguntas y debates",
   "comm_releases": "Novedades de cada versión",
-  "comm_issues": "Informar de un fallo"
+  "comm_issues": "Informar de un fallo",
+  "support_h": "Apoya Arctiva",
+  "support_p": "Arctiva es software libre. Si te gusta, puedes ayudar a que siga adelante.",
+  "sp_gh_h": "¿Tienes cuenta de GitHub?",
+  "sp_gh_p": "Patrocina Arctiva cada mes o con una aportación puntual.",
+  "sp_gh_btn": "Patrocinar en GitHub",
+  "sp_coffee_h": "¿Sin GitHub? Con un café basta.",
+  "sp_coffee_p": "Rápido y sencillo: invítanos a un café, sin necesitar GitHub.",
+  "sp_coffee_btn": "Invitar a un café"
 }
