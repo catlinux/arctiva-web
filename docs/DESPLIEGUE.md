@@ -10,7 +10,16 @@ Servidor: VPS ForgeHost, Apache sirve `/opt/vps-apps/arctiva-web/public` para `a
 
 ## Actualizar contenido
 
-Desde el equipo de casa: editar `src/i18n/*.json`, commit, push a `main` en GitHub (`catlinux/arctiva-web`) y `ssh vps-forgehost /opt/vps-apps/arctiva-web/scripts/deploy.sh`.
+1. Editar `src/i18n/*.json` (o la plantilla), hacer commit y push a `main` (`catlinux/arctiva-web`).
+2. Lanzar el despliegue. Desde el equipo Windows (o cualquier equipo con el alias SSH `vps-forgehost`):
+
+   ```
+   ssh vps-forgehost /opt/vps-apps/arctiva-web/scripts/deploy.sh
+   ```
+
+   En el propio servidor basta `/opt/vps-apps/arctiva-web/scripts/deploy.sh`.
+
+El script hace `git fetch` y `git merge --ff-only origin/main` (falla si el árbol del servidor tiene cambios propios o divergentes) y regenera `public/` con `build.py`. Al terminar imprime la versión y el commit desplegados; compruébalos con `curl -I https://arctiva.techmarc.es/`. No toca Apache ni el vhost.
 
 ## Añadir un idioma
 

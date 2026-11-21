@@ -4,6 +4,11 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.1.2] - 2026-11-21
+
+### Cambiado
+- `docs/DESPLIEGUE.md`: flujo de actualización documentado, incluida la orden desde el equipo Windows.
+
 ## [0.1.1] - 2026-11-21
 
 ### Añadido
