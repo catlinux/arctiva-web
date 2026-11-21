@@ -28,5 +28,10 @@
       "en": "https://github.com/catlinux/arctiva/blob/main/LICENSE",
       "es": "https://github.com/catlinux/arctiva/blob/main/LICENSE"
     }
+  },
+  "community": {
+    "discussions": "",
+    "releases": "https://github.com/catlinux/arctiva/releases",
+    "issues": "https://github.com/catlinux/arctiva/issues"
   }
 }

@@ -48,8 +48,8 @@
       "p": "ISO bakoitza Arch Linux Archive-ren data batera finkatzen da, eta pakete berdinekin berreraiki daiteke."
     },
     {
-      "h": "Falta denaren berri argi",
-      "p": "Windows-eko zenbait programak eta iruzur-aurkako zenbait jokok arazoak eman ditzakete. Zerbait ez badabil, esaten dugu."
+      "h": "Laguntza propioa",
+      "p": "Arctiva-k bere laguntza-kanalak izango ditu; beraz, inork ez du Arch-en foroetara jo beharrik izango."
     },
     {
       "h": "Kode irekia",
@@ -266,5 +266,10 @@
     "Windows-eko zenbait programak eta iruzur-aurkako zenbait jokok ez dute funtzionatu ahal izango."
   ],
   "noiso_h": "Oraindik ez dago ISOrik deskargatzeko",
-  "noiso_p": "Arctiva garatzen ari da, lehen betaren aurretik. Probatu nahi baduzu, ISOa iturburu-kodetik eraiki dezakezu."
+  "noiso_p": "Arctiva garatzen ari da, lehen betaren aurretik. Probatu nahi baduzu, ISOa iturburu-kodetik eraiki dezakezu.",
+  "community_h": "Komunitatea",
+  "community_p": "Galdetu, jarraitu berriak edo jakinarazi errore bat. Dena GitHub-en egiten da eta kontu doako bat behar da idazteko.",
+  "comm_discussions": "Galderak eta eztabaidak",
+  "comm_releases": "Bertsio bakoitzaren berriak",
+  "comm_issues": "Errore baten berri eman"
 }

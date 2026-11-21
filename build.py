@@ -26,6 +26,7 @@ REQUIRED = {
     "center_h", "center_p", "center", "roadmap_h", "roadmap", "roadmap_more",
     "reqs_h", "reqs", "limits_h", "limits", "noiso_h", "noiso_p",
     "legal_independent", "legal_license", "legal_author", "links_h", "link_code", "link_roadmap",
+    "community_h", "community_p", "comm_discussions", "comm_releases", "comm_issues",
     "link_arch", "link_changes", "link_repo", "link_trademarks", "fingerprint_label",
 }
 TICKER = ["Arch Linux", "KDE Plasma 6", "Wayland", "Btrfs", "Snapper", "Calamares", "GRUB",
@@ -157,6 +158,10 @@ def render(lang, texts, names):
         f'<li class="{r["s"]}"><span class="dot"></span><div class="v">{e(r["v"])}</div>'
         f'<div class="b"><h3>{e(r["n"])}</h3><p>{e(r["t"])}</p>{tag(r["s"])}</div></li>'
         for r in texts["roadmap"]
+    )
+    d["community"] = "".join(
+        f'<li><a href="{e(CONFIG["community"][k])}" target="_blank" rel="noopener noreferrer">{e(texts["comm_" + k])}</a></li>'
+        for k in ("discussions", "releases", "issues") if CONFIG["community"].get(k)
     )
     d["reqs"] = "".join(f"<li>{e(r)}</li>" for r in texts["reqs"])
     d["limits"] = "".join(f"<li>{e(r)}</li>" for r in texts["limits"])

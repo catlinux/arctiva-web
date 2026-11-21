@@ -48,8 +48,8 @@
       "p": "Each ISO is pinned to a date of the Arch Linux Archive, so it can be rebuilt with exactly the same packages."
     },
     {
-      "h": "Clear about what's missing",
-      "p": "Some Windows programs and games with anti-cheat can give trouble. When something doesn't work, we say so."
+      "h": "Support of its own",
+      "p": "Arctiva will have its own help channels, so nobody gets sent to the Arch forums."
     },
     {
       "h": "Open source",
@@ -266,5 +266,10 @@
     "Some Windows programs and anti-cheat games may not work."
   ],
   "noiso_h": "No ISO to download yet",
-  "noiso_p": "Arctiva is in development, before its first beta. If you want to try it, you can build the ISO from the source code."
+  "noiso_p": "Arctiva is in development, before its first beta. If you want to try it, you can build the ISO from the source code.",
+  "community_h": "Community",
+  "community_p": "Ask a question, follow the news or report a bug. It all happens on GitHub, and you need a free account to post.",
+  "comm_discussions": "Questions and discussions",
+  "comm_releases": "Release notes",
+  "comm_issues": "Report a bug"
 }

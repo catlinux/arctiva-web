@@ -48,8 +48,8 @@
       "p": "Cada ISO fíxase a unha data do Arch Linux Archive, así que se pode reconstruír exactamente cos mesmos paquetes."
     },
     {
-      "h": "Claros co que falta",
-      "p": "Algúns programas de Windows e xogos con antitrampas poden dar problemas. Se algo non funciona, dicímolo."
+      "h": "Axuda propia",
+      "p": "Arctiva terá as súas propias canles de axuda, así que ninguén terá que acudir aos foros de Arch."
     },
     {
       "h": "Código aberto",
@@ -266,5 +266,10 @@
     "Algúns programas de Windows e xogos con antitrampas poden non funcionar."
   ],
   "noiso_h": "Aínda non hai ISO para descargar",
-  "noiso_p": "Arctiva está en desenvolvemento, antes da súa primeira beta. Se queres probala, podes construír a ISO desde o código fonte."
+  "noiso_p": "Arctiva está en desenvolvemento, antes da súa primeira beta. Se queres probala, podes construír a ISO desde o código fonte.",
+  "community_h": "Comunidade",
+  "community_p": "Pregunta, segue as novidades ou cóntanos un erro. Todo se fai en GitHub e fai falta unha conta gratuíta para escribir.",
+  "comm_discussions": "Preguntas e debates",
+  "comm_releases": "Novidades de cada versión",
+  "comm_issues": "Informar dun erro"
 }

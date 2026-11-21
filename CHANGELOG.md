@@ -4,6 +4,14 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.3.0] - 2026-11-21
+
+### Añadido
+- Sección «Comunidad» con enlaces a las novedades de cada versión (Releases) y a los fallos (Issues) del repositorio; el enlace a Discussions se activará con `community.discussions` en `src/site.json`.
+
+### Cambiado
+- El principio «Claros con lo que falta» se sustituye por «Ayuda propia».
+
 ## [0.2.1] - 2026-11-21
 
 ### Cambiado

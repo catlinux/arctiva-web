@@ -1,6 +1,8 @@
 # TODO
 
 ## Alta
+- Activar GitHub Discussions en `catlinux/arctiva` (Settings → Features → Discussions), poner su URL en `community.discussions` de `src/site.json` y desplegar.
+- Requisitos exactos (RAM, disco, USB, Vulkan): pendientes de confirmar con el proyecto principal.
 - Revisión de los textos en gallego y euskera por una persona hablante nativa.
 
 ## Media
@@ -10,4 +12,6 @@
 - Mantener `src/i18n` al día con el estado real del proyecto principal (0.3.x, fases).
 
 ## Baja
+- Donaciones: Buy Me a Coffee (necesita la URL), GitHub Sponsors y Monero (necesita dirección); sección «Apoya el proyecto» y «Colabora».
+- Confirmar si hay plan para Secure Boot y reflejarlo en «Conviene saber».
 - Sustituir «Descarga: próximamente» por el enlace real cuando exista ISO.
