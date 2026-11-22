@@ -302,5 +302,77 @@
   "sp_gh_btn": "Babestu GitHub-en",
   "sp_coffee_h": "GitHub gabe? Kafe batekin nahikoa da.",
   "sp_coffee_p": "Azkarra eta erraza: gonbidatu kafe batera, GitHub behar izan gabe.",
-  "sp_coffee_btn": "Gonbidatu kafe batera"
+  "sp_coffee_btn": "Gonbidatu kafe batera",
+  "shots_h": "Pantaila-argazkiak",
+  "shots_p": "Arctiva 0.7.0 proba-makina birtual batean. Sakatu irudi bat handian ikusteko.",
+  "shots": [
+    {
+      "f": "escritorio-claro",
+      "h": "Mahaigaina modu argian"
+    },
+    {
+      "f": "escritorio-oscuro",
+      "h": "Mahaigaina modu ilunean"
+    },
+    {
+      "f": "login",
+      "h": "Saio-hasiera"
+    },
+    {
+      "f": "arranque-plymouth",
+      "h": "Abio-pantaila"
+    },
+    {
+      "f": "grub",
+      "h": "Abio-menua (GRUB)"
+    },
+    {
+      "f": "grub-instantaneas",
+      "h": "Berreskuratze-puntuak GRUB-en"
+    },
+    {
+      "f": "instalador",
+      "h": "Instalatzailea"
+    },
+    {
+      "f": "instalador-final",
+      "h": "Instalazioa amaituta"
+    },
+    {
+      "f": "center-bienvenida",
+      "h": "Center: Ongietorria"
+    },
+    {
+      "f": "center-personalizacion",
+      "h": "Center: Pertsonalizazioa"
+    },
+    {
+      "f": "tienda",
+      "h": "Denda: bilaketa-emaitzak"
+    },
+    {
+      "f": "tienda-detalle",
+      "h": "Denda: programa bakoitzaren jatorria"
+    },
+    {
+      "f": "aur-aviso",
+      "h": "Abisua AUR aktibatzean"
+    },
+    {
+      "f": "dialogo-exe",
+      "h": "Elkarrizketa-koadroa .exe fitxategientzat"
+    },
+    {
+      "f": "center-actualizaciones",
+      "h": "Center: Eguneratzeak"
+    },
+    {
+      "f": "center-controladores",
+      "h": "Center: Kontrolatzaileak"
+    },
+    {
+      "f": "center-extras",
+      "h": "Center: Gehigarriak"
+    }
+  ]
 }

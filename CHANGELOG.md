@@ -4,6 +4,11 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.5.0] - 2026-11-22
+
+### Añadido
+- Sección «Capturas» con 17 imágenes de Arctiva 0.7.0 tomadas en una máquina virtual (escritorio, inicio de sesión, arranque, GRUB, instalador, Arctiva Center, tienda, AUR y diálogo de .exe), en los cinco idiomas. Cada imagen abre su tamaño completo en una pestaña nueva.
+
 ## [0.4.0] - 2026-11-22
 
 ### Cambiado

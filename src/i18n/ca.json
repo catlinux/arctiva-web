@@ -302,5 +302,77 @@
   "sp_gh_btn": "Patrocinar a GitHub",
   "sp_coffee_h": "Sense GitHub? Amb un cafè n'hi ha prou.",
   "sp_coffee_p": "Ràpid i senzill: convida'ns a un cafè, sense necessitar GitHub.",
-  "sp_coffee_btn": "Convidar a un cafè"
+  "sp_coffee_btn": "Convidar a un cafè",
+  "shots_h": "Captures",
+  "shots_p": "Arctiva 0.7.0 en una màquina virtual de proves. Prem una imatge per veure-la en gran.",
+  "shots": [
+    {
+      "f": "escritorio-claro",
+      "h": "Escriptori en mode clar"
+    },
+    {
+      "f": "escritorio-oscuro",
+      "h": "Escriptori en mode fosc"
+    },
+    {
+      "f": "login",
+      "h": "Inici de sessió"
+    },
+    {
+      "f": "arranque-plymouth",
+      "h": "Pantalla d'arrencada"
+    },
+    {
+      "f": "grub",
+      "h": "Menú d'arrencada (GRUB)"
+    },
+    {
+      "f": "grub-instantaneas",
+      "h": "Instantànies a GRUB"
+    },
+    {
+      "f": "instalador",
+      "h": "Instal·lador"
+    },
+    {
+      "f": "instalador-final",
+      "h": "Instal·lació acabada"
+    },
+    {
+      "f": "center-bienvenida",
+      "h": "Center: Benvinguda"
+    },
+    {
+      "f": "center-personalizacion",
+      "h": "Center: Personalització"
+    },
+    {
+      "f": "tienda",
+      "h": "Botiga: resultats de cerca"
+    },
+    {
+      "f": "tienda-detalle",
+      "h": "Botiga: origen de cada programa"
+    },
+    {
+      "f": "aur-aviso",
+      "h": "Avís en activar l'AUR"
+    },
+    {
+      "f": "dialogo-exe",
+      "h": "Diàleg per a arxius .exe"
+    },
+    {
+      "f": "center-actualizaciones",
+      "h": "Center: Actualitzacions"
+    },
+    {
+      "f": "center-controladores",
+      "h": "Center: Controladors"
+    },
+    {
+      "f": "center-extras",
+      "h": "Center: Extres"
+    }
+  ]
 }

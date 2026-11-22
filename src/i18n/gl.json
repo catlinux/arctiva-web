@@ -302,5 +302,77 @@
   "sp_gh_btn": "Patrocinar en GitHub",
   "sp_coffee_h": "Sen GitHub? Cun café abonda.",
   "sp_coffee_p": "Rápido e sinxelo: convídanos a un café, sen precisar GitHub.",
-  "sp_coffee_btn": "Convidar a un café"
+  "sp_coffee_btn": "Convidar a un café",
+  "shots_h": "Capturas",
+  "shots_p": "Arctiva 0.7.0 nunha máquina virtual de probas. Preme unha imaxe para vela en grande.",
+  "shots": [
+    {
+      "f": "escritorio-claro",
+      "h": "Escritorio en modo claro"
+    },
+    {
+      "f": "escritorio-oscuro",
+      "h": "Escritorio en modo escuro"
+    },
+    {
+      "f": "login",
+      "h": "Inicio de sesión"
+    },
+    {
+      "f": "arranque-plymouth",
+      "h": "Pantalla de arranque"
+    },
+    {
+      "f": "grub",
+      "h": "Menú de arranque (GRUB)"
+    },
+    {
+      "f": "grub-instantaneas",
+      "h": "Instantáneas en GRUB"
+    },
+    {
+      "f": "instalador",
+      "h": "Instalador"
+    },
+    {
+      "f": "instalador-final",
+      "h": "Instalación rematada"
+    },
+    {
+      "f": "center-bienvenida",
+      "h": "Center: Benvida"
+    },
+    {
+      "f": "center-personalizacion",
+      "h": "Center: Personalización"
+    },
+    {
+      "f": "tienda",
+      "h": "Tenda: resultados da busca"
+    },
+    {
+      "f": "tienda-detalle",
+      "h": "Tenda: orixe de cada programa"
+    },
+    {
+      "f": "aur-aviso",
+      "h": "Aviso ao activar o AUR"
+    },
+    {
+      "f": "dialogo-exe",
+      "h": "Diálogo para ficheiros .exe"
+    },
+    {
+      "f": "center-actualizaciones",
+      "h": "Center: Actualizacións"
+    },
+    {
+      "f": "center-controladores",
+      "h": "Center: Controladores"
+    },
+    {
+      "f": "center-extras",
+      "h": "Center: Extras"
+    }
+  ]
 }

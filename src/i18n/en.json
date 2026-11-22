@@ -302,5 +302,77 @@
   "sp_gh_btn": "Sponsor on GitHub",
   "sp_coffee_h": "No GitHub account? A coffee will do.",
   "sp_coffee_p": "Quick and simple: buy us a coffee, no GitHub needed.",
-  "sp_coffee_btn": "Buy us a coffee"
+  "sp_coffee_btn": "Buy us a coffee",
+  "shots_h": "Screenshots",
+  "shots_p": "Arctiva 0.7.0 in a test virtual machine. Click an image to see it full size.",
+  "shots": [
+    {
+      "f": "escritorio-claro",
+      "h": "Desktop in light mode"
+    },
+    {
+      "f": "escritorio-oscuro",
+      "h": "Desktop in dark mode"
+    },
+    {
+      "f": "login",
+      "h": "Login screen"
+    },
+    {
+      "f": "arranque-plymouth",
+      "h": "Boot screen"
+    },
+    {
+      "f": "grub",
+      "h": "Boot menu (GRUB)"
+    },
+    {
+      "f": "grub-instantaneas",
+      "h": "Snapshots in GRUB"
+    },
+    {
+      "f": "instalador",
+      "h": "Installer"
+    },
+    {
+      "f": "instalador-final",
+      "h": "Installation finished"
+    },
+    {
+      "f": "center-bienvenida",
+      "h": "Center: Welcome"
+    },
+    {
+      "f": "center-personalizacion",
+      "h": "Center: Personalisation"
+    },
+    {
+      "f": "tienda",
+      "h": "Store: search results"
+    },
+    {
+      "f": "tienda-detalle",
+      "h": "Store: source of each program"
+    },
+    {
+      "f": "aur-aviso",
+      "h": "Warning when enabling the AUR"
+    },
+    {
+      "f": "dialogo-exe",
+      "h": "Dialog for .exe files"
+    },
+    {
+      "f": "center-actualizaciones",
+      "h": "Center: Updates"
+    },
+    {
+      "f": "center-controladores",
+      "h": "Center: Drivers"
+    },
+    {
+      "f": "center-extras",
+      "h": "Center: Extras"
+    }
+  ]
 }

@@ -16,14 +16,14 @@ BASE = CONFIG["base_url"].rstrip("/")
 DEFAULT = CONFIG["default_lang"]
 ORDER = CONFIG["languages"]
 
-LIST_KEYS = {"principles", "feat", "install_steps", "snap_lines", "profiles", "center", "roadmap", "reqs", "limits"}
+LIST_KEYS = {"principles", "feat", "install_steps", "snap_lines", "profiles", "center", "shots", "roadmap", "reqs", "limits"}
 REQUIRED = {
     "lang_name", "title", "description", "tagline", "lead", "cta_soon", "cta_code",
     "nav_label", "langs_label", "nav_about", "nav_features", "nav_install", "nav_roadmap", "nav_reqs",
     "hero_badge", "scroll_hint", "about_h", "about_p", "principles_h", "principles",
     "tag_done", "tag_wip", "tag_planned", "feat_h", "feat", "install_h", "install_p", "install_steps",
     "snap_h", "snap_p", "snap_lines", "profiles_h", "profiles_p", "profiles",
-    "center_h", "center_p", "center", "roadmap_h", "roadmap", "roadmap_more",
+    "center_h", "center_p", "center", "shots_h", "shots_p", "shots", "roadmap_h", "roadmap", "roadmap_more",
     "reqs_h", "reqs", "limits_h", "limits", "noiso_h", "noiso_p",
     "legal_independent", "legal_license", "legal_author", "links_h", "link_code", "link_roadmap",
     "support_h", "support_p", "sp_gh_h", "sp_gh_p", "sp_gh_btn", "sp_coffee_h", "sp_coffee_p", "sp_coffee_btn",
@@ -154,6 +154,12 @@ def render(lang, texts, names):
     )
     d["profiles"] = cards(texts["profiles"])
     d["center"] = cards(texts["center"])
+    d["shots"] = "".join(
+        f'<figure class="shot"><a href="../assets/capturas/{e(s["f"])}.png" target="_blank" rel="noopener">'
+        f'<img src="../assets/capturas/{e(s["f"])}.png" alt="{e(s["h"])}" width="1280" height="800" loading="lazy"></a>'
+        f'<figcaption>{e(s["h"])}</figcaption></figure>'
+        for s in texts["shots"]
+    )
     d["center_tag"] = tag("done")
     d["roadmap"] = "".join(
         f'<li class="{r["s"]}"><span class="dot"></span><div class="v">{e(r["v"])}</div>'
