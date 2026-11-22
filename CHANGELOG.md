@@ -4,6 +4,11 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.7.1] - 2026-11-22
+
+### Corregido
+- Hoja de ruta (0.4): el repositorio firmado [arctiva] ya está publicado, se quita «aún sin publicar».
+
 ### Cambiado
 - El botón principal de la portada pasa de «Descarga: próximamente» a «Descargar la beta».
 
