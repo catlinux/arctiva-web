@@ -41,4 +41,8 @@ El **nombre y el logo de Arctiva** (los archivos `static/arctiva-*.svg`) **no es
 
 ### Material de terceros
 
-Este proyecto no contiene material de terceros.
+| Componente | Autor | Licencia | Enlace |
+| --- | --- | --- | --- |
+| Tipografía Outfit (paquete `@fontsource-variable/outfit` 5.3.0) | The Outfit Project Authors | [SIL Open Font License 1.1](static/fonts/OFL.txt) | https://github.com/Outfitio/Outfit-Fonts |
+
+La tipografía conserva su propia licencia; la GPL de este proyecto no la cubre.

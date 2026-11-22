@@ -6,6 +6,7 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ### Cambiado
 - La web pasa a generarse con Astro 7 (antes, `build.py`): plantilla base con cabecera fija, menú móvil, selector de idioma desplegable, conmutador de modo claro/oscuro (claro por defecto), pie con mapa del sitio y portada nueva con los colores del sistema (Arctiva Light y Breeze Dark). Capturas optimizadas a WebP en varios tamaños.
+- Tipografía Outfit (SIL Open Font License 1.1) servida desde la propia web para los titulares, con su crédito en el pie y el texto de la licencia en `/fonts/OFL.txt`.
 - Solo inglés (en la raíz) y castellano (`/es/`); se retiran catalán, gallego y euskera.
 - `scripts/deploy.sh` compila con Astro, comprueba el resultado con `scripts/check-site.mjs` y sustituye `public/` de una vez.
 
