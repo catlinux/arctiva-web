@@ -1,0 +1,77 @@
+[
+  {
+    "q": "What is Arctiva?",
+    "a": [
+      "Arctiva is a Linux distribution based on Arch Linux, with a KDE Plasma 6 desktop laid out in a way that is familiar to Windows users. It keeps Arch's official repositories, pacman and the rolling-release model, and adds a graphical installer, simple updates with automatic Btrfs snapshots, ready-to-use graphics drivers and gaming tools, and Arctiva Center, one app for the welcome screen, updates, drivers, extras and the software store.",
+      "Arctiva is an independent project. It is not affiliated with or endorsed by Arch Linux."
+    ]
+  },
+  {
+    "q": "Is there an ISO I can download?",
+    "a": [
+      "Yes. Arctiva 0.8.0 (beta) is the first public beta and you can download it from [GitHub Releases](https://github.com/catlinux/arctiva/releases/tag/v0.8.0). Before using it, check it with the .sha256 and .sig files published next to it; the steps are on the [Download page](/download/).",
+      "It is a beta, so expect rough edges. So far it has been tested mainly in virtual machines, and testing on real hardware continues. Please report any problem in the project's repository."
+    ]
+  },
+  {
+    "q": "Is Arctiva still Arch? Can I use pacman and the AUR?",
+    "a": [
+      "Yes. Arctiva uses Arch's official core, extra and multilib repositories unchanged, and pacman is the only system package manager, so the ArchWiki applies almost entirely. A small signed [arctiva] repository holds only Arctiva's own packages and never modified versions of official ones.",
+      "The AUR works as on any Arch system. In Arctiva Center's store it is a separate source, turned off by default: if you turn it on you get a warning, and before every installation you must read the PKGBUILD, because AUR packages are not reviewed. Please do not ask for help with Arctiva on the Arch Linux forums: Arch does not support derivatives."
+    ]
+  },
+  {
+    "q": "What are the system requirements?",
+    "a": [
+      "A 64-bit x86 PC with UEFI firmware (legacy BIOS is not supported), 4 GiB of RAM, 25 GiB of free disk space, and a USB stick of 4 GB or more for the installation media. For gaming you need a graphics card with Vulkan support. An internet connection is needed during installation only for what does not fit on the ISO (the LTS kernel and the Gaming and Office profiles); without it, what the ISO includes is installed anyway."
+    ]
+  },
+  {
+    "q": "Does Arctiva work with Secure Boot?",
+    "a": [
+      "No: Secure Boot must be turned off in your firmware settings before booting the Arctiva USB. If your computer has Windows with BitLocker (many Windows 11 laptops do), changing the boot settings can make Windows ask for the BitLocker recovery key on its next start. Find and save that key before you change anything."
+    ]
+  },
+  {
+    "q": "Can I try it without installing it?",
+    "a": [
+      "Yes. The USB starts a complete live session. When it opens you see a welcome window and an \"Install Arctiva\" icon on the desktop, but nothing on your disk changes until you run the installer."
+    ]
+  },
+  {
+    "q": "Can I install it next to Windows?",
+    "a": [
+      "Yes. The installer can shrink the Windows partition and install Arctiva beside it, and the boot menu lists both systems. Before you start, make a backup of anything important, turn off Windows Fast Startup and shut Windows down completely, and keep your BitLocker recovery key at hand if you use BitLocker. Installing next to a real Windows is still being tested on real hardware, so take care."
+    ]
+  },
+  {
+    "q": "How do I make the installation USB?",
+    "a": [
+      "Write the ISO to a USB stick with Rufus (choose the GPT partition scheme and UEFI as the target system, and DD image mode if it asks), balenaEtcher, or `dd` on Linux. Ventoy also works, but you have to choose \"Boot in grub2 mode\" in its menu: its normal mode does not boot Arctiva yet."
+    ]
+  },
+  {
+    "q": "Can I play games and run Windows programs?",
+    "a": [
+      "Yes, with limits. The Gaming extra installs Steam (with Proton), Lutris, GameMode, MangoHud and Gamescope. Heroic Games Launcher covers Epic Games, GOG and Amazon Games, and ProtonPlus manages Proton versions. Windows programs (.exe and .msi files) open with Bottles. Not everything works: games with kernel-level anti-cheat usually do not run on Linux. Check ProtonDB and Are We Anti-Cheat Yet? before you buy or install a game."
+    ]
+  },
+  {
+    "q": "Which graphics cards are supported?",
+    "a": [
+      "Intel and AMD graphics work with the open-source drivers that come with the system. For NVIDIA, the installer detects GeForce RTX and GTX 16 series cards and newer and installs the open NVIDIA driver, which needs an internet connection. Older cards (GTX 900 and 1000 series) use the open-source nouveau driver, and Arctiva tells you so. Hybrid laptops (Intel or AMD together with NVIDIA) are detected too."
+    ]
+  },
+  {
+    "q": "What happens if an update breaks something?",
+    "a": [
+      "Before and after every installation or update, Arctiva takes a Btrfs snapshot of the system. If something stops working, restart, choose \"Arctiva snapshots\" in the boot menu and pick a snapshot from before the problem: the system starts as it was. Changes you make while started from a snapshot are temporary. The most recent snapshots are kept and the oldest are deleted automatically."
+    ]
+  },
+  {
+    "q": "Where can I ask for help?",
+    "a": [
+      "In the Discussions of Arctiva's GitHub repository, where you can also report problems. Please do not use the Arch Linux forums."
+    ]
+  }
+]

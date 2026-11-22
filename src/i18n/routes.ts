@@ -20,7 +20,7 @@ export const routes = {
 export type PageKey = keyof typeof routes;
 
 // Páginas visibles en la cabecera y en el pie. Añadir aquí una página solo cuando exista.
-export const NAV: PageKey[] = ['features', 'center', 'screenshots', 'roadmap', 'community'];
-export const FOOTER_SITE: PageKey[] = ['home', 'features', 'center', 'screenshots', 'download', 'roadmap', 'community', 'trademarks'];
+export const NAV: PageKey[] = ['features', 'center', 'screenshots', 'roadmap', 'faq', 'community'];
+export const FOOTER_SITE: PageKey[] = ['home', 'features', 'center', 'screenshots', 'download', 'roadmap', 'faq', 'community', 'trademarks'];
 
 export const url = (page: PageKey, lang: Lang) => routes[page][lang];

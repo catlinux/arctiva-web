@@ -110,6 +110,11 @@
       "s": "done",
       "h": "Windows programs",
       "p": "The “Windows programs” extra installs Bottles (Flatpak). When you open a .exe or .msi, a dedicated dialog explains what will happen, opens the file with Bottles and links to WineHQ AppDB, ProtonDB and Are We Anti-Cheat Yet?. Not everything works: games with anti-cheat, for example."
+    },
+    {
+      "s": "wip",
+      "h": "Arctiva Games",
+      "p": "An optional Arctiva Center extra (it is not on the ISO) that installs Windows game launchers (Battle.net, EA app, Ubisoft Connect, GOG Galaxy and Epic Games) step by step with Proton or Wine, with a library and shortcuts. It is new and has had little testing on real hardware."
     }
   ],
   "install_h": "Installation in ten steps",

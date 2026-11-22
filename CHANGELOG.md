@@ -4,6 +4,12 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.8.0] - 2026-11-22
+
+### Añadido
+- Preguntas frecuentes (`/faq/`, `/es/preguntas-frecuentes/`) con datos estructurados `FAQPage`, enlazadas en la cabecera y el pie. La respuesta sobre la ISO apunta a la descarga de GitHub Releases (0.8.0, beta).
+- «Arctiva Games» en «Qué incluye» (en desarrollo): extra opcional de Arctiva Center, fuera de la ISO, que instala lanzadores de juegos de Windows con Proton o Wine; nuevo y poco probado en hardware real. También se menciona en la tarjeta «Juegos» de la portada.
+
 ## [0.7.1] - 2026-11-22
 
 ### Corregido

@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import { type Lang } from '../../i18n/routes';
+import { useT } from '../../i18n/ui';
+import { inline, plain } from '../../lib/inline';
+import faqEn from '../../data/faq.en.json';
+import faqEs from '../../data/faq.es.json';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { u } = useT(lang);
+const m = u.faq_meta;
+const items: { q: string; a: string[] }[] = lang === 'es' ? faqEs : faqEn;
+const jsonld = [{
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  inLanguage: lang,
+  mainEntity: items.map((i) => ({
+    '@type': 'Question',
+    name: i.q,
+    acceptedAnswer: { '@type': 'Answer', text: i.a.map(plain).join(' ') },
+  })),
+}];
+---
+<Base lang={lang} page="faq" title={m.title} description={m.desc} jsonld={jsonld}>
+  <PageHead title={m.title} />
+  <section class="sec">
+    <div class="wrap prose">
+      {items.map((i) => (
+        <>
+          <h2>{i.q}</h2>
+          {i.a.map((p) => <p set:html={inline(p)} />)}
+        </>
+      ))}
+    </div>
+  </section>
+</Base>
