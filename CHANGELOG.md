@@ -4,6 +4,15 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.7.0] - 2026-11-22
+
+### Añadido
+- Página de descarga con la beta de Arctiva 0.8.0: enlace a la release de GitHub, huella de la clave y las órdenes de verificación (`sha256sum` y `gpg --verify`).
+
+### Cambiado
+- Contenido al día con Arctiva 0.8.0: insignia de la portada («Beta · versión 0.8.0»), hoja de ruta (0.8–0.9 en desarrollo) y «Requisitos» (antes «previstos»). Las claves `noiso_*` pasan a `beta_*`.
+- Titular de la sección de la portada: «Linux para el día a día» (antes mencionaba Arch Linux).
+
 ## [0.6.0] - 2026-11-22
 
 ### Añadido

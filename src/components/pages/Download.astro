@@ -9,6 +9,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const { d, u, site } = useT(lang);
 const m = u.meta.download;
+const iso = `arctiva-${site.project_version}-x86_64.iso`;
 ---
 <Base lang={lang} page="download" title={m.title} description={m.desc}>
   <PageHead title={m.title} />
@@ -17,9 +18,18 @@ const m = u.meta.download;
     <div class="wrap">
       <div class="status">
         <div>
-          <h2>{d.noiso_h}</h2>
-          <p>{d.noiso_p}</p>
+          <h2>{d.beta_h}</h2>
+          <p class="fp">{d.fingerprint_label} <code>{site.repo_key_fingerprint}</code></p>
+          <p>{d.beta_p}</p>
         </div>
+        <p class="cta">
+          <a class="btn btn-primary" href={site.release_latest} target="_blank" rel="noopener noreferrer"><Icon name="arrow" />{u.dl_btn}</a>
+        </p>
+      </div>
+      <div class="verify">
+        <h3>{u.verify_h}</h3>
+        <p>{u.verify_p}</p>
+        <pre class="term"><span class="t-cmd">$ sha256sum -c {iso}.sha256{'\n'}</span><span class="t-cmd">$ gpg --verify {iso}.sig {iso}{'\n'}</span></pre>
       </div>
     </div>
   </section>

@@ -261,6 +261,11 @@ h3 .tag { margin: 0 0 0 .5rem; vertical-align: middle; }
 .viewer form { position: absolute; right: .6rem; top: .4rem; margin: 0; }
 .viewer-close { width: 36px; height: 36px; border: 0; border-radius: 50%; background: var(--surface); color: var(--fg); font-size: 1.6rem; line-height: 1; cursor: pointer; box-shadow: var(--shadow); }
 
+.fp { font-size: .92rem; }
+.fp code { overflow-wrap: anywhere; }
+.verify { margin-top: 2rem; }
+.verify .term { margin-top: 1rem; }
+
 /* Pie */
 .foot { margin-top: 2rem; padding-block: 3.5rem 2rem; background: var(--bg-alt); border-top: 1px solid var(--line); font-size: .95rem; }
 .foot-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }

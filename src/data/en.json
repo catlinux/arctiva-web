@@ -25,9 +25,9 @@
   "roadmap_more": "Full detail in the project's roadmap.",
   "nav_features": "Features",
   "nav_install": "Install",
-  "hero_badge": "Pre-beta · version 0.7.0",
+  "hero_badge": "Beta · version 0.8.0",
   "scroll_hint": "Scroll",
-  "about_h": "Arch Linux for everyday use",
+  "about_h": "Linux for everyday use",
   "about_p": "Arctiva is for people coming from Windows, or who want Arch without building it by hand. It keeps the best of Arch (unmodified official repositories, pacman and rolling releases) and adds what Arch lacks for everyday use: a graphical installer, a KDE Plasma desktop that feels familiar, simple updates with automatic snapshots to go back to, and games and graphics drivers without the fuss.",
   "principles_h": "Principles",
   "principles": [
@@ -260,8 +260,8 @@
     {
       "v": "0.8–0.9",
       "n": "Beta",
-      "t": "Real-hardware testing, documentation, public beta.",
-      "s": "planned"
+      "t": "0.8 first public beta published; hardware testing continues.",
+      "s": "wip"
     },
     {
       "v": "1.0",
@@ -270,7 +270,7 @@
       "s": "planned"
     }
   ],
-  "reqs_h": "Planned requirements",
+  "reqs_h": "Requirements",
   "reqs": [
     "x86 64-bit PC with UEFI",
     "Secure Boot disabled",
@@ -288,8 +288,8 @@
     "Some Windows programs and anti-cheat games may not work.",
     "With disk encryption, GRUB asks for the password in text mode before loading the theme; that is normal."
   ],
-  "noiso_h": "No ISO to download yet",
-  "noiso_p": "Arctiva is in development, before its first beta. If you want to try it, you can build the ISO from the source code. The ISO weighs about 1.8 GiB.",
+  "beta_h": "Download the beta ISO",
+  "beta_p": "Arctiva 0.8.0 is the first public beta: expect rough edges and please report them. Download it from GitHub Releases and check it with the .sha256 and .sig files (key fingerprint above). The ISO weighs about 1.8 GiB. You can also build it from the source code.",
   "community_h": "Community",
   "community_p": "Ask a question, follow the news or report a bug. It all happens on GitHub, and you need a free account to post.",
   "comm_discussions": "Questions and discussions",
