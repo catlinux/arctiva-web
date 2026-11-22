@@ -1,0 +1,22 @@
+---
+// Motivo «Órbita» del fondo de Arctiva: anillos, un arco iluminado y un punto con brillo.
+---
+<svg class="orbit" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="orbit-arc" x1="707" y1="150" x2="1130" y2="187" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="currentColor" stop-opacity="0" />
+      <stop offset="1" stop-color="currentColor" stop-opacity="1" />
+    </linearGradient>
+    <radialGradient id="orbit-glow">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset=".3" stop-color="#5b95ff" stop-opacity=".85" />
+      <stop offset="1" stop-color="#5b95ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <circle class="ring" cx="900" cy="380" r="300" />
+  <circle class="ring ring-2" cx="900" cy="380" r="430" />
+  <circle class="ring ring-3" cx="900" cy="380" r="580" />
+  <path class="arc" d="M707.2 150.2 A300 300 0 0 1 1129.8 187.1" stroke="url(#orbit-arc)" />
+  <circle cx="1129.8" cy="187.1" r="26" fill="url(#orbit-glow)" />
+  <circle cx="1129.8" cy="187.1" r="4.5" fill="#ffffff" />
+</svg>

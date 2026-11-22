@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import { routes } from '../i18n/routes';
+import { useT } from '../i18n/ui';
+const en = useT('en').u;
+const es = useT('es').u;
+---
+<Base lang="en" page={null} title={`${en.nf_title} · ${es.nf_title}`} description={en.nf_text}>
+  <section class="sec nf">
+    <div class="wrap">
+      <h1>{en.nf_title}</h1>
+      <p>{en.nf_text} <a href={routes.home.en}>{en.nf_back}</a></p>
+      <p lang="es" class="nf-es"><strong>{es.nf_title}.</strong> {es.nf_text} <a href={routes.home.es} hreflang="es">{es.nf_back}</a></p>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,13 @@
+{
+  "name": "arctiva-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "node scripts/check-site.mjs dist"
+  },
+  "dependencies": {
+    "astro": "7.4.13"
+  }
+}

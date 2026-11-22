@@ -4,6 +4,11 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+### Cambiado
+- La web pasa a generarse con Astro 7 (antes, `build.py`): plantilla base con cabecera fija, menú móvil, selector de idioma desplegable, conmutador de modo claro/oscuro (claro por defecto), pie con mapa del sitio y portada nueva con los colores del sistema (Arctiva Light y Breeze Dark). Capturas optimizadas a WebP en varios tamaños.
+- Solo inglés (en la raíz) y castellano (`/es/`); se retiran catalán, gallego y euskera.
+- `scripts/deploy.sh` compila con Astro, comprueba el resultado con `scripts/check-site.mjs` y sustituye `public/` de una vez.
+
 ## [0.5.0] - 2026-11-22
 
 ### Añadido

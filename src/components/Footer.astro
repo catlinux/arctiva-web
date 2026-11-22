@@ -1,0 +1,46 @@
+---
+import { FOOTER_SITE, routes, type Lang } from '../i18n/routes';
+import { useT } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { d, u, site } = useT(lang);
+const ext = (href: string, text: string) => ({ href, text });
+const project = [
+  ext(site.code_url, d.link_code),
+  ext(site.links.architecture[lang], d.link_arch),
+  ext(site.links.changelog[lang], d.link_changes),
+  ext(site.repo_url, d.link_repo),
+];
+const help = [
+  ext(site.community.discussions, d.comm_discussions),
+  ext(site.community.issues, d.comm_issues),
+  ext(site.support.sponsors, d.sp_gh_btn),
+  ext(site.support.coffee, d.sp_coffee_btn),
+];
+---
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href={routes.home[lang]}><img src="/arctiva-mark.svg" alt="" width="28" height="28"><span>Arctiva</span></a>
+      <p>{d.tagline}</p>
+    </div>
+    <nav aria-label={u.foot_site}>
+      <h2>{u.foot_site}</h2>
+      <ul>{FOOTER_SITE.map((k) => <li><a href={routes[k][lang]}>{u.page[k]}</a></li>)}</ul>
+    </nav>
+    <nav aria-label={u.foot_project}>
+      <h2>{u.foot_project}</h2>
+      <ul>{project.map((l) => <li><a href={l.href} target="_blank" rel="noopener noreferrer">{l.text}</a></li>)}</ul>
+    </nav>
+    <nav aria-label={u.foot_help}>
+      <h2>{u.foot_help}</h2>
+      <ul>{help.map((l) => <li><a href={l.href} target="_blank" rel="noopener noreferrer">{l.text}</a></li>)}</ul>
+    </nav>
+  </div>
+  <div class="wrap foot-legal">
+    <p>{d.legal_independent}</p>
+    <p>{d.legal_license}</p>
+    <p>{d.legal_author}</p>
+  </div>
+</footer>

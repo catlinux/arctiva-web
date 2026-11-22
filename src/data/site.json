@@ -4,10 +4,7 @@
   "default_lang": "en",
   "languages": [
     "en",
-    "es",
-    "ca",
-    "gl",
-    "eu"
+    "es"
   ],
   "code_url": "https://github.com/catlinux/arctiva",
   "repo_key_fingerprint": "C0AE 9639 0DC2 0F79 3A38  0441 B216 D69A 3793 8267",
@@ -37,5 +34,6 @@
   "support": {
     "sponsors": "https://github.com/sponsors/catlinux",
     "coffee": "https://buymeacoffee.com/arctiva"
-  }
+  },
+  "project_version": "0.7.0"
 }

@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import Icon from '../Icon.astro';
+import Orbit from '../Orbit.astro';
+import { routes, type Lang } from '../../i18n/routes';
+import { useT } from '../../i18n/ui';
+import { shot } from '../../lib/shots';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { d, u, site } = useT(lang);
+const caption = (f: string) => d.shots.find((s) => s.f === f)?.h ?? '';
+const strip = ['center-personalizacion', 'tienda-detalle', 'grub'];
+const jsonld = [{
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Arctiva',
+  applicationCategory: 'OperatingSystem',
+  softwareVersion: site.project_version,
+  description: d.description,
+  url: site.base_url + routes.home[lang],
+  image: site.base_url + '/arctiva-logo.svg',
+  license: 'https://www.gnu.org/licenses/gpl-3.0.html',
+  sameAs: [site.code_url],
+}];
+---
+<Base lang={lang} page="home" title={d.title} description={d.description} jsonld={jsonld}>
+  <section class="hero">
+    <Orbit />
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="badge"><span class="badge-dot"></span>{d.hero_badge}</p>
+        <h1>{d.tagline}</h1>
+        <p class="lead">{d.lead}</p>
+        <p class="cta">
+          <a class="btn btn-primary" href={routes.download[lang]}>{d.cta_soon}</a>
+          <a class="btn" href={site.code_url} target="_blank" rel="noopener noreferrer"><Icon name="code" />{d.cta_code}</a>
+        </p>
+      </div>
+      <figure class="hero-shot">
+        <Image class="only-light" src={shot('escritorio-claro')} alt={caption('escritorio-claro')}
+          widths={[640, 960, 1280]} sizes="(min-width: 1000px) 640px, 100vw" loading="eager" fetchpriority="high" />
+        <Image class="only-dark" src={shot('escritorio-oscuro')} alt={caption('escritorio-oscuro')}
+          widths={[640, 960, 1280]} sizes="(min-width: 1000px) 640px, 100vw" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>{d.about_h}</h2>
+        <p class="intro">{d.about_p}</p>
+      </header>
+      <ul class="cards cards-3">
+        {u.highlights.map((h) => (
+          <li class="card">
+            <span class="card-ico"><Icon name={h.k} /></span>
+            <h3><a class="card-link" href={routes[h.to][lang]}>{h.h}</a></h3>
+            <p>{h.p}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="more"><a class="link-arrow" href={routes.features[lang]}>{u.home_more_features}<Icon name="arrow" /></a></p>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>{d.center_h}</h2>
+        <p class="intro">{d.center_p}</p>
+      </header>
+      <div class="strip">
+        {strip.map((f) => (
+          <figure class="shot">
+            <a href={routes.screenshots[lang]}>
+              <Image src={shot(f)} alt={caption(f)} widths={[480, 800]} sizes="(min-width: 900px) 380px, 100vw" />
+            </a>
+            <figcaption>{caption(f)}</figcaption>
+          </figure>
+        ))}
+      </div>
+      <p class="more">
+        <a class="link-arrow" href={routes.center[lang]}>{u.home_more_center}<Icon name="arrow" /></a>
+        <a class="link-arrow" href={routes.screenshots[lang]}>{u.home_more_shots}<Icon name="arrow" /></a>
+      </p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="status">
+        <div>
+          <h2>{d.noiso_h}</h2>
+          <p>{d.noiso_p}</p>
+        </div>
+        <p class="cta">
+          <a class="btn btn-primary" href={routes.download[lang]}>{u.home_status_link}</a>
+          <a class="btn" href={routes.roadmap[lang]}>{u.home_roadmap_link}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

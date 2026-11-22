@@ -28,7 +28,7 @@
   "hero_badge": "Pre-beta · version 0.7.0",
   "scroll_hint": "Scroll",
   "about_h": "Arch Linux for everyday use",
-  "about_p": "Arctiva is for people coming from Windows, or who want Arch without building it by hand. It keeps the best of Arch ( unmodified official repositories, pacman and rolling releases ) and adds what Arch lacks for everyday use: a graphical installer, a KDE Plasma desktop that feels familiar, simple updates with automatic snapshots to go back to, and games and graphics drivers without the fuss.",
+  "about_p": "Arctiva is for people coming from Windows, or who want Arch without building it by hand. It keeps the best of Arch (unmodified official repositories, pacman and rolling releases) and adds what Arch lacks for everyday use: a graphical installer, a KDE Plasma desktop that feels familiar, simple updates with automatic snapshots to go back to, and games and graphics drivers without the fuss.",
   "principles_h": "Principles",
   "principles": [
     {

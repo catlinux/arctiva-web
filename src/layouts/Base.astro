@@ -1,0 +1,98 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { LANGS, routes, type Lang, type PageKey } from '../i18n/routes';
+import { useT } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  page: PageKey | null; // null: página sin equivalente indexable (404)
+  title: string; // título propio de la página; la portada pasa el título completo
+  description: string;
+  jsonld?: object[];
+}
+const { lang, page, title, description, jsonld = [] } = Astro.props;
+const { d, u, site } = useT(lang);
+const base = site.base_url;
+const fullTitle = page === 'home' ? title : `${title} · Arctiva`;
+const canonical = page ? base + routes[page][lang] : null;
+const ogLocale = { en: 'en_US', es: 'es_ES' };
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Arctiva', url: base + '/', inLanguage: LANGS },
+  ...jsonld,
+];
+---
+<!doctype html>
+<html lang={lang} data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script is:inline>try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<title>{fullTitle}</title>
+<meta name="description" content={description}>
+{page === null && <meta name="robots" content="noindex">}
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="/arctiva-icon.svg">
+{canonical && <link rel="canonical" href={canonical}>}
+{page && LANGS.map((l) => <link rel="alternate" hreflang={l} href={base + routes[page][l]}>)}
+{page && <link rel="alternate" hreflang="x-default" href={base + routes[page].en}>}
+<meta property="og:site_name" content="Arctiva">
+<meta property="og:type" content="website">
+<meta property="og:title" content={fullTitle}>
+<meta property="og:description" content={description}>
+{canonical && <meta property="og:url" content={canonical}>}
+<meta property="og:locale" content={ogLocale[lang]}>
+{LANGS.filter((l) => l !== lang).map((l) => <meta property="og:locale:alternate" content={ogLocale[l]}>)}
+{page && <script type="application/ld+json" set:html={JSON.stringify(ld)} />}
+</head>
+<body>
+<a class="skip" href="#main">{u.skip}</a>
+<Header lang={lang} page={page} />
+{lang === 'en' && page && u.lang_hint && (
+  <div class="langhint" id="langhint" lang="es" hidden>
+    <p>{u.lang_hint.text} <a href={routes[page].es} hreflang="es">{u.lang_hint.cta}</a></p>
+    <button type="button" class="langhint-close" aria-label={u.lang_hint.close}>×</button>
+  </div>
+)}
+<main id="main">
+<slot />
+</main>
+<Footer lang={lang} />
+<script is:inline>
+(function () {
+  var root = document.documentElement;
+  var t = document.getElementById('theme-toggle');
+  if (t) {
+    t.hidden = false;
+    var sync = function () { t.setAttribute('aria-pressed', root.dataset.theme === 'dark' ? 'true' : 'false'); };
+    sync();
+    t.addEventListener('click', function () {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+      sync();
+    });
+  }
+  // Los desplegables (<details>) se cierran al pulsar fuera o con Escape.
+  var menus = document.querySelectorAll('details.dropdown');
+  document.addEventListener('click', function (e) {
+    menus.forEach(function (m) { if (m.open && !m.contains(e.target)) m.open = false; });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    menus.forEach(function (m) { if (m.open) { m.open = false; m.querySelector('summary').focus(); } });
+  });
+  var h = document.getElementById('langhint');
+  if (h) {
+    var seen = false;
+    try { seen = localStorage.getItem('langhint') === '1'; } catch (e) {}
+    if (!seen && /^es\b/i.test(navigator.language || '')) h.hidden = false;
+    h.querySelector('button').addEventListener('click', function () {
+      h.hidden = true;
+      try { localStorage.setItem('langhint', '1'); } catch (e) {}
+    });
+  }
+})();
+</script>
+</body>
+</html>

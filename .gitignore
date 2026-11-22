@@ -2,3 +2,6 @@ public/
 public.new/
 public.old/
 entrada/
+node_modules/
+dist/
+.astro/

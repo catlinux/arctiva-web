@@ -1,0 +1,54 @@
+---
+import { LANGS, NAV, routes, type Lang, type PageKey } from '../i18n/routes';
+import { useT } from '../i18n/ui';
+import Icon from './Icon.astro';
+
+interface Props { lang: Lang; page: PageKey | null }
+const { lang, page } = Astro.props;
+const { d, u, site } = useT(lang);
+const names = { en: 'English', es: 'Español' };
+const target = (l: Lang) => routes[page ?? 'home'][l];
+---
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href={routes.home[lang]}>
+      <img src="/arctiva-mark.svg" alt="" width="28" height="28"><span>Arctiva</span>
+    </a>
+
+    <nav class="nav-main" aria-label={d.nav_label}>
+      {NAV.map((k) => <a href={routes[k][lang]} aria-current={k === page ? 'page' : undefined}>{u.page[k]}</a>)}
+    </nav>
+
+    <div class="top-tools">
+      <a class="btn btn-primary btn-sm nav-cta" href={routes.download[lang]} aria-current={page === 'download' ? 'page' : undefined}>{u.page.download}</a>
+
+      <details class="dropdown lang-menu">
+        <summary aria-label={d.langs_label}><Icon name="globe" /><span>{lang.toUpperCase()}</span></summary>
+        <ul class="dropdown-panel">
+          {LANGS.map((l) => (
+            <li>
+              {l === lang
+                ? <span class="is-current" aria-current="true">{names[l]}</span>
+                : <a href={target(l)} hreflang={l} lang={l}>{names[l]}</a>}
+            </li>
+          ))}
+        </ul>
+      </details>
+
+      <button type="button" class="icon-btn" id="theme-toggle" aria-pressed="false" title={u.theme} hidden>
+        <span class="sr">{u.theme}</span><Icon name="moon" class="i-moon" /><Icon name="sun" class="i-sun" />
+      </button>
+
+      <a class="icon-btn hide-sm" href={site.code_url} title={u.github} target="_blank" rel="noopener noreferrer"><span class="sr">{u.github}</span><Icon name="code" /></a>
+
+      <details class="dropdown nav-mobile">
+        <summary aria-label={u.menu}><Icon name="menu" /></summary>
+        <nav class="dropdown-panel" aria-label={d.nav_label}>
+          {NAV.map((k) => <a href={routes[k][lang]} aria-current={k === page ? 'page' : undefined}>{u.page[k]}</a>)}
+          <a href={routes.download[lang]} aria-current={page === 'download' ? 'page' : undefined}>{u.page.download}</a>
+          <a href={site.code_url} target="_blank" rel="noopener noreferrer">{u.github}</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
