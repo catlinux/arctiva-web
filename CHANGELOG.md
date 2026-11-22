@@ -4,6 +4,13 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.4.0] - 2026-11-22
+
+### Cambiado
+- Contenido al día con la versión 0.7.0 de Arctiva (fases 1 a 6 terminadas), en los cinco idiomas: insignia de la portada, «Qué incluye» (aspecto propio, tienda, programas de Windows, Heroic y ProtonPlus como extras), Arctiva Center (páginas Bienvenida, Personalización, Aplicaciones…) y hoja de ruta (0.4 a 0.7 completadas).
+- Arctiva Center pasa de «En desarrollo» a «Completado».
+- Aviso en «Conviene saber» sobre GRUB en modo texto con el cifrado de disco; se indica el peso de la ISO (≈ 1,8 GiB) en el aviso de que aún no hay descarga.
+
 ## [0.3.4] - 2026-11-21
 
 ### Añadido

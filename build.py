@@ -154,7 +154,7 @@ def render(lang, texts, names):
     )
     d["profiles"] = cards(texts["profiles"])
     d["center"] = cards(texts["center"])
-    d["center_tag"] = tag("wip")
+    d["center_tag"] = tag("done")
     d["roadmap"] = "".join(
         f'<li class="{r["s"]}"><span class="dot"></span><div class="v">{e(r["v"])}</div>'
         f'<div class="b"><h3>{e(r["n"])}</h3><p>{e(r["t"])}</p>{tag(r["s"])}</div></li>'

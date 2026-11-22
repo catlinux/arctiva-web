@@ -25,7 +25,7 @@
   "roadmap_more": "Detalle completo en la hoja de ruta del proyecto.",
   "nav_features": "Características",
   "nav_install": "Instalación",
-  "hero_badge": "Pre-beta · versión 0.4.0",
+  "hero_badge": "Pre-beta · versión 0.7.0",
   "scroll_hint": "Desliza",
   "about_h": "Arch Linux para el día a día",
   "about_p": "Arctiva es para quien viene de Windows o quiere Arch sin montarlo a mano. Mantiene lo mejor de Arch (repositorios oficiales sin modificar, pacman y rolling release) y añade lo que le falta para el uso cotidiano: instalador gráfico, un escritorio KDE Plasma de manejo cercano a Windows, actualizaciones sencillas con instantáneas automáticas a las que volver, y juegos y controladores gráficos sin complicaciones.",
@@ -64,17 +64,22 @@
     {
       "s": "done",
       "h": "ISO live e instalador gráfico",
-      "p": "Prueba el escritorio KDE Plasma completo sin instalar nada y después instala con un asistente basado en Calamares y con diseño propio de Arctiva. Instalación sin conexión: copia el sistema live ya probado, así que es rápida."
+      "p": "Prueba el escritorio completo sin instalar nada y después instala con Calamares, con perfiles Básico, Juegos y Oficina, cifrado de disco opcional y kernel LTS opcional. Instalación sin conexión: copia el sistema live ya probado, así que es rápida. Solo UEFI."
+    },
+    {
+      "s": "done",
+      "h": "Aspecto propio",
+      "p": "Escritorio KDE Plasma al estilo de Windows: barra de tareas abajo con iconos centrados, menú de inicio con buscador, bandeja y reloj. Modo claro por defecto y modo oscuro, fondo «Órbita» y tipografía Outfit. Menú de arranque (GRUB) con tema propio y siempre visible, pantalla de arranque animada (Plymouth) e inicio de sesión con el fondo de Arctiva."
     },
     {
       "s": "done",
       "h": "Instantáneas de Btrfs",
-      "p": "Btrfs con compresión zstd. Snapper y snap-pac hacen una instantánea antes y después de cada cambio de paquetes, y GRUB permite arrancar cualquiera de ellas."
+      "p": "Btrfs con Snapper: se conservan como máximo 10 y se pueden arrancar desde el menú de GRUB."
     },
     {
       "s": "done",
       "h": "KDE Plasma 6 sobre Wayland",
-      "p": "Menú, barra de tareas y bandeja al estilo de Windows desde el primer minuto. Dolphin, pantallas de alta frecuencia (VRR), HDR; las aplicaciones X11 antiguas siguen funcionando con Xwayland."
+      "p": "Dolphin, pantallas de alta frecuencia (VRR), HDR; las aplicaciones X11 antiguas siguen funcionando con Xwayland."
     },
     {
       "s": "done",
@@ -89,17 +94,22 @@
     {
       "s": "done",
       "h": "Juegos",
-      "p": "multilib activado de serie; Steam, Lutris, GameMode, MangoHud y Gamescope en el perfil Juegos. Heroic, ProtonPlus y Bottles están previstos."
+      "p": "multilib activado de serie; Steam, Lutris, GameMode, MangoHud y Gamescope en el perfil Juegos. Heroic Games Launcher y ProtonPlus están disponibles como extras (Flatpak)."
     },
     {
-      "s": "wip",
+      "s": "done",
       "h": "Arctiva Center",
-      "p": "Una sola aplicación propia (Python + Qt/PySide6) para actualizaciones, controladores y extras. La ventana base ya existe y está publicada; sus módulos se están programando."
+      "p": "Una sola aplicación propia con las páginas Bienvenida, Personalización, Actualizaciones, Aplicaciones, Controladores y Extras. En lugar de Discover, la tienda es el propio Center."
     },
     {
-      "s": "planned",
-      "h": "Aplicaciones y programas de Windows",
-      "p": "Una tienda con repositorios oficiales, Flathub y AUR claramente diferenciados, y Bottles para archivos .exe y .msi, con notas de compatibilidad."
+      "s": "done",
+      "h": "Tienda de aplicaciones",
+      "p": "Busca e instala programas de los repositorios oficiales de Arch y de Flathub, con el origen siempre visible y una fuente recomendada. Si hay actualizaciones pendientes, te pide actualizar antes para no dejar el sistema a medias. El AUR está disponible pero desactivado de serie: al activarlo hay un aviso, antes de cada instalación hay que leer el PKGBUILD y sus actualizaciones son manuales y muestran qué ha cambiado."
+    },
+    {
+      "s": "done",
+      "h": "Programas de Windows",
+      "p": "El extra «Programas de Windows» instala Bottles (Flatpak). Al abrir un .exe o .msi, un diálogo propio explica qué va a pasar, abre el archivo con Bottles y enlaza a WineHQ AppDB, ProtonDB y Are We Anti-Cheat Yet?. No todo funciona: por ejemplo, los juegos con anti-trampas."
     }
   ],
   "install_h": "Instalación en diez pasos",
@@ -164,15 +174,23 @@
     }
   ],
   "center_h": "Arctiva Center",
-  "center_p": "Una aplicación que reúne las herramientas de Arctiva, con el aspecto de Plasma. En desarrollo (fase 4, versión 0.5.0).",
+  "center_p": "Una aplicación que reúne las herramientas de Arctiva, con el aspecto de Plasma.",
   "center": [
+    {
+      "h": "Bienvenida",
+      "p": "Página de inicio del Center."
+    },
+    {
+      "h": "Personalización",
+      "p": "Modo claro, oscuro o automático, color de acento, fondo, barra centrada o a la izquierda, barra flotante, tamaño del texto, escala de pantalla y luz nocturna. Incluye «Restaurar el aspecto de Arctiva» y «Configuración avanzada»."
+    },
     {
       "h": "Actualizaciones",
       "p": "Lee las noticias de archlinux.org desde tu última actualización y bloquea la actualización hasta que leas las que exigen intervención manual. Marca los paquetes delicados (kernel, NVIDIA, Mesa, systemd, Plasma), actualiza los Flatpak y ayuda con los .pacnew."
     },
     {
-      "h": "Mensajes de error comprensibles",
-      "p": "Traduce los fallos habituales (conflictos, claves, espacio en disco, sin red) a mensajes comprensibles, sin ocultar el texto original."
+      "h": "Aplicaciones",
+      "p": "La tienda: repositorios oficiales de Arch y Flathub con el origen siempre visible, y AUR opcional con avisos y lectura obligatoria del PKGBUILD."
     },
     {
       "h": "Controladores",
@@ -180,7 +198,11 @@
     },
     {
       "h": "Extras",
-      "p": "Juegos, Oficina, kernel LTS, impresoras y cortafuegos: instalar y quitar con un solo interruptor."
+      "p": "Juegos, Oficina, Programas de Windows (Bottles), Heroic Games Launcher, ProtonPlus, kernel LTS, impresoras y cortafuegos: instalar y quitar con un solo interruptor."
+    },
+    {
+      "h": "Mensajes de error comprensibles",
+      "p": "Traduce los fallos habituales (conflictos, claves, espacio en disco, sin red) a mensajes comprensibles, sin ocultar el texto original."
     },
     {
       "h": "Permisos de administrador",
@@ -214,26 +236,26 @@
     {
       "v": "0.4",
       "n": "Repositorio y hardware",
-      "t": "Repositorio [arctiva] firmado, detección de gráficas. Casi terminada.",
-      "s": "wip"
+      "t": "Repositorio [arctiva] firmado (aún sin publicar) y detección de gráficas.",
+      "s": "done"
     },
     {
       "v": "0.5",
       "n": "Arctiva Center",
       "t": "Bienvenida, controladores, actualizaciones y extras.",
-      "s": "wip"
+      "s": "done"
     },
     {
       "v": "0.6",
       "n": "Aplicaciones y Windows",
-      "t": "Tienda y compatibilidad con Windows.",
-      "s": "planned"
+      "t": "Tienda con Arch, Flathub y AUR opcional; diálogo para .exe y .msi.",
+      "s": "done"
     },
     {
       "v": "0.7",
       "n": "Identidad",
       "t": "Tema de GRUB, pantalla de arranque, inicio de sesión, tema de Plasma y fondos.",
-      "s": "planned"
+      "s": "done"
     },
     {
       "v": "0.8–0.9",
@@ -263,10 +285,11 @@
     "La hibernación no estará en la 1.0; la suspensión sí funciona.",
     "Solo equipos con UEFI.",
     "Las NVIDIA GTX 900/1000 usan el controlador libre.",
-    "Algunos programas de Windows y juegos con antitrampas pueden no funcionar."
+    "Algunos programas de Windows y juegos con antitrampas pueden no funcionar.",
+    "Con el cifrado de disco, GRUB pide la contraseña en modo texto antes de cargar el tema; es normal."
   ],
   "noiso_h": "Todavía no hay ISO para descargar",
-  "noiso_p": "Arctiva está en desarrollo, antes de su primera beta. Si quieres probarla, puedes construir la ISO desde el código fuente.",
+  "noiso_p": "Arctiva está en desarrollo, antes de su primera beta. Si quieres probarla, puedes construir la ISO desde el código fuente. La ISO pesa unos 1,8 GiB.",
   "community_h": "Comunidad",
   "community_p": "Pregunta, sigue las novedades o cuéntanos un fallo. Todo se hace en GitHub y hace falta una cuenta gratuita para escribir.",
   "comm_discussions": "Preguntas y debates",

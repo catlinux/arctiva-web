@@ -25,7 +25,7 @@
   "roadmap_more": "Full detail in the project's roadmap.",
   "nav_features": "Features",
   "nav_install": "Install",
-  "hero_badge": "Pre-beta · version 0.4.0",
+  "hero_badge": "Pre-beta · version 0.7.0",
   "scroll_hint": "Scroll",
   "about_h": "Arch Linux for everyday use",
   "about_p": "Arctiva is for people coming from Windows, or who want Arch without building it by hand. It keeps the best of Arch ( unmodified official repositories, pacman and rolling releases ) and adds what Arch lacks for everyday use: a graphical installer, a KDE Plasma desktop that feels familiar, simple updates with automatic snapshots to go back to, and games and graphics drivers without the fuss.",
@@ -64,42 +64,52 @@
     {
       "s": "done",
       "h": "Live ISO and graphical installer",
-      "p": "Try the full KDE Plasma desktop without installing anything, then install with a Calamares-based wizard with Arctiva's own design. Offline install: it copies the tested live system, so it is fast."
+      "p": "Try the full desktop without installing anything, then install with Calamares, with Basic, Gaming and Office profiles, optional disk encryption and an optional LTS kernel. Offline install: it copies the already-tested live system, so it is fast. UEFI only."
+    },
+    {
+      "s": "done",
+      "h": "Its own look",
+      "p": "A KDE Plasma desktop in the style of Windows: taskbar at the bottom with centred icons, start menu with search, tray and clock. Light mode by default plus dark mode, the “Orbit” wallpaper and the Outfit typeface. A custom, always-visible boot menu (GRUB) theme, an animated boot screen (Plymouth) and a login screen with the Arctiva background."
     },
     {
       "s": "done",
       "h": "Btrfs snapshots",
-      "p": "Btrfs with zstd compression. Snapper and snap-pac take a snapshot before and after every package change, and GRUB lets you boot any of them."
+      "p": "Btrfs with Snapper: at most 10 are kept, and any of them can be booted from the GRUB menu."
     },
     {
       "s": "done",
       "h": "KDE Plasma 6 on Wayland",
-      "p": "Menu, taskbar and tray like Windows from the first minute. Dolphin, high-refresh-rate screens (VRR), HDR; old X11 apps still work through Xwayland."
+      "p": "Dolphin, high-refresh-rate displays (VRR), HDR; older X11 apps keep working through Xwayland."
     },
     {
       "s": "done",
       "h": "Install alongside Windows",
-      "p": "Before touching the disk, a check warns about hibernated Windows or Fast Startup and active BitLocker, and GRUB lists Windows automatically. Optional disk encryption asks the password only once."
+      "p": "Before touching the disk, a check warns you if Windows is hibernated or uses fast startup, or if BitLocker is on, and GRUB shows Windows automatically. Optional disk encryption asks for the password once."
     },
     {
       "s": "done",
       "h": "Graphics drivers",
-      "p": "AMD and Intel work out of the box. NVIDIA GTX 16 / RTX 20 and later are detected and get nvidia-open automatically. Older GTX 900/1000 use the free driver, and you are told your options."
+      "p": "AMD and Intel work out of the box. NVIDIA GTX 16 / RTX 20 and later are detected and get nvidia-open installed automatically. GTX 900/1000 cards use the free driver and the options are explained to you."
     },
     {
       "s": "done",
       "h": "Games",
-      "p": "multilib on by default; Steam, Lutris, GameMode, MangoHud and Gamescope in the Gaming profile. Heroic, ProtonPlus and Bottles are planned."
+      "p": "multilib on by default; Steam, Lutris, GameMode, MangoHud and Gamescope in the Gaming profile. Heroic Games Launcher and ProtonPlus are available as extras (Flatpak)."
     },
     {
-      "s": "wip",
+      "s": "done",
       "h": "Arctiva Center",
-      "p": "One native app (Python + Qt/PySide6) for updates, drivers and extras. The base window exists and is already published; its modules are being written."
+      "p": "One native app with the pages Welcome, Personalisation, Updates, Applications, Drivers and Extras. Discover is gone: the store is the Center itself."
     },
     {
-      "s": "planned",
-      "h": "Apps and Windows programs",
-      "p": "A store with official repositories, Flathub and the AUR clearly told apart, plus Bottles for .exe and .msi files, with notes on compatibility."
+      "s": "done",
+      "h": "App store",
+      "p": "Search and install programs from the official Arch repositories and Flathub, with the source always visible and a recommended one. If updates are pending, it asks you to update first so the system isn't left half-updated. The AUR is available but off by default: turning it on shows a warning, you must read the PKGBUILD before every install, and its updates are manual and show what changed."
+    },
+    {
+      "s": "done",
+      "h": "Windows programs",
+      "p": "The “Windows programs” extra installs Bottles (Flatpak). When you open a .exe or .msi, a dedicated dialog explains what will happen, opens the file with Bottles and links to WineHQ AppDB, ProtonDB and Are We Anti-Cheat Yet?. Not everything works: games with anti-cheat, for example."
     }
   ],
   "install_h": "Installation in ten steps",
@@ -164,15 +174,23 @@
     }
   ],
   "center_h": "Arctiva Center",
-  "center_p": "One app that brings Arctiva's tools together, with the look of Plasma. In development (phase 4, version 0.5.0).",
+  "center_p": "One app that brings Arctiva's tools together, with the look of Plasma.",
   "center": [
+    {
+      "h": "Welcome",
+      "p": "The Center's start page."
+    },
+    {
+      "h": "Personalisation",
+      "p": "Light, dark or automatic mode, accent colour, wallpaper, centred or left-aligned taskbar, floating taskbar, text size, screen scale and night light. Includes “Restore the Arctiva look” and “Advanced settings”."
+    },
     {
       "h": "Updates",
       "p": "Reads the archlinux.org news since your last update and blocks the update until you read any item that needs manual action. Flags delicate packages (kernel, NVIDIA, Mesa, systemd, Plasma), updates Flatpaks, and helps with .pacnew files."
     },
     {
-      "h": "Readable error messages",
-      "p": "Translates the usual failures ( conflicts, keys, disk space, no network ) into clear messages, without hiding the original text."
+      "h": "Applications",
+      "p": "The store: official Arch repositories and Flathub with the source always visible, and an optional AUR with warnings and a mandatory PKGBUILD read."
     },
     {
       "h": "Drivers",
@@ -180,7 +198,11 @@
     },
     {
       "h": "Extras",
-      "p": "Gaming, Office, LTS kernel, printers and firewall: install and remove with one toggle."
+      "p": "Games, Office, Windows programs (Bottles), Heroic Games Launcher, ProtonPlus, LTS kernel, printers and firewall: install and remove with a single switch."
+    },
+    {
+      "h": "Readable error messages",
+      "p": "Translates the usual failures ( conflicts, keys, disk space, no network ) into clear messages, without hiding the original text."
     },
     {
       "h": "Administrator permissions",
@@ -214,26 +236,26 @@
     {
       "v": "0.4",
       "n": "Repository and hardware",
-      "t": "Signed [arctiva] repository, graphics detection. Almost done.",
-      "s": "wip"
+      "t": "Signed [arctiva] repository (not published yet) and graphics detection.",
+      "s": "done"
     },
     {
       "v": "0.5",
       "n": "Arctiva Center",
       "t": "Welcome, drivers, updates and extras.",
-      "s": "wip"
+      "s": "done"
     },
     {
       "v": "0.6",
       "n": "Apps and Windows",
-      "t": "Store and Windows compatibility.",
-      "s": "planned"
+      "t": "Store with Arch, Flathub and optional AUR; dialog for .exe and .msi.",
+      "s": "done"
     },
     {
       "v": "0.7",
       "n": "Identity",
-      "t": "GRUB theme, boot screen, login, Plasma theme, wallpapers.",
-      "s": "planned"
+      "t": "GRUB theme, boot screen, login screen, Plasma theme and wallpapers.",
+      "s": "done"
     },
     {
       "v": "0.8–0.9",
@@ -263,10 +285,11 @@
     "Hibernation won't be in 1.0; suspend works.",
     "UEFI machines only.",
     "NVIDIA GTX 900/1000 cards use the free driver.",
-    "Some Windows programs and anti-cheat games may not work."
+    "Some Windows programs and anti-cheat games may not work.",
+    "With disk encryption, GRUB asks for the password in text mode before loading the theme; that is normal."
   ],
   "noiso_h": "No ISO to download yet",
-  "noiso_p": "Arctiva is in development, before its first beta. If you want to try it, you can build the ISO from the source code.",
+  "noiso_p": "Arctiva is in development, before its first beta. If you want to try it, you can build the ISO from the source code. The ISO weighs about 1.8 GiB.",
   "community_h": "Community",
   "community_p": "Ask a question, follow the news or report a bug. It all happens on GitHub, and you need a free account to post.",
   "comm_discussions": "Questions and discussions",

@@ -25,7 +25,7 @@
   "roadmap_more": "Detall complet al full de ruta del projecte.",
   "nav_features": "Característiques",
   "nav_install": "Instal·lació",
-  "hero_badge": "Pre-beta · versió 0.4.0",
+  "hero_badge": "Pre-beta · versió 0.7.0",
   "scroll_hint": "Desplaça",
   "about_h": "Arch Linux per al dia a dia",
   "about_p": "Arctiva és per a qui ve de Windows o vol Arch sense muntar-lo a mà. Manté el millor d'Arch (repositoris oficials sense modificar, pacman i rolling release) i afegeix el que li falta per a l'ús quotidià: instal·lador gràfic, un escriptori KDE Plasma de manejament proper a Windows, actualitzacions senzilles amb instantànies automàtiques a les quals tornar, i jocs i controladors gràfics sense complicacions.",
@@ -64,17 +64,22 @@
     {
       "s": "done",
       "h": "ISO live i instal·lador gràfic",
-      "p": "Prova l'escriptori KDE Plasma complet sense instal·lar res i després instal·la amb un assistent basat en Calamares i amb disseny propi d'Arctiva. Instal·lació sense connexió: copia el sistema live ja provat, així que és ràpida."
+      "p": "Prova l'escriptori complet sense instal·lar res i després instal·la amb Calamares, amb perfils Bàsic, Jocs i Oficina, xifratge de disc opcional i nucli LTS opcional. Instal·lació sense connexió: copia el sistema live ja provat, així que és ràpida. Només UEFI."
+    },
+    {
+      "s": "done",
+      "h": "Aspecte propi",
+      "p": "Escriptori KDE Plasma a l'estil de Windows: barra de tasques a baix amb icones centrades, menú d'inici amb cercador, safata i rellotge. Mode clar per defecte i mode fosc, fons «Òrbita» i tipografia Outfit. Menú d'arrencada (GRUB) amb tema propi i sempre visible, pantalla d'arrencada animada (Plymouth) i inici de sessió amb el fons d'Arctiva."
     },
     {
       "s": "done",
       "h": "Instantànies de Btrfs",
-      "p": "Btrfs amb compressió zstd. Snapper i snap-pac fan una instantània abans i després de cada canvi de paquets, i GRUB permet arrencar-ne qualsevol."
+      "p": "Btrfs amb Snapper: se'n conserven com a màxim 10 i es poden arrencar des del menú de GRUB."
     },
     {
       "s": "done",
       "h": "KDE Plasma 6 sobre Wayland",
-      "p": "Menú, barra de tasques i safata a l'estil de Windows des del primer minut. Dolphin, pantalles d'alta freqüència (VRR), HDR; les aplicacions X11 antigues segueixen funcionant amb Xwayland."
+      "p": "Dolphin, pantalles d'alta freqüència (VRR), HDR; les aplicacions X11 antigues continuen funcionant amb Xwayland."
     },
     {
       "s": "done",
@@ -84,22 +89,27 @@
     {
       "s": "done",
       "h": "Controladors gràfics",
-      "p": "AMD i Intel funcionen de sèrie. NVIDIA GTX 16 / RTX 20 i posteriors es detecten i instal·len nvidia-open automàticament. Les GTX 900/1000 usen el controlador lliure i t'expliquem les opcions."
+      "p": "AMD i Intel funcionen de sèrie. NVIDIA GTX 16 / RTX 20 i posteriors es detecten i s'instal·la nvidia-open automàticament. Les GTX 900/1000 usen el controlador lliure i t'expliquen les opcions."
     },
     {
       "s": "done",
       "h": "Jocs",
-      "p": "multilib activat de sèrie; Steam, Lutris, GameMode, MangoHud i Gamescope al perfil Jocs. Heroic, ProtonPlus i Bottles estan previstos."
+      "p": "multilib activat de sèrie; Steam, Lutris, GameMode, MangoHud i Gamescope al perfil Jocs. Heroic Games Launcher i ProtonPlus estan disponibles com a extres (Flatpak)."
     },
     {
-      "s": "wip",
+      "s": "done",
       "h": "Arctiva Center",
-      "p": "Una sola aplicació pròpia (Python + Qt/PySide6) per a actualitzacions, controladors i extres. La finestra base ja existeix i està publicada; els seus mòduls s'estan programant."
+      "p": "Una sola aplicació pròpia amb les pàgines Benvinguda, Personalització, Actualitzacions, Aplicacions, Controladors i Extres. En lloc de Discover, la botiga és el propi Center."
     },
     {
-      "s": "planned",
-      "h": "Aplicacions i programes de Windows",
-      "p": "Una botiga amb repositoris oficials, Flathub i AUR clarament diferenciats, i Bottles per a arxius .exe i .msi, amb notes de compatibilitat."
+      "s": "done",
+      "h": "Botiga d'aplicacions",
+      "p": "Cerca i instal·la programes dels repositoris oficials d'Arch i de Flathub, amb l'origen sempre visible i una font recomanada. Si hi ha actualitzacions pendents, et demana actualitzar abans per no deixar el sistema a mitges. L'AUR està disponible però desactivat de sèrie: en activar-lo hi ha un avís, abans de cada instal·lació cal llegir el PKGBUILD i les seves actualitzacions són manuals i mostren què ha canviat."
+    },
+    {
+      "s": "done",
+      "h": "Programes de Windows",
+      "p": "L'extra «Programes de Windows» instal·la Bottles (Flatpak). En obrir un .exe o .msi, un diàleg propi explica què passarà, obre l'arxiu amb Bottles i enllaça a WineHQ AppDB, ProtonDB i Are We Anti-Cheat Yet?. No tot funciona: per exemple, els jocs amb anti-trampes."
     }
   ],
   "install_h": "Instal·lació en deu passos",
@@ -164,15 +174,23 @@
     }
   ],
   "center_h": "Arctiva Center",
-  "center_p": "Una aplicació que reuneix les eines d'Arctiva, amb l'aspecte de Plasma. En desenvolupament (fase 4, versió 0.5.0).",
+  "center_p": "Una aplicació que reuneix les eines d'Arctiva, amb l'aspecte de Plasma.",
   "center": [
+    {
+      "h": "Benvinguda",
+      "p": "Pàgina d'inici del Center."
+    },
+    {
+      "h": "Personalització",
+      "p": "Mode clar, fosc o automàtic, color d'accent, fons, barra centrada o a l'esquerra, barra flotant, mida del text, escala de pantalla i llum nocturna. Inclou «Restaurar l'aspecte d'Arctiva» i «Configuració avançada»."
+    },
     {
       "h": "Actualitzacions",
       "p": "Llegeix les notícies d'archlinux.org des de la teva última actualització i bloqueja l'actualització fins que llegeixis les que exigeixen intervenció manual. Marca els paquets delicats (kernel, NVIDIA, Mesa, systemd, Plasma), actualitza els Flatpak i ajuda amb els .pacnew."
     },
     {
-      "h": "Missatges d'error comprensibles",
-      "p": "Tradueix les fallades habituals (conflictes, claus, espai al disc, sense xarxa) a missatges comprensibles, sense amagar el text original."
+      "h": "Aplicacions",
+      "p": "La botiga: repositoris oficials d'Arch i Flathub amb l'origen sempre visible, i AUR opcional amb avisos i lectura obligatòria del PKGBUILD."
     },
     {
       "h": "Controladors",
@@ -180,7 +198,11 @@
     },
     {
       "h": "Extres",
-      "p": "Jocs, Oficina, kernel LTS, impressores i tallafoc: instal·lar i treure amb un sol interruptor."
+      "p": "Jocs, Oficina, Programes de Windows (Bottles), Heroic Games Launcher, ProtonPlus, nucli LTS, impressores i tallafoc: instal·lar i treure amb un sol interruptor."
+    },
+    {
+      "h": "Missatges d'error comprensibles",
+      "p": "Tradueix les fallades habituals (conflictes, claus, espai al disc, sense xarxa) a missatges comprensibles, sense amagar el text original."
     },
     {
       "h": "Permisos d'administrador",
@@ -214,26 +236,26 @@
     {
       "v": "0.4",
       "n": "Repositori i maquinari",
-      "t": "Repositori [arctiva] signat, detecció de gràfiques. Gairebé acabada.",
-      "s": "wip"
+      "t": "Repositori [arctiva] signat (encara sense publicar) i detecció de gràfiques.",
+      "s": "done"
     },
     {
       "v": "0.5",
       "n": "Arctiva Center",
       "t": "Benvinguda, controladors, actualitzacions i extres.",
-      "s": "wip"
+      "s": "done"
     },
     {
       "v": "0.6",
       "n": "Aplicacions i Windows",
-      "t": "Botiga i compatibilitat amb Windows.",
-      "s": "planned"
+      "t": "Botiga amb Arch, Flathub i AUR opcional; diàleg per a .exe i .msi.",
+      "s": "done"
     },
     {
       "v": "0.7",
       "n": "Identitat",
       "t": "Tema de GRUB, pantalla d'arrencada, inici de sessió, tema de Plasma i fons.",
-      "s": "planned"
+      "s": "done"
     },
     {
       "v": "0.8–0.9",
@@ -263,10 +285,11 @@
     "La hibernació no hi serà a la 1.0; la suspensió sí que funciona.",
     "Només equips amb UEFI.",
     "Les NVIDIA GTX 900/1000 usen el controlador lliure.",
-    "Alguns programes de Windows i jocs amb antitrampes poden no funcionar."
+    "Alguns programes de Windows i jocs amb antitrampes poden no funcionar.",
+    "Amb el xifratge de disc, GRUB demana la contrasenya en mode text abans de carregar el tema; és normal."
   ],
   "noiso_h": "Encara no hi ha ISO per descarregar",
-  "noiso_p": "Arctiva està en desenvolupament, abans de la primera beta. Si vols provar-la, pots construir la ISO des del codi font.",
+  "noiso_p": "Arctiva està en desenvolupament, abans de la primera beta. Si vols provar-la, pots construir la ISO des del codi font. La ISO pesa unes 1,8 GiB.",
   "community_h": "Comunitat",
   "community_p": "Pregunta, segueix les novetats o explica'ns un error. Tot es fa a GitHub i cal un compte gratuït per escriure.",
   "comm_discussions": "Preguntes i debats",

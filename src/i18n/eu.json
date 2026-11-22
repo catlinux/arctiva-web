@@ -25,7 +25,7 @@
   "roadmap_more": "Xehetasun guztiak proiektuaren ibilbide-orrian.",
   "nav_features": "Ezaugarriak",
   "nav_install": "Instalazioa",
-  "hero_badge": "Pre-beta · 0.4.0 bertsioa",
+  "hero_badge": "Pre-beta · 0.7.0 bertsioa",
   "scroll_hint": "Jaitsi",
   "about_h": "Arch Linux egunerokoan erabiltzeko",
   "about_p": "Arctiva Windows-etik datozenentzat da, edo Arch eskuz muntatu nahi ez dutenentzat. Arch-en onena mantentzen du (aldatu gabeko biltegi ofizialak, pacman eta rolling release) eta egunerokotasunerako falta zaiona gehitzen du: instalatzaile grafikoa, Windows-en antzeko KDE Plasma mahaigaina, eguneratze errazak eta itzultzeko berreskuratze-puntu automatikoak, eta konplikaziorik gabeko jolasak eta kontrolatzaile grafikoak.",
@@ -64,17 +64,22 @@
     {
       "s": "done",
       "h": "ISO live eta instalatzaile grafikoa",
-      "p": "Probatu KDE Plasma mahaigain osoa ezer instalatu gabe, eta gero instalatu Calamares-en oinarritutako eta Arctiva-ren diseinu propioa duen laguntzailearekin. Konexiorik gabeko instalazioa: probatutako sistema live-a kopiatzen du, beraz azkarra da."
+      "p": "Probatu mahaigain osoa ezer instalatu gabe eta gero instalatu Calamares-ekin, Oinarrizko, Jolasak eta Bulegoa profilekin, aukerako disko-zifratzearekin eta aukerako LTS nukleoarekin. Konexiorik gabeko instalazioa: probatutako sistema live kopiatzen du, beraz azkarra da. UEFI soilik."
+    },
+    {
+      "s": "done",
+      "h": "Itxura propioa",
+      "p": "KDE Plasma mahaigaina Windows-en estiloan: beheko ataza-barra ikono zentratuekin, bilatzailedun hasiera-menua, erretilua eta ordularia. Modu argia lehenespenez eta modu iluna, «Orbita» atzeko planoa eta Outfit letra-tipoa. GRUB abio-menua tema propioarekin eta beti ikusgai, abio-pantaila animatua (Plymouth) eta saio-hasiera Arctiva-ren atzeko planoarekin."
     },
     {
       "s": "done",
       "h": "Btrfs berreskuratze-puntuak",
-      "p": "Btrfs zstd konpresioarekin. Snapper eta snap-pac-ek berreskuratze-puntu bat sortzen dute pakete-aldaketa bakoitzaren aurretik eta ondoren, eta GRUB-ek edozein abiarazten uzten du."
+      "p": "Btrfs Snapper-ekin: gehienez 10 gordetzen dira eta GRUB menutik abiarazi daitezke."
     },
     {
       "s": "done",
       "h": "KDE Plasma 6 Wayland gainean",
-      "p": "Menua, zeregin-barra eta erretilua Windows-en estilokoak lehen minututik. Dolphin, maiztasun handiko pantailak (VRR), HDR; X11 aplikazio zaharrek Xwayland-ekin funtzionatzen jarraitzen dute."
+      "p": "Dolphin, frekuentzia altuko pantailak (VRR), HDR; X11 aplikazio zaharrek Xwayland-ekin funtzionatzen dute."
     },
     {
       "s": "done",
@@ -84,22 +89,27 @@
     {
       "s": "done",
       "h": "Kontrolatzaile grafikoak",
-      "p": "AMD eta Intel berez funtzionatzen dute. NVIDIA GTX 16 / RTX 20 eta berriagoak detektatu eta nvidia-open automatikoki instalatzen da. GTX 900/1000-ek kontrolatzaile librea erabiltzen dute eta aukerak azaltzen zaizkizu."
+      "p": "AMD eta Intel berez dabiltza. NVIDIA GTX 16 / RTX 20 eta berriagoak detektatzen dira eta nvidia-open automatikoki instalatzen da. GTX 900/1000 kontrolatzaile librearekin dabiltza eta aukerak azaltzen zaizkizu."
     },
     {
       "s": "done",
       "h": "Jolasak",
-      "p": "multilib berez aktibatuta; Steam, Lutris, GameMode, MangoHud eta Gamescope Jolasak profilean. Heroic, ProtonPlus eta Bottles aurreikusita daude."
+      "p": "multilib berez aktibatuta; Steam, Lutris, GameMode, MangoHud eta Gamescope Jolasak profilean. Heroic Games Launcher eta ProtonPlus gehigarri gisa daude eskuragarri (Flatpak)."
     },
     {
-      "s": "wip",
+      "s": "done",
       "h": "Arctiva Center",
-      "p": "Aplikazio propio bakarra (Python + Qt/PySide6) eguneratzeetarako, kontrolatzaileetarako eta gehigarrietarako. Oinarrizko leihoa badago eta argitaratuta dago; bere moduluak programatzen ari dira."
+      "p": "Aplikazio propio bakarra Ongietorria, Pertsonalizazioa, Eguneratzeak, Aplikazioak, Kontrolatzaileak eta Gehigarriak orriekin. Discover-en ordez, denda Center bera da."
     },
     {
-      "s": "planned",
-      "h": "Aplikazioak eta Windows-eko programak",
-      "p": "Biltegi ofizialak, Flathub eta AUR argi bereizten dituen denda bat, eta Bottles .exe eta .msi fitxategietarako, bateragarritasunari buruzko oharrekin."
+      "s": "done",
+      "h": "Aplikazio-denda",
+      "p": "Bilatu eta instalatu programak Arch-en biltegi ofizialetatik eta Flathub-etik, jatorria beti ikusgai eta iturri gomendatu batekin. Eguneratze zain badaude, aurrez eguneratzeko eskatzen du, sistema erdizka ez uzteko. AUR eskuragarri dago baina berez desaktibatuta: aktibatzean abisu bat dago, instalazio bakoitzaren aurretik PKGBUILD irakurri behar da eta bere eguneratzeak eskuzkoak dira eta zer aldatu den erakusten dute."
+    },
+    {
+      "s": "done",
+      "h": "Windows-eko programak",
+      "p": "«Windows-eko programak» gehigarriak Bottles instalatzen du (Flatpak). .exe edo .msi bat irekitzean, elkarrizketa-koadro propio batek zer gertatuko den azaltzen du, fitxategia Bottles-ekin irekitzen du eta WineHQ AppDB, ProtonDB eta Are We Anti-Cheat Yet? helbideetara esteka egiten du. Ez dabil dena: adibidez, iruzur-aurkako sistema duten jolasak."
     }
   ],
   "install_h": "Instalazioa hamar urratsetan",
@@ -164,15 +174,23 @@
     }
   ],
   "center_h": "Arctiva Center",
-  "center_p": "Arctiva-ren tresnak biltzen dituen aplikazio bat, Plasma-ren itxurarekin. Garatzen (4. fasea, 0.5.0 bertsioa).",
+  "center_p": "Arctiva-ren tresnak biltzen dituen aplikazio bat, Plasma-ren itxurarekin.",
   "center": [
+    {
+      "h": "Ongietorria",
+      "p": "Center-aren hasiera-orria."
+    },
+    {
+      "h": "Pertsonalizazioa",
+      "p": "Modu argia, iluna edo automatikoa, azentu-kolorea, atzeko planoa, ataza-barra zentratua edo ezkerrean, barra flotatzailea, testu-tamaina, pantaila-eskala eta gau-argia. «Leheneratu Arctiva-ren itxura» eta «Ezarpen aurreratuak» barne."
+    },
     {
       "h": "Eguneratzeak",
       "p": "Azken eguneratzetik archlinux.org-eko berriak irakurtzen ditu eta eguneratzea blokeatzen du eskuzko esku-hartzea eskatzen dutenak irakurri arte. Pakete delikatuak markatzen ditu (kernel, NVIDIA, Mesa, systemd, Plasma), Flatpak-ak eguneratzen ditu eta .pacnew-ekin laguntzen du."
     },
     {
-      "h": "Errore-mezu ulergarriak",
-      "p": "Ohiko hutsegiteak (gatazkak, gakoak, disko-lekua, sarerik eza) mezu ulergarri bihurtzen ditu, jatorrizko testua ezkutatu gabe."
+      "h": "Aplikazioak",
+      "p": "Denda: Arch-en biltegi ofizialak eta Flathub jatorria beti ikusgai, eta AUR aukerakoa abisuekin eta PKGBUILD irakurtzeko derrigorrezko urratsarekin."
     },
     {
       "h": "Kontrolatzaileak",
@@ -180,7 +198,11 @@
     },
     {
       "h": "Gehigarriak",
-      "p": "Jolasak, Bulegoa, LTS kernela, inprimagailuak eta suhesia: instalatu eta kendu etengailu batekin."
+      "p": "Jolasak, Bulegoa, Windows-eko programak (Bottles), Heroic Games Launcher, ProtonPlus, LTS nukleoa, inprimagailuak eta suebakia: interruptore bakarrarekin instalatu eta kendu."
+    },
+    {
+      "h": "Errore-mezu ulergarriak",
+      "p": "Ohiko hutsegiteak (gatazkak, gakoak, disko-lekua, sarerik eza) mezu ulergarri bihurtzen ditu, jatorrizko testua ezkutatu gabe."
     },
     {
       "h": "Administratzaile-baimenak",
@@ -214,26 +236,26 @@
     {
       "v": "0.4",
       "n": "Biltegia eta hardwarea",
-      "t": "[arctiva] biltegi sinatua, grafikoen detekzioa. Ia amaituta.",
-      "s": "wip"
+      "t": "[arctiva] biltegi sinatua (oraindik argitaratu gabe) eta grafikoen detekzioa.",
+      "s": "done"
     },
     {
       "v": "0.5",
       "n": "Arctiva Center",
       "t": "Ongietorria, kontrolatzaileak, eguneratzeak eta gehigarriak.",
-      "s": "wip"
+      "s": "done"
     },
     {
       "v": "0.6",
       "n": "Aplikazioak eta Windows",
-      "t": "Denda eta Windows-ekiko bateragarritasuna.",
-      "s": "planned"
+      "t": "Arch, Flathub eta AUR aukerakoa dituen denda; .exe eta .msi-rako elkarrizketa-koadroa.",
+      "s": "done"
     },
     {
       "v": "0.7",
       "n": "Nortasuna",
-      "t": "GRUB gaia, abio-pantaila, saio-hasiera, Plasma gaia eta horma-paperak.",
-      "s": "planned"
+      "t": "GRUB gaia, abio-pantaila, saio-hasiera, Plasma gaia eta atzeko planoak.",
+      "s": "done"
     },
     {
       "v": "0.8–0.9",
@@ -263,10 +285,11 @@
     "Hibernazioa ez dago 1.0-n; etenaldiak funtzionatzen du.",
     "UEFI duten ekipoak soilik.",
     "NVIDIA GTX 900/1000-ek kontrolatzaile librea erabiltzen dute.",
-    "Windows-eko zenbait programak eta iruzur-aurkako zenbait jokok ez dute funtzionatu ahal izango."
+    "Windows-eko zenbait programak eta iruzur-aurkako zenbait jokok ez dute funtzionatu ahal izango.",
+    "Disko-zifratzearekin, GRUB-ek pasahitza testu-moduan eskatzen du gaia kargatu aurretik; normala da."
   ],
   "noiso_h": "Oraindik ez dago ISOrik deskargatzeko",
-  "noiso_p": "Arctiva garatzen ari da, lehen betaren aurretik. Probatu nahi baduzu, ISOa iturburu-kodetik eraiki dezakezu.",
+  "noiso_p": "Arctiva garatzen ari da, lehen betaren aurretik. Probatu nahi baduzu, ISOa iturburu-kodetik eraiki dezakezu. ISOak 1,8 GiB inguru pisatzen ditu.",
   "community_h": "Komunitatea",
   "community_p": "Galdetu, jarraitu berriak edo jakinarazi errore bat. Dena GitHub-en egiten da eta kontu doako bat behar da idazteko.",
   "comm_discussions": "Galderak eta eztabaidak",
