@@ -1,0 +1,9 @@
+---
+import { useT } from '../i18n/ui';
+import type { Lang } from '../i18n/routes';
+interface Props { lang: Lang; s: string }
+const { lang, s } = Astro.props;
+const { d } = useT(lang);
+const label = ({ done: d.tag_done, wip: d.tag_wip, planned: d.tag_planned } as Record<string, string>)[s] ?? s;
+---
+<span class={`tag tag-${s}`}>{label}</span>

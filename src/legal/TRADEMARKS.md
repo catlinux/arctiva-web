@@ -1,8 +1,8 @@
 # Arctiva name and logo policy
 
-> Versión en castellano: [TRADEMARKS.es.md](TRADEMARKS.es.md)
+> [Versión en castellano](/es/marca/)
 
-The Arctiva code is free software under the [GPL-3.0-or-later](LICENSE). The **Arctiva name and logo** (the files in `branding/logo/` and their variants) are not covered by that licence. They belong to CatLinux and identify the official project.
+The Arctiva code is free software under the [GPL-3.0-or-later](https://github.com/catlinux/arctiva/blob/main/LICENSE). The **Arctiva name and logo** (the files in `branding/logo/` and their variants) are not covered by that licence. They belong to CatLinux and identify the official project.
 
 ## Allowed without asking
 

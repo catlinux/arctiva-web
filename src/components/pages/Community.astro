@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import { type Lang } from '../../i18n/routes';
+import { useT } from '../../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { d, u, site } = useT(lang);
+const m = u.meta.community;
+const help = [
+  { h: d.comm_discussions, href: site.community.discussions },
+  { h: d.comm_releases, href: site.community.releases },
+  { h: d.comm_issues, href: site.community.issues },
+];
+---
+<Base lang={lang} page="community" title={m.title} description={m.desc}>
+  <PageHead title={d.community_h} lead={d.community_p} />
+  <section class="sec">
+    <div class="wrap">
+      <ul class="cards cards-3">
+        {help.map((l) => (
+          <li class="card"><h3><a class="card-link" href={l.href} target="_blank" rel="noopener noreferrer">{l.h}</a></h3></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>{d.support_h}</h2>
+        <p class="intro">{d.support_p}</p>
+      </header>
+      <div class="cards cards-2">
+        <div class="card">
+          <h3>{d.sp_gh_h}</h3>
+          <p>{d.sp_gh_p}</p>
+          <p class="cta"><a class="btn btn-primary" href={site.support.sponsors} target="_blank" rel="noopener noreferrer">{d.sp_gh_btn}</a></p>
+        </div>
+        <div class="card">
+          <h3>{d.sp_coffee_h}</h3>
+          <p>{d.sp_coffee_p}</p>
+          <p class="cta"><a class="btn" href={site.support.coffee} target="_blank" rel="noopener noreferrer">{d.sp_coffee_btn}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

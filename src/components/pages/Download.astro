@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import Icon from '../Icon.astro';
+import { type Lang } from '../../i18n/routes';
+import { useT } from '../../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { d, u, site } = useT(lang);
+const m = u.meta.download;
+---
+<Base lang={lang} page="download" title={m.title} description={m.desc}>
+  <PageHead title={m.title} />
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="status">
+        <div>
+          <h2>{d.noiso_h}</h2>
+          <p>{d.noiso_p}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap two">
+      <div>
+        <h2>{d.reqs_h}</h2>
+        <ul class="ticks">{d.reqs.map((r) => <li>{r}</li>)}</ul>
+      </div>
+      <div>
+        <h2>{d.limits_h}</h2>
+        <ul class="ticks ticks-note">{d.limits.map((r) => <li>{r}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>{u.build_h}</h2>
+        <p class="intro">{u.build_p}</p>
+      </header>
+      <p class="cta">
+        <a class="btn btn-primary" href={site.code_url} target="_blank" rel="noopener noreferrer"><Icon name="code" />{d.link_code}</a>
+        <a class="btn" href={site.links.architecture[lang]} target="_blank" rel="noopener noreferrer">{d.link_arch}</a>
+      </p>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import { Content as En } from '../../legal/TRADEMARKS.md';
+import { Content as Es } from '../../legal/TRADEMARKS.es.md';
+import { type Lang } from '../../i18n/routes';
+import { useT } from '../../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { u } = useT(lang);
+const m = u.meta.trademarks;
+---
+<Base lang={lang} page="trademarks" title={m.title} description={m.desc}>
+  <section class="sec">
+    <div class="wrap prose">
+      {lang === 'es' ? <Es /> : <En />}
+    </div>
+  </section>
+</Base>

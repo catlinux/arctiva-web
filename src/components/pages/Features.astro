@@ -1,0 +1,79 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import StatusTag from '../StatusTag.astro';
+import { type Lang } from '../../i18n/routes';
+import { useT } from '../../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { d, u } = useT(lang);
+const m = u.meta.features;
+---
+<Base lang={lang} page="features" title={m.title} description={m.desc}>
+  <PageHead title={m.title} lead={m.lead} />
+
+  <section class="sec">
+    <div class="wrap">
+      <header class="sec-head"><h2>{d.feat_h}</h2></header>
+      <ul class="cards cards-2">
+        {d.feat.map((f) => (
+          <li class="card">
+            <StatusTag lang={lang} s={f.s} />
+            <h3>{f.h}</h3>
+            <p>{f.p}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <header class="sec-head"><h2>{d.principles_h}</h2></header>
+      <ul class="cards cards-3">
+        {d.principles.map((p) => (
+          <li class="card"><h3>{p.h}</h3><p>{p.p}</p></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap split">
+      <div>
+        <h2>{d.snap_h}</h2>
+        <p class="intro">{d.snap_p}</p>
+      </div>
+      <pre class="term" aria-label={d.snap_h}>{d.snap_lines.map((l) => (
+        <span class={`t-${l.k}`}>{l.k === 'cmd' ? '$ ' : ''}{l.t}{'\n'}</span>
+      ))}</pre>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>{d.profiles_h}</h2>
+        <p class="intro">{d.profiles_p}</p>
+      </header>
+      <ul class="cards cards-3">
+        {d.profiles.map((p) => (
+          <li class="card"><h3>{p.h}</h3><p>{p.p}</p><p class="meta">{p.m}</p></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>{d.install_h}</h2>
+        <p class="intro">{d.install_p}</p>
+      </header>
+      <ol class="steps">
+        {d.install_steps.map((s) => <li>{s}</li>)}
+      </ol>
+    </div>
+  </section>
+</Base>

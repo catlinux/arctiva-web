@@ -38,6 +38,18 @@ const ui = {
     nf_title: 'Page not found',
     nf_text: 'This page does not exist or has moved.',
     nf_back: 'Go to the home page',
+    close: 'Close',
+    build_h: 'Build it from the source code',
+    build_p: 'Until there is an ISO, you can build it yourself from the source code in the project repository.',
+    meta: {
+      features: { title: 'Features', desc: 'Everything Arctiva includes: graphical installer, KDE Plasma desktop, Btrfs snapshots, drivers, games and Windows programs, on top of Arch Linux.', lead: 'What Arctiva includes, from the graphical installer to the snapshots that let you undo a failed update.' },
+      center: { title: 'Arctiva Center', desc: 'Arctiva Center brings personalisation, updates, the app store, drivers and extras together in one native app that looks like Plasma.', lead: 'The app that brings Arctiva\'s tools together, and the store where you install programs.' },
+      screenshots: { title: 'Screenshots', desc: 'Screenshots of Arctiva 0.7.0: desktop, installer, GRUB snapshots, Arctiva Center, the app store and the .exe dialog.', lead: '' },
+      download: { title: 'Download and requirements', desc: 'Arctiva has no ISO to download yet. Planned requirements, things to know and how to build the ISO from the source code.', lead: '' },
+      roadmap: { title: 'Roadmap', desc: 'The Arctiva roadmap, from the foundations to the first stable release: what is already complete (up to 0.7) and what is planned.', lead: '' },
+      community: { title: 'Community and support', desc: 'Ask questions, follow releases and report bugs on GitHub, or support Arctiva with a GitHub sponsorship or a coffee.', lead: '' },
+      trademarks: { title: 'Trademark policy', desc: 'Policy for the Arctiva name and logo: what you can do without asking and what needs written permission from CatLinux.', lead: '' },
+    } as Record<string, { title: string; desc: string; lead: string }>,
   },
   es: {
     page: {
@@ -70,6 +82,18 @@ const ui = {
     nf_title: 'Página no encontrada',
     nf_text: 'Esta página no existe o ha cambiado de sitio.',
     nf_back: 'Ir a la portada',
+    close: 'Cerrar',
+    build_h: 'Constrúyela desde el código fuente',
+    build_p: 'Mientras no haya ISO, puedes construirla tú desde el código fuente del repositorio del proyecto.',
+    meta: {
+      features: { title: 'Características', desc: 'Todo lo que incluye Arctiva: instalador gráfico, KDE Plasma, instantáneas de Btrfs, controladores, juegos y programas de Windows, sobre Arch Linux.', lead: 'Qué incluye Arctiva, desde el instalador gráfico hasta las instantáneas que deshacen una actualización fallida.' },
+      center: { title: 'Arctiva Center', desc: 'Arctiva Center reúne personalización, actualizaciones, tienda, controladores y extras en una sola aplicación nativa con el aspecto de Plasma.', lead: 'La aplicación que reúne las herramientas de Arctiva y la tienda donde instalas programas.' },
+      screenshots: { title: 'Capturas', desc: 'Capturas de Arctiva 0.7.0: escritorio, instalador, instantáneas en GRUB, Arctiva Center, la tienda y el diálogo de .exe.', lead: '' },
+      download: { title: 'Descarga y requisitos', desc: 'Arctiva aún no tiene ISO para descargar. Requisitos previstos, cosas que conviene saber y cómo construir la ISO desde el código fuente.', lead: '' },
+      roadmap: { title: 'Hoja de ruta', desc: 'La hoja de ruta de Arctiva, de los cimientos a la primera versión estable: lo que ya está completo (hasta la 0.7) y lo que está previsto.', lead: '' },
+      community: { title: 'Comunidad y apoyo', desc: 'Pregunta, sigue las versiones y avisa de fallos en GitHub, o apoya Arctiva con un patrocinio de GitHub o un café.', lead: '' },
+      trademarks: { title: 'Política de marca', desc: 'Política del nombre y el logo de Arctiva: qué puedes hacer sin pedir permiso y qué necesita permiso por escrito de CatLinux.', lead: '' },
+    } as Record<string, { title: string; desc: string; lead: string }>,
   },
 };
 

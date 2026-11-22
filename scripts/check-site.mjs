@@ -30,7 +30,11 @@ for (const file of walk(root).filter((f) => f.endsWith('.html'))) {
   if (/\sstyle\s*=/i.test(html)) fail('atributo style= (bloqueado por el CSP)');
   if (/<style[\s>]/i.test(html)) fail('<style> en línea (bloqueado por el CSP)');
   if (!/<title>[^<]+<\/title>/.test(html)) fail('sin <title>');
-  if (!/<meta name="description" content="[^"]+"/.test(html)) fail('sin meta description');
+  const title = html.match(/<title>([^<]+)<\/title>/)?.[1];
+  if (title && title.length > 60) fail(`título de ${title.length} caracteres (máximo 60)`);
+  const desc = html.match(/<meta name="description" content="([^"]+)"/)?.[1];
+  if (!desc) fail('sin meta description');
+  else if (desc.length > 155) fail(`descripción de ${desc.length} caracteres (máximo 155)`);
   if (!is404) {
     if (!/<link rel="canonical"/.test(html)) fail('sin canonical');
     if (!/hreflang="x-default"/.test(html)) fail('sin hreflang');

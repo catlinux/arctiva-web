@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import Icon from '../Icon.astro';
+import { routes, type Lang } from '../../i18n/routes';
+import { useT } from '../../i18n/ui';
+import { shot } from '../../lib/shots';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { d, u } = useT(lang);
+const m = u.meta.center;
+const caption = (f: string) => d.shots.find((s) => s.f === f)?.h ?? '';
+const strip = ['center-bienvenida', 'center-personalizacion', 'center-actualizaciones', 'center-controladores', 'center-extras', 'tienda'];
+---
+<Base lang={lang} page="center" title={m.title} description={m.desc}>
+  <PageHead title={m.title} lead={d.center_p} />
+
+  <section class="sec">
+    <div class="wrap">
+      <ul class="cards cards-3">
+        {d.center.map((c) => (
+          <li class="card"><h3>{c.h}</h3><p>{c.p}</p></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <header class="sec-head"><h2>{u.page.screenshots}</h2></header>
+      <div class="strip">
+        {strip.map((f) => (
+          <figure class="shot">
+            <a href={routes.screenshots[lang]}>
+              <Image src={shot(f)} alt={caption(f)} widths={[480, 800]} sizes="(min-width: 900px) 380px, 100vw" />
+            </a>
+            <figcaption>{caption(f)}</figcaption>
+          </figure>
+        ))}
+      </div>
+      <p class="more"><a class="link-arrow" href={routes.screenshots[lang]}>{u.home_more_shots}<Icon name="arrow" /></a></p>
+    </div>
+  </section>
+</Base>

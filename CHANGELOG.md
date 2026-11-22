@@ -4,10 +4,17 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.6.0] - 2026-11-22
+
+### Añadido
+- Web multipágina: características, Arctiva Center, capturas (con visor), descarga y requisitos, hoja de ruta, comunidad y apoyo, y política de marca, en inglés y castellano.
+
 ### Cambiado
+- Cambian las URL: ya no hay una sola página por idioma. `/en/` pasa a `/` y las rutas en castellano cuelgan de `/es/`.
 - La web pasa a generarse con Astro 7 (antes, `build.py`): plantilla base con cabecera fija, menú móvil, selector de idioma desplegable, conmutador de modo claro/oscuro (claro por defecto), pie con mapa del sitio y portada nueva con los colores del sistema (Arctiva Light y Breeze Dark). Capturas optimizadas a WebP en varios tamaños.
 - Tipografía Outfit (SIL Open Font License 1.1) servida desde la propia web para los titulares, con su crédito en el pie y el texto de la licencia en `/fonts/OFL.txt`.
 - Solo inglés (en la raíz) y castellano (`/es/`); se retiran catalán, gallego y euskera.
+- `scripts/check-site.mjs` comprueba también que el título no pase de 60 caracteres ni la descripción de 155.
 - `scripts/deploy.sh` compila con Astro, comprueba el resultado con `scripts/check-site.mjs` y sustituye `public/` de una vez.
 
 ## [0.5.0] - 2026-11-22

@@ -1,34 +1,30 @@
 # arctiva-web
 
-Web pública de Arctiva (<https://arctiva.techmarc.es>). Sitio estático de una sola página por idioma, con tema oscuro y animaciones por scroll (respeta «reducir movimiento»), sin rastreadores ni recursos de terceros, en cinco idiomas: inglés, castellano, catalán, gallego y euskera.
+Web pública de Arctiva (<https://arctiva.techmarc.es>). Sitio estático multipágina generado con [Astro](https://astro.build), en inglés (raíz) y castellano (`/es/`), con tema claro por defecto y conmutador a oscuro, sin rastreadores ni recursos de terceros.
 
 ## Requisitos
 
-- Python 3 (solo biblioteca estándar) para generar el sitio.
+- Node.js 22 y npm (en el VPS, vía nvm).
 - Apache en el servidor, con los módulos `headers`, `expires` y `deflate`.
 
 ## Estructura
 
-- `src/template.html`: plantilla común. `src/app.js`: animaciones por scroll (se incrusta en cada página por la CSP; la web funciona sin él). Estilos en `assets/style.css`. `src/site.json`: dominio, enlace al repositorio e idiomas.
-- `src/i18n/<idioma>.json`: todo el texto de cada idioma. Todas las claves son obligatorias en todos los idiomas.
-- `src/legal/`: política del nombre y el logo (`TRADEMARKS*.md`), publicada como `/en/trademarks.html` y `/es/trademarks.html`.
-- `assets/`: estilos y logos oficiales (`arctiva-logo.svg`, `arctiva-mark.svg`, `arctiva-mark-mono.svg`, `arctiva-icon.svg`). No se modifican ni se redibujan.
-- `entrada/`: buzón de archivos recibidos (ignorado por git).
-- `build.py`: genera `public/` (no se versiona). `scripts/`: despliegue y vhost.
+- `src/pages/`: rutas (`/…` en inglés, `/es/…` en castellano); cada una solo instancia un componente de `src/components/pages/`. La tabla de URL de cada idioma está en `src/i18n/routes.ts`; los textos de interfaz, en `src/i18n/ui.ts`.
+- `src/data/`: contenido del proyecto por idioma (`en.json`, `es.json`) y `site.json` (dominio, enlaces, versión). `src/legal/`: política del nombre y el logo (`TRADEMARKS*.md`).
+- `src/assets/capturas/`: capturas originales (se optimizan a WebP al compilar). `static/`: logos oficiales (`arctiva-*.svg`, no se modifican), tipografía y su licencia.
+- `scripts/`: `deploy.sh`, `check-site.mjs` (comprueba el resultado) y vhost. `entrada/`: buzón de archivos recibidos (ignorado por git).
+- `dist/` es la salida de la compilación y `public/` lo que sirve Apache; ninguno se versiona.
 
 ## Uso
 
-Generar en local: `python3 build.py` y abrir `public/index.html`.
-
-Para cambiar texto, editar el JSON del idioma, hacer commit y push a `main`, y desplegar:
-
 ```
-ssh vps-forgehost /opt/vps-apps/arctiva-web/scripts/deploy.sh
+npm ci
+npm run dev      # servidor de desarrollo
+npm run build    # genera dist/
+npm run check    # comprueba dist/ (CSS en línea, SEO, enlaces rotos)
 ```
 
-El script hace `git fetch` + `merge --ff-only` de `origin/main` y regenera `public/`. El servidor solo sirve `public/`.
-
-Instalación en el servidor (una sola vez, con sudo): ver `docs/DESPLIEGUE.md`.
+Para publicar: commit y push a `main`, y `ssh vps-forgehost /opt/vps-apps/arctiva-web/scripts/deploy.sh`. Detalles e instalación en el servidor: `docs/DESPLIEGUE.md`.
 
 ## Créditos y licencia
 

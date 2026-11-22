@@ -1,0 +1,59 @@
+---
+import { Picture, getImage } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import PageHead from '../PageHead.astro';
+import { type Lang } from '../../i18n/routes';
+import { useT } from '../../i18n/ui';
+import { shot } from '../../lib/shots';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { d, u } = useT(lang);
+const m = u.meta.screenshots;
+const items = await Promise.all(d.shots.map(async (s) => ({
+  ...s,
+  full: (await getImage({ src: shot(s.f), format: 'webp', width: 1280 })).src,
+})));
+---
+<Base lang={lang} page="screenshots" title={m.title} description={m.desc}>
+  <PageHead title={d.shots_h} lead={d.shots_p} />
+  <section class="sec">
+    <div class="wrap">
+      <div class="strip">
+        {items.map((s) => (
+          <figure class="shot">
+            <a href={s.full} data-viewer data-caption={s.h}>
+              <Picture src={shot(s.f)} alt={s.h} formats={['webp']} fallbackFormat="webp"
+                widths={[480, 800]} sizes="(min-width: 900px) 380px, 100vw" loading="lazy" />
+            </a>
+            <figcaption>{s.h}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <dialog id="viewer" class="viewer" aria-label={d.shots_h}>
+    <form method="dialog"><button class="viewer-close" aria-label={u.close}>×</button></form>
+    <img id="viewer-img" alt="" />
+    <p id="viewer-cap"></p>
+  </dialog>
+  <script is:inline>
+  (function () {
+    var dlg = document.getElementById('viewer');
+    if (!dlg || !dlg.showModal) return;
+    var img = document.getElementById('viewer-img');
+    var cap = document.getElementById('viewer-cap');
+    document.querySelectorAll('a[data-viewer]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        img.src = a.href;
+        img.alt = a.dataset.caption;
+        cap.textContent = a.dataset.caption;
+        dlg.showModal();
+      });
+    });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+  })();
+  </script>
+</Base>

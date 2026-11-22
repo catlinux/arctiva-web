@@ -1,8 +1,8 @@
 # Política del nombre y el logo de Arctiva
 
-> English version: [TRADEMARKS.md](TRADEMARKS.md)
+> [English version](/trademarks/)
 
-El código de Arctiva es software libre bajo la [GPL-3.0-or-later](LICENSE). El **nombre y el logo de Arctiva** (los archivos de `branding/logo/` y sus variantes) no están cubiertos por esa licencia: pertenecen a CatLinux e identifican el proyecto oficial.
+El código de Arctiva es software libre bajo la [GPL-3.0-or-later](https://github.com/catlinux/arctiva/blob/main/LICENSE). El **nombre y el logo de Arctiva** (los archivos de `branding/logo/` y sus variantes) no están cubiertos por esa licencia: pertenecen a CatLinux e identifican el proyecto oficial.
 
 ## Permitido sin pedir permiso
 
