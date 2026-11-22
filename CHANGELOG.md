@@ -4,6 +4,9 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+### Cambiado
+- El botón principal de la portada pasa de «Descarga: próximamente» a «Descargar la beta».
+
 ## [0.7.0] - 2026-11-22
 
 ### Añadido

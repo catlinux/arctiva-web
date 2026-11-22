@@ -10,7 +10,6 @@
 - Buscador Pagefind (necesita `connect-src` y `wasm-unsafe-eval` en el CSP).
 - Donaciones: Monero más adelante (necesita dirección); sección «Colabora» (probar, traducir, reportar fallos).
 - Confirmar si hay plan para Secure Boot y reflejarlo en «Conviene saber».
-- Sustituir «Descarga: próximamente» por el enlace real cuando exista ISO.
 
 ## Descartado
 - Catalán, gallego y euskera: se retiran por decisión del usuario; solo inglés y castellano.
