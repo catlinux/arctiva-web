@@ -25,7 +25,7 @@
   "roadmap_more": "Detalle completo en la hoja de ruta del proyecto.",
   "nav_features": "Características",
   "nav_install": "Instalación",
-  "hero_badge": "Beta · versión 0.8.0",
+  "hero_badge": "Beta · versión 0.8.1",
   "scroll_hint": "Desliza",
   "about_h": "Linux para el día a día",
   "about_p": "Arctiva es para quien viene de Windows o quiere Arch sin montarlo a mano. Mantiene lo mejor de Arch (repositorios oficiales sin modificar, pacman y rolling release) y añade lo que le falta para el uso cotidiano: instalador gráfico, un escritorio KDE Plasma de manejo cercano a Windows, actualizaciones sencillas con instantáneas automáticas a las que volver, y juegos y controladores gráficos sin complicaciones.",
@@ -64,7 +64,7 @@
     {
       "s": "done",
       "h": "ISO live e instalador gráfico",
-      "p": "Prueba el escritorio completo sin instalar nada y después instala con Calamares, con perfiles Básico, Juegos y Oficina, cifrado de disco opcional y kernel LTS opcional. Instalación sin conexión: copia el sistema live ya probado, así que es rápida. Solo UEFI."
+      "p": "Prueba el escritorio completo sin instalar nada y después instala con Calamares, con perfiles Básico, Juegos y Oficina, cifrado de disco opcional y kernel LTS opcional. Instalación sin conexión: copia el sistema live ya probado, así que es rápida. Solo UEFI. Kate, Ark, Okular, Gwenview, Spectacle y KWalletManager no vienen en la ISO: se instalan durante la instalación si hay internet o, si no, la primera vez que el equipo se conecta, con un aviso."
     },
     {
       "s": "done",
@@ -191,15 +191,19 @@
     },
     {
       "h": "Actualizaciones",
-      "p": "Lee las noticias de archlinux.org desde tu última actualización y bloquea la actualización hasta que leas las que exigen intervención manual. Marca los paquetes delicados (kernel, NVIDIA, Mesa, systemd, Plasma), actualiza los Flatpak y ayuda con los .pacnew."
+      "p": "Lee las noticias de archlinux.org desde tu última actualización y bloquea la actualización hasta que leas las que exigen intervención manual. Marca los paquetes delicados (kernel, NVIDIA, Mesa, systemd, Plasma), ayuda con los .pacnew y lo actualiza todo con un solo botón: los repositorios de Arch, Flatpak y, si está activado, el AUR. Los cambios del AUR se revisan antes de empezar, y Flatpak o el AUR se pueden dejar fuera."
     },
     {
       "h": "Aplicaciones",
-      "p": "La tienda: repositorios oficiales de Arch y Flathub con el origen siempre visible, y AUR opcional con avisos y lectura obligatoria del PKGBUILD."
+      "p": "La tienda: repositorios oficiales de Arch y Flathub con el origen siempre visible, y AUR opcional con avisos y lectura obligatoria del PKGBUILD. Las instalaciones van a una cola, con el progreso visible desde cualquier módulo."
     },
     {
       "h": "Controladores",
       "p": "Muestra la gráfica detectada y lo que falta, y lo instala."
+    },
+    {
+      "h": "Energía",
+      "p": "Perfiles de energía incluidos de serie."
     },
     {
       "h": "Extras",
@@ -294,7 +298,7 @@
     "Con el cifrado de disco, GRUB pide la contraseña en modo texto antes de cargar el tema; es normal."
   ],
   "beta_h": "Descarga la ISO beta",
-  "beta_p": "Arctiva 0.8.0 es la primera beta pública: puede haber fallos y se agradece que los cuentes. Descárgala de GitHub Releases y compruébala con los archivos .sha256 y .sig (huella de la clave arriba). La ISO pesa unos 1,8 GiB. También puedes construirla desde el código fuente.",
+  "beta_p": "Arctiva 0.8.1 es una beta pública: puede haber fallos y se agradece que los cuentes. Descárgala de GitHub Releases y compruébala con los archivos .sha256 y .sig (huella de la clave arriba). La ISO pesa unos 1,7 GiB. También puedes construirla desde el código fuente.",
   "community_h": "Comunidad",
   "community_p": "Pregunta, sigue las novedades o cuéntanos un fallo. Todo se hace en GitHub y hace falta una cuenta gratuita para escribir.",
   "comm_discussions": "Preguntas y debates",

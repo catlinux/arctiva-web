@@ -7,7 +7,7 @@
     "es"
   ],
   "code_url": "https://github.com/catlinux/arctiva",
-  "release_latest": "https://github.com/catlinux/arctiva/releases/tag/v0.8.0",
+  "release_latest": "https://github.com/catlinux/arctiva/releases/tag/v0.8.1",
   "repo_key_fingerprint": "C0AE 9639 0DC2 0F79 3A38  0441 B216 D69A 3793 8267",
   "links": {
     "roadmap": {
@@ -36,5 +36,5 @@
     "sponsors": "https://github.com/sponsors/catlinux",
     "coffee": "https://buymeacoffee.com/arctiva"
   },
-  "project_version": "0.8.0"
+  "project_version": "0.8.1"
 }

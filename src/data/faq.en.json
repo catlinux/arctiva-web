@@ -9,7 +9,7 @@
   {
     "q": "Is there an ISO I can download?",
     "a": [
-      "Yes. Arctiva 0.8.0 (beta) is the first public beta and you can download it from [GitHub Releases](https://github.com/catlinux/arctiva/releases/tag/v0.8.0). Before using it, check it with the .sha256 and .sig files published next to it; the steps are on the [Download page](/download/).",
+      "Yes. Arctiva 0.8.1 (beta) is a public beta and you can download it from [GitHub Releases](https://github.com/catlinux/arctiva/releases/tag/v0.8.1). Before using it, check it with the .sha256 and .sig files published next to it; the steps are on the [Download page](/download/).",
       "It is a beta, so expect rough edges. So far it has been tested mainly in virtual machines, and testing on real hardware continues. Please report any problem in the project's repository."
     ]
   },

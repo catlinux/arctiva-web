@@ -4,6 +4,13 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.9.0] - 2026-11-23
+
+### Cambiado
+- Contenido al día con Arctiva 0.8.1 (versión preliminar): versión en la insignia, la descarga, la FAQ y los datos estructurados; enlaces a la release v0.8.1 y a `arctiva-0.8.1-x86_64.iso`; la ISO pesa unos 1,7 GiB.
+- Arctiva Center: «Actualizaciones» describe el botón único (Arch, Flatpak y AUR opcional); «Aplicaciones» menciona la cola de instalaciones con progreso; nuevo apartado «Energía» con los perfiles de energía.
+- «Live ISO e instalador»: Kate, Ark, Okular, Gwenview, Spectacle y KWalletManager no vienen en la ISO y se instalan con internet o la primera vez que el equipo se conecta.
+
 ## [0.8.0] - 2026-11-22
 
 ### Añadido
