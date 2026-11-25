@@ -4,6 +4,15 @@ Formato [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/); versionado 
 
 ## [Sin publicar]
 
+## [0.10.0] - 2026-11-25
+
+### Cambiado
+- Contenido al día con las mejoras posteriores a Arctiva 0.8.1, que llegan a los sistemas instalados al actualizar (la última ISO sigue siendo la 0.8.1):
+  - Descarga y FAQ: las mejoras de Arctiva Center, Arctiva Games y del sistema llegan al actualizar desde Arctiva Center, entre ellas la del apagado y reinicio que parecían colgados.
+  - Tienda y Arctiva Center («Aplicaciones»): búsqueda tolerante a erratas, resultados paginados, selección múltiple para la cola, orden por relevancia en el AUR y filtro por votos; el AUR se actualiza desde «Actualizaciones» tras aprobar los cambios.
+  - Arctiva Games (en desarrollo): descarga y comprueba Proton-Wineland por sí mismo; también en la tarjeta «Juegos» de la portada y en la FAQ.
+  - «Ayuda propia»: la ayuda está en las Discussions del repositorio de GitHub.
+
 ## [0.9.0] - 2026-11-23
 
 ### Cambiado

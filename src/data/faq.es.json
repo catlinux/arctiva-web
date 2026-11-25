@@ -9,7 +9,7 @@
   {
     "q": "¿Hay una ISO para descargar?",
     "a": [
-      "Sí. Arctiva 0.8.1 (beta) es una beta pública y puedes descargarla de [GitHub Releases](https://github.com/catlinux/arctiva/releases/tag/v0.8.1). Antes de usarla, compruébala con los archivos .sha256 y .sig que se publican a su lado; los pasos están en la [página de descarga](/es/descargar/).",
+      "Sí. Arctiva 0.8.1 (beta) es una beta pública y puedes descargarla de [GitHub Releases](https://github.com/catlinux/arctiva/releases/tag/v0.8.1). Antes de usarla, compruébala con los archivos .sha256 y .sig que se publican a su lado; los pasos están en la [página de descarga](/es/descargar/). Después de instalar, conviene actualizar para recibir las mejoras posteriores a la 0.8.1.",
       "Es una beta, así que puede haber fallos. Hasta ahora se ha probado sobre todo en máquinas virtuales, y continúan las pruebas en hardware real. Cuenta cualquier problema en el repositorio del proyecto."
     ]
   },
@@ -53,7 +53,7 @@
   {
     "q": "¿Puedo jugar y usar programas de Windows?",
     "a": [
-      "Sí, con límites. El extra Juegos instala Steam (con Proton), Lutris, GameMode, MangoHud y Gamescope. Heroic Games Launcher sirve para Epic Games, GOG y Amazon Games, y ProtonPlus gestiona las versiones de Proton. Los programas de Windows (archivos .exe y .msi) se abren con Bottles. No todo funciona: los juegos con anti-trampas a nivel de kernel suelen no ejecutarse en Linux. Consulta ProtonDB y Are We Anti-Cheat Yet? antes de comprar o instalar un juego."
+      "Sí, con límites. El extra Juegos instala Steam (con Proton), Lutris, GameMode, MangoHud y Gamescope. Heroic Games Launcher sirve para Epic Games, GOG y Amazon Games, y ProtonPlus gestiona las versiones de Proton. Los programas de Windows (archivos .exe y .msi) se abren con Bottles. El extra Arctiva Games, nuevo y poco probado, instala lanzadores como Battle.net, EA app, Ubisoft Connect, GOG Galaxy y Epic Games, y la primera vez descarga Proton-Wineland. No todo funciona: los juegos con anti-trampas a nivel de kernel suelen no ejecutarse en Linux. Consulta ProtonDB y Are We Anti-Cheat Yet? antes de comprar o instalar un juego."
     ]
   },
   {

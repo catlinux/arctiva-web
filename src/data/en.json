@@ -49,7 +49,7 @@
     },
     {
       "h": "Support of its own",
-      "p": "Arctiva will have its own help channels, so nobody gets sent to the Arch forums."
+      "p": "Help is in the Discussions of the GitHub repository, with no need to go to the Arch forums."
     },
     {
       "h": "Open source",
@@ -104,7 +104,7 @@
     {
       "s": "done",
       "h": "App store",
-      "p": "Search and install programs from the official Arch repositories and Flathub, with the source always visible and a recommended one. If updates are pending, it asks you to update first so the system isn't left half-updated. The AUR is available but off by default: turning it on shows a warning, you must read the PKGBUILD before every install, and its updates are manual and show what changed."
+      "p": "Search and install programs from the official Arch repositories and Flathub, with the source always visible and a recommended one. If updates are pending, it asks you to update first so the system isn't left half-updated. The AUR is available but off by default: turning it on shows a warning, you must read the PKGBUILD before every install, and it is updated with the rest of the system from Updates, after you review and approve the changes. Search ignores hyphens, spaces and accents and tolerates typos, results are paginated, and you can tick several applications and add them to the queue at once."
     },
     {
       "s": "done",
@@ -114,7 +114,7 @@
     {
       "s": "wip",
       "h": "Arctiva Games",
-      "p": "An optional Arctiva Center extra (it is not on the ISO) that installs Windows game launchers (Battle.net, EA app, Ubisoft Connect, GOG Galaxy and Epic Games) step by step with Proton or Wine, with a library and shortcuts. It is new and has had little testing on real hardware."
+      "p": "An optional Arctiva Center extra (it is not on the ISO) that installs Windows game launchers (Battle.net, EA app, Ubisoft Connect, GOG Galaxy and Epic Games) step by step with Proton or Wine, with a library and shortcuts. When you open it, or install the extra, it downloads the latest Proton-Wineland (about 350 MB) from its official GitHub releases, checks its SHA-512 sum and makes it the default; it looks for a new version at most once a week. GE-Proton is still available. Arctiva neither hosts nor redistributes either of them. Without a connection, it keeps working with the other runners. It is new and has had little testing on real hardware."
     }
   ],
   "install_h": "Installation in ten steps",
@@ -195,7 +195,7 @@
     },
     {
       "h": "Applications",
-      "p": "The store: official Arch repositories and Flathub with the source always visible, and an optional AUR with warnings and a mandatory PKGBUILD read. Installations go into a queue, with progress visible from any module."
+      "p": "The store: official Arch repositories and Flathub with the source always visible, and an optional AUR with warnings and a mandatory PKGBUILD read. Installations go into a queue, with progress visible from any module, and you can tick several applications and add them at once. Search tolerates typos. AUR results are sorted by relevance (you can switch to votes, popularity or name), and an option hides packages with fewer than 10 votes."
     },
     {
       "h": "Drivers",
@@ -298,7 +298,7 @@
     "With disk encryption, GRUB asks for the password in text mode before loading the theme; that is normal."
   ],
   "beta_h": "Download the beta ISO",
-  "beta_p": "Arctiva 0.8.1 is a public beta: expect rough edges and please report them. Download it from GitHub Releases and check it with the .sha256 and .sig files (key fingerprint above). The ISO weighs about 1.7 GiB. You can also build it from the source code.",
+  "beta_p": "Arctiva 0.8.1 is a public beta: expect rough edges and please report them. Download it from GitHub Releases and check it with the .sha256 and .sig files (key fingerprint above). The ISO weighs about 1.7 GiB. Later improvements to Arctiva Center, Arctiva Games and the system arrive when you update from Arctiva Center (among them, shutting down and restarting no longer looks frozen). You can also build it from the source code.",
   "community_h": "Community",
   "community_p": "Ask a question, follow the news or report a bug. It all happens on GitHub, and you need a free account to post.",
   "comm_discussions": "Questions and discussions",

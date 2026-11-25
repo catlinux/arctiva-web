@@ -3,7 +3,8 @@
 ## Media
 - Revisar el nuevo diseño en navegadores reales y en móvil (hasta ahora solo se ha validado el código, no se ha visto renderizado).
 - Renovar las capturas (hoy de una máquina virtual con 0.7.0) cuando haya ISO y hardware real.
-- Mantener `src/data` al día con el estado real del proyecto principal (0.3.x, fases).
+- Mantener `src/data` al día con el estado real del proyecto principal.
+- Con la próxima ISO: reflejar las correcciones del instalador (GRUB y partición EFI) y el acceso por SSH en la sesión live, que no están en la 0.8.1.
 
 ## Baja
 - Guías (junto a Windows, migrar desde Windows, volver a una instantánea) cuando haya contenido; comparativas con otras distribuciones.

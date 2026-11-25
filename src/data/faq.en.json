@@ -9,7 +9,7 @@
   {
     "q": "Is there an ISO I can download?",
     "a": [
-      "Yes. Arctiva 0.8.1 (beta) is a public beta and you can download it from [GitHub Releases](https://github.com/catlinux/arctiva/releases/tag/v0.8.1). Before using it, check it with the .sha256 and .sig files published next to it; the steps are on the [Download page](/download/).",
+      "Yes. Arctiva 0.8.1 (beta) is a public beta and you can download it from [GitHub Releases](https://github.com/catlinux/arctiva/releases/tag/v0.8.1). Before using it, check it with the .sha256 and .sig files published next to it; the steps are on the [Download page](/download/). After installing, update the system to get the improvements made since 0.8.1.",
       "It is a beta, so expect rough edges. So far it has been tested mainly in virtual machines, and testing on real hardware continues. Please report any problem in the project's repository."
     ]
   },
@@ -53,7 +53,7 @@
   {
     "q": "Can I play games and run Windows programs?",
     "a": [
-      "Yes, with limits. The Gaming extra installs Steam (with Proton), Lutris, GameMode, MangoHud and Gamescope. Heroic Games Launcher covers Epic Games, GOG and Amazon Games, and ProtonPlus manages Proton versions. Windows programs (.exe and .msi files) open with Bottles. Not everything works: games with kernel-level anti-cheat usually do not run on Linux. Check ProtonDB and Are We Anti-Cheat Yet? before you buy or install a game."
+      "Yes, with limits. The Gaming extra installs Steam (with Proton), Lutris, GameMode, MangoHud and Gamescope. Heroic Games Launcher covers Epic Games, GOG and Amazon Games, and ProtonPlus manages Proton versions. Windows programs (.exe and .msi files) open with Bottles. The Arctiva Games extra, new and little tested, installs launchers such as Battle.net, EA app, Ubisoft Connect, GOG Galaxy and Epic Games, and downloads Proton-Wineland the first time. Not everything works: games with kernel-level anti-cheat usually do not run on Linux. Check ProtonDB and Are We Anti-Cheat Yet? before you buy or install a game."
     ]
   },
   {

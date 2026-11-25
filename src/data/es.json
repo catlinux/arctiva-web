@@ -49,7 +49,7 @@
     },
     {
       "h": "Ayuda propia",
-      "p": "Arctiva tendrá sus propios canales de ayuda, así que nadie tendrá que acudir a los foros de Arch."
+      "p": "La ayuda está en las Discussions del repositorio de GitHub, sin necesidad de acudir a los foros de Arch."
     },
     {
       "h": "Código abierto",
@@ -104,7 +104,7 @@
     {
       "s": "done",
       "h": "Tienda de aplicaciones",
-      "p": "Busca e instala programas de los repositorios oficiales de Arch y de Flathub, con el origen siempre visible y una fuente recomendada. Si hay actualizaciones pendientes, te pide actualizar antes para no dejar el sistema a medias. El AUR está disponible pero desactivado de serie: al activarlo hay un aviso, antes de cada instalación hay que leer el PKGBUILD y sus actualizaciones son manuales y muestran qué ha cambiado."
+      "p": "Busca e instala programas de los repositorios oficiales de Arch y de Flathub, con el origen siempre visible y una fuente recomendada. Si hay actualizaciones pendientes, te pide actualizar antes para no dejar el sistema a medias. El AUR está disponible pero desactivado de serie: al activarlo hay un aviso, antes de cada instalación hay que leer el PKGBUILD y se actualiza con el resto del sistema desde Actualizaciones, tras revisar y aprobar los cambios. La búsqueda ignora guiones, espacios y tildes y tolera erratas, los resultados salen paginados y puedes marcar varias aplicaciones y añadirlas a la cola de una vez."
     },
     {
       "s": "done",
@@ -114,7 +114,7 @@
     {
       "s": "wip",
       "h": "Arctiva Games",
-      "p": "Un extra opcional de Arctiva Center (no va en la ISO) que instala lanzadores de juegos de Windows (Battle.net, EA app, Ubisoft Connect, GOG Galaxy y Epic Games) paso a paso con Proton o Wine, con biblioteca y accesos directos. Es nuevo y está poco probado en hardware real."
+      "p": "Un extra opcional de Arctiva Center (no va en la ISO) que instala lanzadores de juegos de Windows (Battle.net, EA app, Ubisoft Connect, GOG Galaxy y Epic Games) paso a paso con Proton o Wine, con biblioteca y accesos directos. Al abrirlo, o al instalar el extra, descarga la última versión de Proton-Wineland (unos 350 MB) desde sus publicaciones oficiales en GitHub, comprueba su suma SHA-512 y la deja por defecto; busca una versión nueva como mucho una vez por semana. GE-Proton sigue disponible. Arctiva no aloja ni redistribuye ninguno de los dos. Sin conexión, sigue funcionando con los demás ejecutores. Es nuevo y está poco probado en hardware real."
     }
   ],
   "install_h": "Instalación en diez pasos",
@@ -195,7 +195,7 @@
     },
     {
       "h": "Aplicaciones",
-      "p": "La tienda: repositorios oficiales de Arch y Flathub con el origen siempre visible, y AUR opcional con avisos y lectura obligatoria del PKGBUILD. Las instalaciones van a una cola, con el progreso visible desde cualquier módulo."
+      "p": "La tienda: repositorios oficiales de Arch y Flathub con el origen siempre visible, y AUR opcional con avisos y lectura obligatoria del PKGBUILD. Las instalaciones van a una cola, con el progreso visible desde cualquier módulo, y puedes marcar varias aplicaciones y añadirlas de una vez. La búsqueda tolera erratas. En el AUR, los resultados se ordenan por relevancia (se puede cambiar a votos, popularidad o nombre) y hay una opción para ocultar los paquetes con menos de 10 votos."
     },
     {
       "h": "Controladores",
@@ -298,7 +298,7 @@
     "Con el cifrado de disco, GRUB pide la contraseña en modo texto antes de cargar el tema; es normal."
   ],
   "beta_h": "Descarga la ISO beta",
-  "beta_p": "Arctiva 0.8.1 es una beta pública: puede haber fallos y se agradece que los cuentes. Descárgala de GitHub Releases y compruébala con los archivos .sha256 y .sig (huella de la clave arriba). La ISO pesa unos 1,7 GiB. También puedes construirla desde el código fuente.",
+  "beta_p": "Arctiva 0.8.1 es una beta pública: puede haber fallos y se agradece que los cuentes. Descárgala de GitHub Releases y compruébala con los archivos .sha256 y .sig (huella de la clave arriba). La ISO pesa unos 1,7 GiB. Las mejoras posteriores de Arctiva Center, Arctiva Games y del sistema llegan al actualizar desde Arctiva Center (entre ellas, que apagar y reiniciar ya no parece colgado). También puedes construirla desde el código fuente.",
   "community_h": "Comunidad",
   "community_p": "Pregunta, sigue las novedades o cuéntanos un fallo. Todo se hace en GitHub y hace falta una cuenta gratuita para escribir.",
   "comm_discussions": "Preguntas y debates",
